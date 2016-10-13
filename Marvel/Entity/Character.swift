@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+struct Character {
+    let id: String
+    let name: String
+    let description: String
+}

@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+enum MarvelError: Error {
+    case apiError
+    case unkown
+}

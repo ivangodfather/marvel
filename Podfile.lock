@@ -1,0 +1,37 @@
+PODS:
+  - Alamofire (4.0.1)
+  - CryptoSwift (0.6.0)
+  - RxAlamofire (3.0.0-beta.1):
+    - RxAlamofire/Core (= 3.0.0-beta.1)
+  - RxAlamofire/Core (3.0.0-beta.1):
+    - Alamofire (~> 4.0)
+    - RxCocoa (~> 3.0.0-beta.1)
+    - RxSwift (~> 3.0.0-beta.1)
+  - RxCocoa (3.0.0-beta.1):
+    - RxSwift (~> 3.0.0-beta.1)
+  - RxSwift (3.0.0-beta.1)
+
+DEPENDENCIES:
+  - CryptoSwift
+  - RxAlamofire (from `https://github.com/RxSwiftCommunity/RxAlamofire`, branch `master`)
+
+EXTERNAL SOURCES:
+  RxAlamofire:
+    :branch: master
+    :git: https://github.com/RxSwiftCommunity/RxAlamofire
+
+CHECKOUT OPTIONS:
+  RxAlamofire:
+    :commit: b8d5d5d2bfd857b328f48b3c7c5052cdd52698d7
+    :git: https://github.com/RxSwiftCommunity/RxAlamofire
+
+SPEC CHECKSUMS:
+  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  CryptoSwift: 4a599b7241b8d3b857d6e2c28867d0bd5d1aae24
+  RxAlamofire: 3e62073fbe1c0269c942af44b073c10d9dda81ab
+  RxCocoa: 8cecf331302b8ae5381bbab1bccba4ede2eae6a8
+  RxSwift: 0823e8d7969c23bfa9ddfb2afa4881e424a1a710
+
+PODFILE CHECKSUM: 759c3ff7d9f3e12e8c5cf58c4a1528f0141e96d4
+
+COCOAPODS: 1.0.0
