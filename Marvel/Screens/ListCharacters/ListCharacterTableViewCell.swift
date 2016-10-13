@@ -24,13 +24,6 @@ class ListCharacterTableViewCell: UITableViewCell {
         nameLabel.text = character.name
         descriptionLabel.text = character.description
         characterImageView.imageURL = character.thumbnail
-        print(character.thumbnail?.absoluteString)
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-    
 }
