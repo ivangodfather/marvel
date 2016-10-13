@@ -10,13 +10,13 @@ import RxSwift
 
 class GetCharacters {
 
-    let api: CharactersAPI
+    let repository: CharactersRepository
 
-    init(api: CharactersAPI = CharactersAPI()) {
-        self.api = api
+    init(repository: CharactersRepository = CharactersRepository()) {
+        self.repository = repository
     }
 
     func execute() -> Observable<[Character]> {
-        return api.getAll()
+        return repository.getAll()
     }
 }

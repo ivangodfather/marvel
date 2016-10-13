@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     private func setRoot() {
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = CharactersWireframe().listCharacters()
+        window?.rootViewController = CharactersWireframe().list()
         window?.makeKeyAndVisible()
     }
 

@@ -37,5 +37,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--Detail Character View Controller-->
+        <scene sceneID="tjL-kW-lOk">
+            <objects>
+                <viewController storyboardIdentifier="DetailCharacterViewController" id="M69-Ui-deC" customClass="DetailCharacterViewController" customModule="Marvel" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Eia-n7-j1t"/>
+                        <viewControllerLayoutGuide type="bottom" id="13v-LL-geh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4cY-FX-fnR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dJt-vg-apA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="762" y="38"/>
+        </scene>
     </scenes>
 </document>

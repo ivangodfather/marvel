@@ -9,7 +9,7 @@
 import UIKit
 import RxSwift
 
-class ListCharactersViewController: UIViewController {
+class ListCharactersViewController: BaseViewController {
 
     fileprivate let cellId = String(describing: ListCharacterTableViewCell.self)
     var characters: [Character] = [] { didSet { tableView.reloadData() } }
@@ -21,6 +21,11 @@ class ListCharactersViewController: UIViewController {
         super.viewDidLoad()
         setupTableView()
         presenter.viewDidLoad()
+    }
+
+    override func updateGUI() {
+        super.updateGUI()
+        self.title = "List"
     }
 
     private func setupTableView() {
@@ -52,5 +57,8 @@ extension ListCharactersViewController: UITableViewDataSource {
 }
 
 extension ListCharactersViewController: UITableViewDelegate {
-
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let character = characters[indexPath.row]
+        presenter.didTap(character: character)
+    }
 }
