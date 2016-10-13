@@ -19,8 +19,7 @@ class CharactersWireframe {
 
     func listCharacters() -> ListCharactersViewController {
         guard let charactersVC = storyboard.instantiateViewController(withIdentifier: identifiers.listCharacters) as? ListCharactersViewController else { fatalError() }
-
+        charactersVC.presenter = ListCharactersPresenter(ui: charactersVC)
         return charactersVC
-
     }
 }

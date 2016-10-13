@@ -18,7 +18,7 @@ class CharactersAPI {
         self.parser = parser
     }
 
-    func get() -> Observable<[Character]> {
+    func getAll() -> Observable<[Character]> {
         return RxAlamofire.requestJSON(.get, MarvelAPI.url, parameters: MarvelAPI.parameters() as [String : AnyObject]?).flatMap { response, data -> Observable<[Character]> in
             guard response.statusCode == 200 else { return Observable.error(MarvelError.apiError) }
             guard let data = data as? [String: Any] else { return Observable.error(MarvelError.unkown) }
