@@ -8,6 +8,7 @@ target 'Marvel' do
   # Pods for Marvel
   pod 'CryptoSwift'
   pod 'RxAlamofire', :git => 'https://github.com/RxSwiftCommunity/RxAlamofire', :branch => 'master'
+  pod 'AsyncImageView'
 
 
   target 'MarvelTests' do
