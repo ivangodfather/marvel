@@ -52,6 +52,7 @@
 		3F8B71811DB018C70022B718 /* ListCharactersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListCharactersViewController.swift; path = Screens/ListCharacters/ListCharactersViewController.swift; sourceTree = "<group>"; };
 		3F8B71831DB019360022B718 /* ListCharacterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListCharacterTableViewCell.swift; path = Screens/ListCharacters/ListCharacterTableViewCell.swift; sourceTree = "<group>"; };
 		3F8B71841DB019360022B718 /* ListCharacterTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ListCharacterTableViewCell.xib; path = Screens/ListCharacters/ListCharacterTableViewCell.xib; sourceTree = "<group>"; };
+		3F8B718A1DB024490022B718 /* Marvel-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Marvel-Bridging-Header.h"; sourceTree = "<group>"; };
 		3FF2475E1DB00452004DFBFE /* Marvel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marvel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FF247611DB00452004DFBFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FF247661DB00452004DFBFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -139,6 +140,34 @@
 			name = ListCharacters;
 			sourceTree = "<group>";
 		};
+		3F8B71871DB024180022B718 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				3FF247611DB00452004DFBFE /* AppDelegate.swift */,
+				3FF247681DB00452004DFBFE /* Assets.xcassets */,
+				3FF2476A1DB00452004DFBFE /* LaunchScreen.storyboard */,
+				3FF2476D1DB00452004DFBFE /* Info.plist */,
+				3F8B718A1DB024490022B718 /* Marvel-Bridging-Header.h */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		3F8B71881DB0242C0022B718 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				3F8B717D1DB0159C0022B718 /* MarvelErrors.swift */,
+			);
+			name = Domain;
+			sourceTree = "<group>";
+		};
+		3F8B71891DB024350022B718 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3FF247651DB00452004DFBFE /* Main.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
 		3FF247551DB00452004DFBFE = {
 			isa = PBXGroup;
 			children = (
@@ -164,15 +193,12 @@
 		3FF247601DB00452004DFBFE /* Marvel */ = {
 			isa = PBXGroup;
 			children = (
+				3F8B71891DB024350022B718 /* UI */,
+				3F8B71881DB0242C0022B718 /* Domain */,
+				3F8B71871DB024180022B718 /* Support */,
 				3F8B717F1DB018910022B718 /* Screens */,
 				3F8B71781DB00E140022B718 /* Entity */,
 				3FF2478F1DB00500004DFBFE /* API */,
-				3FF247611DB00452004DFBFE /* AppDelegate.swift */,
-				3FF247651DB00452004DFBFE /* Main.storyboard */,
-				3FF247681DB00452004DFBFE /* Assets.xcassets */,
-				3FF2476A1DB00452004DFBFE /* LaunchScreen.storyboard */,
-				3FF2476D1DB00452004DFBFE /* Info.plist */,
-				3F8B717D1DB0159C0022B718 /* MarvelErrors.swift */,
 			);
 			path = Marvel;
 			sourceTree = "<group>";
@@ -294,6 +320,7 @@
 				TargetAttributes = {
 					3FF2475D1DB00452004DFBFE = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					3FF247711DB00452004DFBFE = {
@@ -642,10 +669,13 @@
 			baseConfigurationReference = 3108495B17B5544256EEDFE6 /* Pods-Marvel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Marvel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ivan.ruiz.Marvel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Marvel/Marvel-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -655,10 +685,12 @@
 			baseConfigurationReference = C208FFF8D58624962DD2943D /* Pods-Marvel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Marvel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ivan.ruiz.Marvel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Marvel/Marvel-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '563FFEDE2D5283D9C34E7B6592AD612B'
-               BlueprintName = 'RxCocoa'
+               BlueprintIdentifier = '10F2A98565E4CB0A4354935364A3323C'
+               BlueprintName = 'AsyncImageView'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'RxCocoa.framework'>
+               BuildableName = 'AsyncImageView.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

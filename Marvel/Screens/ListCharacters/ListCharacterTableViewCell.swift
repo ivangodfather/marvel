@@ -10,6 +10,7 @@ import UIKit
 
 class ListCharacterTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var characterImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     
@@ -19,8 +20,11 @@ class ListCharacterTableViewCell: UITableViewCell {
     }
 
     func configureWithCharacter(character: Character) {
+        characterImageView.image = #imageLiteral(resourceName: "avatar")
         nameLabel.text = character.name
         descriptionLabel.text = character.description
+        characterImageView.imageURL = character.thumbnail
+        print(character.thumbnail?.absoluteString)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
