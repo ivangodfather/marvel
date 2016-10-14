@@ -12,14 +12,14 @@ class ListCharactersPresenter: BasePresenter {
 
     let ui: ListCharactersUI
     let getCharacters: GetCharacters
-    let charactersWireframe: CharactersWireframe
+    let characterWireframe: CharacterWireframe
 
     init(ui: ListCharactersUI,
          getCharacters: GetCharacters = GetCharacters(),
-         charactersWireframe: CharactersWireframe = CharactersWireframe()) {
+         characterWireframe: CharacterWireframe = CharacterWireframe()) {
         self.ui = ui
         self.getCharacters = getCharacters
-        self.charactersWireframe = charactersWireframe
+        self.characterWireframe = characterWireframe
     }
 
     func viewDidLoad() {
@@ -33,7 +33,7 @@ class ListCharactersPresenter: BasePresenter {
     }
 
     func didTap(character: MarvelCharacter) {
-        charactersWireframe.detail(character: character, fromVC: ui.viewController)
+        characterWireframe.detail(character: character, fromVC: ui.viewController)
     }
 
 }

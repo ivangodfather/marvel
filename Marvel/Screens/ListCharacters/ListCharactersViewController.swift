@@ -11,11 +11,10 @@ import RxSwift
 
 class ListCharactersViewController: BaseViewController {
 
-    fileprivate let cellId = String(describing: ListCharacterTableViewCell.self)
-    var characters: [MarvelCharacter] = [] { didSet { tableView.reloadData() } }
     var presenter: ListCharactersPresenter!
 
     @IBOutlet weak var tableView: UITableView!
+    var dataSource: ListCharactersDataSource!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,39 +25,28 @@ class ListCharactersViewController: BaseViewController {
     override func updateGUI() {
         super.updateGUI()
         self.title = "List"
+        tableView.accessibilityLabel = String(describing: ListCharactersViewController.self)
     }
 
     private func setupTableView() {
-        tableView.dataSource = self
+        tableView.dataSource = dataSource
         tableView.delegate = self
-        let nib = UINib(nibName: cellId, bundle: Bundle.main)
-        tableView.register(nib, forCellReuseIdentifier: cellId)
+        let nib = UINib(nibName: ListCharacterTableViewCell.cellId, bundle: Bundle.main)
+        tableView.register(nib, forCellReuseIdentifier: ListCharacterTableViewCell.cellId)
     }
 
 }
 
 extension ListCharactersViewController: ListCharactersUI {
     func showCharacters(characters: [MarvelCharacter]) {
-        self.characters = characters
-    }
-}
-
-extension ListCharactersViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return characters.count
-    }
-
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellId) as? ListCharacterTableViewCell else { fatalError() }
-        let character = characters[indexPath.row]
-        cell.configureWithCharacter(character: character)
-        return cell
+        self.dataSource.characters = characters
+        self.tableView.reloadData()
     }
 }
 
 extension ListCharactersViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let character = characters[indexPath.row]
+        let character = dataSource.characters[indexPath.row]
         presenter.didTap(character: character)
     }
 }

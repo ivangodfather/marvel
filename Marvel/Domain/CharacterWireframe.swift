@@ -1,5 +1,5 @@
 //
-//  CharactersWireframe.swift
+//  CharacterWireframe.swift
 //  Marvel
 //
 //  Created by Ivan Ruiz Monjo on 13/10/16.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-class CharactersWireframe {
+class CharacterWireframe {
 
     struct identifiers {
         static let sb = "Characters"
@@ -21,12 +21,14 @@ class CharactersWireframe {
     func list() -> UIViewController {
         guard let vc = storyboard.instantiateViewController(withIdentifier: identifiers.list) as? ListCharactersViewController else { fatalError() }
         vc.presenter = ListCharactersPresenter(ui: vc)
+        vc.dataSource = ListCharactersDataSource()
         return UINavigationController(rootViewController: vc)
     }
 
     func detail(character: MarvelCharacter, fromVC: UIViewController) {
         guard let vc = storyboard.instantiateViewController(withIdentifier: identifiers.detail) as? DetailCharacterViewController else { fatalError() }
-        vc.presenter = DetailCharacterPresenter(ui: vc)
+        vc.presenter = DetailCharacterPresenter(ui: vc,
+                                                character: character)
         fromVC.navigationController?.pushViewController(vc, animated: true)
     }
 

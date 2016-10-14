@@ -35,36 +35,35 @@ class CharacterSpec: QuickSpec {
                 }
 
                 it("should create a character if thumbnail is missing") {
-                    self.character = MarvelCharacter(dict: self.dictWithout(key: Keys.thumbnail))
+                    self.character = MarvelCharacter(dict: self.dictWithout(key: MarvelCharacter.Keys.thumbnail))
                     expect(self.character).notTo(beNil())
                 }
 
                 it("should not create a character if id is missing", closure: {
-                    self.character = MarvelCharacter(dict: self.dictWithout(key: Keys.id))
+                    self.character = MarvelCharacter(dict: self.dictWithout(key: MarvelCharacter.Keys.id))
                     expect(self.character).to(beNil())
                 })
 
                 it("should not create a character if name is missing", closure: {
-                    self.character = MarvelCharacter(dict: self.dictWithout(key: Keys.name))
+                    self.character = MarvelCharacter(dict: self.dictWithout(key: MarvelCharacter.Keys.name))
                     expect(self.character).to(beNil())
                 })
 
                 it("should not create a character if description is missing", closure: {
-                    self.character = MarvelCharacter(dict: self.dictWithout(key: Keys.description))
+                    self.character = MarvelCharacter(dict: self.dictWithout(key: MarvelCharacter.Keys.description))
                     expect(self.character).to(beNil())
                 })
             })
         }
-
     }
 
     private func dictWithIdNameDescriptionAndThumbnail() -> [String: Any] {
-        let thumbnailDict = [Keys.ext: anyExtension,
-                             Keys.path: anyPath]
-        return [Keys.id: anyId,
-                Keys.name: anyName,
-                Keys.description: anyDescription,
-                Keys.thumbnail: thumbnailDict]
+        let thumbnailDict = [MarvelCharacter.Keys.ext: anyExtension,
+                             MarvelCharacter.Keys.path: anyPath]
+        return [MarvelCharacter.Keys.id: anyId,
+                MarvelCharacter.Keys.name: anyName,
+                MarvelCharacter.Keys.description: anyDescription,
+                MarvelCharacter.Keys.thumbnail: thumbnailDict]
     }
 
     private func dictWithout(key: String) -> [String: Any] {
@@ -72,13 +71,5 @@ class CharacterSpec: QuickSpec {
         dict.removeValue(forKey: key)
         return dict
     }
-
-    private struct Keys {
-        static let id = "id"
-        static let name = "name"
-        static let description = "description"
-        static let thumbnail = "thumbnail"
-        static let path = "path"
-        static let ext = "extension"
-    }
+    
 }

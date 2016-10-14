@@ -10,6 +10,8 @@ import UIKit
 
 class ListCharacterTableViewCell: UITableViewCell {
 
+    static let cellId = String(describing: ListCharacterTableViewCell.self)
+
     @IBOutlet weak var characterImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
@@ -23,7 +25,10 @@ class ListCharacterTableViewCell: UITableViewCell {
         characterImageView.image = #imageLiteral(resourceName: "avatar")
         nameLabel.text = character.name
         descriptionLabel.text = character.description
-        characterImageView.imageURL = character.thumbnail
+        if let thumb = character.thumbnail {
+            characterImageView.imageURL = thumb
+        }
+        accessibilityLabel = "\(character.id) \(character.name)"
     }
 
 }

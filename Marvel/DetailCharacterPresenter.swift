@@ -11,8 +11,15 @@ import RxSwift
 
 class DetailCharacterPresenter: BasePresenter {
     let ui: DetailCharacterUI
+    let character: MarvelCharacter
 
-    init(ui: DetailCharacterUI) {
+    init(ui: DetailCharacterUI,
+         character: MarvelCharacter) {
         self.ui = ui
+        self.character = character
+    }
+
+    func viewDidLoad() {
+        ui.show(character: character)
     }
 }

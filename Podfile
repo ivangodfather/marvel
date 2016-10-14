@@ -26,6 +26,11 @@ target 'Marvel' do
     # Pods for testing
   end
 
+  target 'Acceptance Tests' do
+    pod 'KIF'
+    testing_pods
+  end
+
 end
 
 post_install do |installer|

@@ -9,5 +9,5 @@
 import Foundation
 
 protocol DetailCharacterUI: BaseUI {
-    func show(character: Character)
+    func show(character: MarvelCharacter)
 }

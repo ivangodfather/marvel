@@ -31,4 +31,25 @@ struct MarvelCharacter {
         self.description = description
         self.thumbnail = thumbnail
     }
+
+    init(id: Int,
+         name: String,
+         description: String,
+         thumbnail: URL?) {
+        self.id = id
+        self.name = name
+        self.description = description
+        self.thumbnail = thumbnail
+    }
+}
+
+extension MarvelCharacter {
+    struct Keys {
+        static let id = "id"
+        static let name = "name"
+        static let description = "description"
+        static let thumbnail = "thumbnail"
+        static let path = "path"
+        static let ext = "extension"
+    }
 }
