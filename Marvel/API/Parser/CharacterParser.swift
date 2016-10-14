@@ -9,21 +9,10 @@
 import Foundation
 
 class CharacterParser {
-
-    func characterFrom(dict: [String: Any]) -> Character? {
-        guard let id = dict["id"] as? String,
-        let name = dict["name"] as? String,
-            let description = dict["desription"] as? String else {
-                return nil
-        }
-        return Character(id: id, name: name, description: description)
-    }
-
-    func characters(dict: [String: Any]) -> [Character] {
+    func characters(dict: [String: Any]) -> [MarvelCharacter] {
         guard let data = dict["data"] as? [String: Any],
-            let results = data["results"] as? [[String: Any]] else {
-                return []
-        }
-        return results.flatMap { characterFrom(dict: $0) }
+            let results = data["results"] as? [[String: Any]]
+            else { return [] }
+        return results.flatMap { MarvelCharacter(dict: $0) }
     }
 }

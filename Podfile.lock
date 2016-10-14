@@ -1,6 +1,12 @@
 PODS:
   - Alamofire (4.0.1)
+  - AsyncImageView (1.6)
   - CryptoSwift (0.6.0)
+  - KIF (3.5.1):
+    - KIF/Core (= 3.5.1)
+  - KIF/Core (3.5.1)
+  - Nimble (5.0.0)
+  - Quick (0.10.0)
   - RxAlamofire (3.0.0-beta.1):
     - RxAlamofire/Core (= 3.0.0-beta.1)
   - RxAlamofire/Core (3.0.0-beta.1):
@@ -12,7 +18,11 @@ PODS:
   - RxSwift (3.0.0-beta.1)
 
 DEPENDENCIES:
+  - AsyncImageView
   - CryptoSwift
+  - KIF
+  - Nimble
+  - Quick
   - RxAlamofire (from `https://github.com/RxSwiftCommunity/RxAlamofire`, branch `master`)
 
 EXTERNAL SOURCES:
@@ -27,11 +37,15 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  AsyncImageView: 416e99402e5b1f20571de70ad619ced90f56a7d9
   CryptoSwift: 4a599b7241b8d3b857d6e2c28867d0bd5d1aae24
+  KIF: 082eb65279e51c3092923802849eb796a04982ab
+  Nimble: 56fc9f5020effa2206de22c3dd910f4fb011b92f
+  Quick: 5d290df1c69d5ee2f0729956dcf0fd9a30447eaa
   RxAlamofire: 3e62073fbe1c0269c942af44b073c10d9dda81ab
   RxCocoa: 8cecf331302b8ae5381bbab1bccba4ede2eae6a8
   RxSwift: 0823e8d7969c23bfa9ddfb2afa4881e424a1a710
 
-PODFILE CHECKSUM: 759c3ff7d9f3e12e8c5cf58c4a1528f0141e96d4
+PODFILE CHECKSUM: f86beab954635655dac0555599c0865aebe480b0
 
-COCOAPODS: 1.0.0
+COCOAPODS: 1.0.1
