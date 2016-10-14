@@ -18,7 +18,12 @@ class ListCharacterTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        updateGUI()
+    }
+
+    private func updateGUI() {
+        accessoryType = .disclosureIndicator
+        selectionStyle = .none
     }
 
     func configureWithCharacter(character: MarvelCharacter) {

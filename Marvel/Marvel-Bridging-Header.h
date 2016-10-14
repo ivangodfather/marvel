@@ -3,3 +3,4 @@
 //
 
 #import <AsyncImageView/AsyncImageView.h>
+#import <UIScrollView_InfiniteScroll/UIScrollView+InfiniteScroll.h>

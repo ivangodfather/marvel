@@ -18,13 +18,22 @@ class MarvelAPI {
         static let apiKey = "apikey"
         static let timestamp = "ts"
         static let hash = "hash"
+        static let offset = "offset"
+        static let pageSize = "limit"
     }
 
-    static func parameters() -> [String: Any] {
-        let timestamp = Int(Date().timeIntervalSince1970)
-        return [apiParams.apiKey: publicKey,
-                apiParams.timestamp: timestamp,
-                apiParams.hash: "\(timestamp)\(privateKey)\(publicKey)".md5()]
+    struct Params {
+        let pageSize: Int
+        var offset: Int
+
+         func toDict() -> [String: Any] {
+            let timestamp = Int(Date().timeIntervalSince1970)
+            return [apiParams.apiKey: publicKey,
+                    apiParams.timestamp: timestamp,
+                    apiParams.hash: "\(timestamp)\(privateKey)\(publicKey)".md5(),
+                    apiParams.pageSize: pageSize,
+                    apiParams.offset: offset]
+        }
     }
 
 

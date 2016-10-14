@@ -227,8 +227,8 @@
 		3F8B71881DB0242C0022B718 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				A3790CDA1DB12F7800875F53 /* Marvel */,
 				A39D447A1DB0CE8E003C0075 /* Extensions */,
-				3F8B717D1DB0159C0022B718 /* MarvelErrors.swift */,
 				3F8B718D1DB02AD50022B718 /* CharacterWireframe.swift */,
 				3F8B71911DB02CCF0022B718 /* BasePresenter.swift */,
 				3F8B71A21DB032AE0022B718 /* BaseUI.swift */,
@@ -362,6 +362,14 @@
 				F5AE00C30D63322FD2F8660A /* Pods-Marvel-Acceptance Tests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		A3790CDA1DB12F7800875F53 /* Marvel */ = {
+			isa = PBXGroup;
+			children = (
+				3F8B717D1DB0159C0022B718 /* MarvelErrors.swift */,
+			);
+			name = Marvel;
 			sourceTree = "<group>";
 		};
 		A39D44761DB0CDA0003C0075 /* Screens */ = {

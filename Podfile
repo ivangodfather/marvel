@@ -9,6 +9,7 @@ target 'Marvel' do
   pod 'CryptoSwift'
   pod 'RxAlamofire', :git => 'https://github.com/RxSwiftCommunity/RxAlamofire', :branch => 'master'
   pod 'AsyncImageView'
+  pod 'UIScrollView-InfiniteScroll'
 
   def testing_pods
     pod 'Quick'

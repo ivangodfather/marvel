@@ -33,14 +33,29 @@ class ListCharactersViewController: BaseViewController {
         tableView.delegate = self
         let nib = UINib(nibName: ListCharacterTableViewCell.cellId, bundle: Bundle.main)
         tableView.register(nib, forCellReuseIdentifier: ListCharacterTableViewCell.cellId)
+        tableView.infiniteScrollIndicatorStyle = .gray
+        tableView.addInfiniteScroll { tableView -> Void in
+            self.presenter.tableViewDidScrollToBottom()
+        }
     }
 
 }
 
 extension ListCharactersViewController: ListCharactersUI {
     func showCharacters(characters: [MarvelCharacter]) {
-        self.dataSource.characters = characters
-        self.tableView.reloadData()
+        var indexPaths = [IndexPath]()
+        var index = self.dataSource.characters.count
+        characters.forEach {
+            let indexPath = IndexPath(row: index, section: 0)
+            indexPaths.append(indexPath)
+            index += 1
+            self.dataSource.characters.append($0)
+        }
+        tableView.beginUpdates()
+        tableView.insertRows(at: indexPaths, with: .automatic)
+        tableView.endUpdates()
+        tableView.finishInfiniteScroll()
+
     }
 }
 

@@ -16,7 +16,7 @@ class GetCharacters {
         self.repository = repository
     }
 
-    func execute() -> Observable<[MarvelCharacter]> {
-        return repository.getAll()
+    func execute(params: MarvelAPI.Params) -> Observable<[MarvelCharacter]> {
+        return repository.getAll(params: params)
     }
 }

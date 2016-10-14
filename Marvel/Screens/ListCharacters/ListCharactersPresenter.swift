@@ -10,9 +10,13 @@ import Foundation
 
 class ListCharactersPresenter: BasePresenter {
 
-    let ui: ListCharactersUI
-    let getCharacters: GetCharacters
-    let characterWireframe: CharacterWireframe
+    private var offset = 0
+    private let pageSize = 20
+    private var apiParams: MarvelAPI.Params { return MarvelAPI.Params(pageSize: pageSize, offset: offset) }
+
+    private let ui: ListCharactersUI
+    private let getCharacters: GetCharacters
+    private let characterWireframe: CharacterWireframe
 
     init(ui: ListCharactersUI,
          getCharacters: GetCharacters = GetCharacters(),
@@ -27,13 +31,18 @@ class ListCharactersPresenter: BasePresenter {
     }
 
     private func showCharacters() {
-        getCharacters.execute().subscribe(onNext: { characters in
+        getCharacters.execute(params: apiParams).subscribe(onNext: { characters in
             self.ui.showCharacters(characters: characters)
         }).addDisposableTo(disposeBag)
     }
 
     func didTap(character: MarvelCharacter) {
         characterWireframe.detail(character: character, fromVC: ui.viewController)
+    }
+
+    func tableViewDidScrollToBottom() {
+        offset += pageSize
+        showCharacters()
     }
 
 }

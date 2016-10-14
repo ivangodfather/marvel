@@ -17,6 +17,5 @@ class BaseViewController: UIViewController, BaseUI {
     }
 
     func updateGUI() {
-
     }
 }
