@@ -12,7 +12,7 @@ import RxSwift
 class ListCharactersViewController: BaseViewController {
 
     fileprivate let cellId = String(describing: ListCharacterTableViewCell.self)
-    var characters: [Character] = [] { didSet { tableView.reloadData() } }
+    var characters: [MarvelCharacter] = [] { didSet { tableView.reloadData() } }
     var presenter: ListCharactersPresenter!
 
     @IBOutlet weak var tableView: UITableView!
@@ -38,7 +38,7 @@ class ListCharactersViewController: BaseViewController {
 }
 
 extension ListCharactersViewController: ListCharactersUI {
-    func showCharacters(characters: [Character]) {
+    func showCharacters(characters: [MarvelCharacter]) {
         self.characters = characters
     }
 }

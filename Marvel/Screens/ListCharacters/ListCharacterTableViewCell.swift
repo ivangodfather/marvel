@@ -19,7 +19,7 @@ class ListCharacterTableViewCell: UITableViewCell {
         // Initialization code
     }
 
-    func configureWithCharacter(character: Character) {
+    func configureWithCharacter(character: MarvelCharacter) {
         characterImageView.image = #imageLiteral(resourceName: "avatar")
         nameLabel.text = character.name
         descriptionLabel.text = character.description

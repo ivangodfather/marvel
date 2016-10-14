@@ -17,7 +17,7 @@ class CharactersRepository {
         self.api = api
     }
 
-    func getAll() -> Observable<[Character]> {
+    func getAll() -> Observable<[MarvelCharacter]> {
         return api.getAll()
     }
 }

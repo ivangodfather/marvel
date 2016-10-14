@@ -10,10 +10,15 @@ target 'Marvel' do
   pod 'RxAlamofire', :git => 'https://github.com/RxSwiftCommunity/RxAlamofire', :branch => 'master'
   pod 'AsyncImageView'
 
+  def testing_pods
+    pod 'Quick'
+    pod 'Nimble'
+  end
 
   target 'MarvelTests' do
     inherit! :search_paths
     # Pods for testing
+    testing_pods
   end
 
   target 'MarvelUITests' do

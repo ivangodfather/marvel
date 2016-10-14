@@ -9,10 +9,10 @@
 import Foundation
 
 class CharacterParser {
-    func characters(dict: [String: Any]) -> [Character] {
+    func characters(dict: [String: Any]) -> [MarvelCharacter] {
         guard let data = dict["data"] as? [String: Any],
             let results = data["results"] as? [[String: Any]]
             else { return [] }
-        return results.flatMap { Character(dict: $0) }
+        return results.flatMap { MarvelCharacter(dict: $0) }
     }
 }

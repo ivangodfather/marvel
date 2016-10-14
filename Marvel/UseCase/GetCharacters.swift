@@ -16,7 +16,7 @@ class GetCharacters {
         self.repository = repository
     }
 
-    func execute() -> Observable<[Character]> {
+    func execute() -> Observable<[MarvelCharacter]> {
         return repository.getAll()
     }
 }

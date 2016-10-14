@@ -24,7 +24,7 @@ class CharactersWireframe {
         return UINavigationController(rootViewController: vc)
     }
 
-    func detail(character: Character, fromVC: UIViewController) {
+    func detail(character: MarvelCharacter, fromVC: UIViewController) {
         guard let vc = storyboard.instantiateViewController(withIdentifier: identifiers.detail) as? DetailCharacterViewController else { fatalError() }
         vc.presenter = DetailCharacterPresenter(ui: vc)
         fromVC.navigationController?.pushViewController(vc, animated: true)

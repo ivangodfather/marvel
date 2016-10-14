@@ -7,5 +7,5 @@
 //
 
 protocol ListCharactersUI: BaseUI {
-    func showCharacters(characters: [Character])
+    func showCharacters(characters: [MarvelCharacter])
 }

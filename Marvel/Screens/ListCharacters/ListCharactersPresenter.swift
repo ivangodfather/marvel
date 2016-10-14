@@ -32,7 +32,7 @@ class ListCharactersPresenter: BasePresenter {
         }).addDisposableTo(disposeBag)
     }
 
-    func didTap(character: Character) {
+    func didTap(character: MarvelCharacter) {
         charactersWireframe.detail(character: character, fromVC: ui.viewController)
     }
 
