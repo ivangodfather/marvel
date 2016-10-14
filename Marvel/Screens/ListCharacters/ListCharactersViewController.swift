@@ -9,23 +9,23 @@
 import UIKit
 import RxSwift
 
-class ListCharactersViewController: UIViewController {
+class ListCharactersViewController: BaseViewController {
 
     fileprivate let cellId = String(describing: ListCharacterTableViewCell.self)
-
-    var characters: [Character] = [] {
-        didSet { tableView.reloadData() }
-    }
+    var characters: [Character] = [] { didSet { tableView.reloadData() } }
+    var presenter: ListCharactersPresenter!
 
     @IBOutlet weak var tableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
-        CharactersAPI().get().subscribe(onNext: { characters in
-            self.characters = characters
-        })
+        presenter.viewDidLoad()
+    }
 
+    override func updateGUI() {
+        super.updateGUI()
+        self.title = "List"
     }
 
     private func setupTableView() {
@@ -35,6 +35,12 @@ class ListCharactersViewController: UIViewController {
         tableView.register(nib, forCellReuseIdentifier: cellId)
     }
 
+}
+
+extension ListCharactersViewController: ListCharactersUI {
+    func showCharacters(characters: [Character]) {
+        self.characters = characters
+    }
 }
 
 extension ListCharactersViewController: UITableViewDataSource {
@@ -51,5 +57,8 @@ extension ListCharactersViewController: UITableViewDataSource {
 }
 
 extension ListCharactersViewController: UITableViewDelegate {
-
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let character = characters[indexPath.row]
+        presenter.didTap(character: character)
+    }
 }
