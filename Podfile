@@ -8,16 +8,30 @@ target 'Marvel' do
   # Pods for Marvel
   pod 'CryptoSwift'
   pod 'RxAlamofire', :git => 'https://github.com/RxSwiftCommunity/RxAlamofire', :branch => 'master'
+  pod 'AsyncImageView'
+  pod 'UIScrollView-InfiniteScroll'
+  pod 'SVProgressHUD'
+  pod 'IOStickyHeader'
 
+  def testing_pods
+    pod 'Quick'
+    pod 'Nimble'
+  end
 
   target 'MarvelTests' do
     inherit! :search_paths
     # Pods for testing
+    testing_pods
   end
 
   target 'MarvelUITests' do
     inherit! :search_paths
     # Pods for testing
+  end
+
+  target 'Acceptance Tests' do
+    pod 'KIF'
+    testing_pods
   end
 
 end
