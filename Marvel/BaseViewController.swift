@@ -19,6 +19,9 @@ class BaseViewController: UIViewController {
     }
 
     func updateGUI() {
+        SVProgressHUD.setDefaultStyle(.custom)
+        SVProgressHUD.setBackgroundColor(UIColor.clear)
+        SVProgressHUD.setForegroundColor(UIColor.darkGray)
     }
 }
 
