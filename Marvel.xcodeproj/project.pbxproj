@@ -563,7 +563,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Ivan Ruiz Monjo";
 				TargetAttributes = {
 					3FF2475D1DB00452004DFBFE = {
@@ -936,6 +936,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -985,6 +986,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -1013,6 +1015,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3108495B17B5544256EEDFE6 /* Pods-Marvel.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Marvel/Info.plist;
@@ -1029,6 +1032,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C208FFF8D58624962DD2943D /* Pods-Marvel.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Marvel/Info.plist;
@@ -1102,6 +1106,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BD3573C19BE9BBD67F5452F9 /* Pods-Marvel-Acceptance Tests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Marvel.app/Marvel";
 				INFOPLIST_FILE = "Acceptance Tests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
@@ -1139,6 +1144,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F5AE00C30D63322FD2F8660A /* Pods-Marvel-Acceptance Tests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Marvel.app/Marvel";
 				INFOPLIST_FILE = "Acceptance Tests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
