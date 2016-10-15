@@ -71,7 +71,6 @@ extension ListCharactersViewController: ListCharactersUI {
         tableView.insertRows(at: indexPaths, with: .automatic)
         tableView.endUpdates()
         tableView.finishInfiniteScroll()
-
     }
 
     func showCharacters(characters: [MarvelCharacter]) {
@@ -84,5 +83,11 @@ extension ListCharactersViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let character = dataSource.characters[indexPath.row]
         presenter.didTap(character: character)
+    }
+}
+
+extension ListCharactersViewController: UISearchBarDelegate {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
     }
 }
