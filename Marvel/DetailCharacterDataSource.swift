@@ -28,9 +28,11 @@ class DetailCharacterDataSource: NSObject, UICollectionViewDataSource {
         return cell
     }
 
+    var headerView: UICollectionReusableView?
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         guard let cell = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: DetailCharacterHeaderCollectionReusableView.identifier, for: indexPath) as? DetailCharacterHeaderCollectionReusableView else { fatalError() }
         cell.configureWithCharacter(character: character)
+        headerView = cell
         return cell
     }
 }
