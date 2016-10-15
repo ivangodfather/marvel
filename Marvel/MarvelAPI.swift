@@ -14,6 +14,10 @@ class MarvelAPI {
     static var publicKey = "c2e5f25aab44206e6f7accdda4a2be7b"
     static var privateKey = "accade7af2b380414e5b2578f91b3b0e7142e5d1"
 
+    class func urlComics(characterId: Int) -> String {
+        return "\(MarvelAPI.url)/\(characterId.description)/series"
+    }
+
     private struct ApiParams {
         static let apiKey = "apikey"
         static let timestamp = "ts"
@@ -23,24 +27,39 @@ class MarvelAPI {
         static let name = "nameStartsWith"
     }
 
-    struct Params {
-        let pageSize: Int
-        var offset: Int
+    struct CharactersParams {
+        var pageSize: Int?
+        var offset: Int?
         var name: String?
 
-         func toDict() -> [String: Any] {
-            let timestamp = Int(Date().timeIntervalSince1970)
-            var dict: [String: Any] = [ApiParams.apiKey: publicKey,
-                    ApiParams.timestamp: timestamp,
-                    ApiParams.hash: "\(timestamp)\(privateKey)\(publicKey)".md5(),
-                    ApiParams.pageSize: pageSize,
-                    ApiParams.offset: offset]
-            if let name = name, name.characters.count > 0 {
-                dict[ApiParams.name] = name
-            }
+        init(pageSize: Int, offset: Int) {
+            self.pageSize = pageSize
+            self.offset = offset
+        }
+
+        init(pageSize: Int, offset: Int, name: String) {
+            self.init(pageSize: pageSize, offset: offset)
+            self.name = name
+        }
+
+        func toDict() -> [String: Any] {
+            var dict = MarvelAPI.defaultParams()
+            if let name = name, name.characters.count > 0 { dict[ApiParams.name] = name }
             return dict
         }
     }
 
+    struct ComicParams {
+        var characterId: Int
+        init(characterId: Int) { self.characterId = characterId }
 
+        func toDict() -> [String: Any] { return MarvelAPI.defaultParams() }
+    }
+
+    private static func defaultParams() -> [String: Any] {
+        let timestamp = Int(Date().timeIntervalSince1970)
+        return [ApiParams.apiKey: publicKey,
+                ApiParams.timestamp: timestamp,
+                ApiParams.hash: "\(timestamp)\(privateKey)\(publicKey)".md5()]
+    }
 }

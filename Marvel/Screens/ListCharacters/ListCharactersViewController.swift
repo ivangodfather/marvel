@@ -49,7 +49,7 @@ class ListCharactersViewController: BaseViewController {
             .do(onNext: presenter.searchBarTextDidChange)
             .flatMapLatest({ (text) -> Observable<[MarvelCharacter]> in
                 self.waitingHud(show: true)
-                return GetCharacters().execute(offset: 0, name: text)
+                return GetCharacters().filtered(name: text, offset: 0)
             }).subscribe(onNext: { (characters) in
                 self.waitingHud(show: false)
                 self.showCharacters(characters: characters)

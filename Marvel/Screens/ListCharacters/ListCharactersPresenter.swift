@@ -31,7 +31,7 @@ class ListCharactersPresenter: BasePresenter {
 
     private func showCharacters() {
         ui.waitingHud(show: true && (offset == 0))
-        getCharacters.execute(offset: offset)
+        getCharacters.all(offset: offset)
             .subscribe(onNext: { characters in
             (self.offset == 0) ?
                 self.ui.showCharacters(characters: characters) : self.ui.appendCharacters(characters: characters)

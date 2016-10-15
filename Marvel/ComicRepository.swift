@@ -1,15 +1,15 @@
 //
-//  CharactersRepository.swift
+//  ComicRepository.swift
 //  Marvel
 //
-//  Created by Ivan Ruiz Monjo on 13/10/16.
+//  Created by Ivan Ruiz on 15/10/16.
 //  Copyright © 2016 Ivan Ruiz Monjo. All rights reserved.
 //
 
 import Foundation
 import RxSwift
 
-class CharactersRepository {
+class ComicRepository {
 
     let api: MarvelAPIEndpoints
 
@@ -17,7 +17,8 @@ class CharactersRepository {
         self.api = api
     }
 
-    func getAll(params: MarvelAPI.CharactersParams) -> Observable<[MarvelCharacter]> {
-        return api.getCharacters(params: params)
+    func getComics(params: MarvelAPI.ComicParams) -> Observable<[MarvelComic]> {
+        return api.getComics(params: params)
     }
+    
 }
