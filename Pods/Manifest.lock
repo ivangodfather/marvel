@@ -16,6 +16,7 @@ PODS:
   - RxCocoa (3.0.0-beta.1):
     - RxSwift (~> 3.0.0-beta.1)
   - RxSwift (3.0.0-beta.1)
+  - SVProgressHUD (2.0.3)
   - UIScrollView-InfiniteScroll (0.9.1)
 
 DEPENDENCIES:
@@ -25,6 +26,7 @@ DEPENDENCIES:
   - Nimble
   - Quick
   - RxAlamofire (from `https://github.com/RxSwiftCommunity/RxAlamofire`, branch `master`)
+  - SVProgressHUD
   - UIScrollView-InfiniteScroll
 
 EXTERNAL SOURCES:
@@ -47,8 +49,9 @@ SPEC CHECKSUMS:
   RxAlamofire: 3e62073fbe1c0269c942af44b073c10d9dda81ab
   RxCocoa: 8cecf331302b8ae5381bbab1bccba4ede2eae6a8
   RxSwift: 0823e8d7969c23bfa9ddfb2afa4881e424a1a710
+  SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
   UIScrollView-InfiniteScroll: 14e204c50ca4040467e1cbfa141dad7a18919b56
 
-PODFILE CHECKSUM: c4079fa2fe5e05f778a59dc8c5d6b9b19db56461
+PODFILE CHECKSUM: 2023964e3e09dd188c549c0ba33ed44204167c3d
 
 COCOAPODS: 1.0.1

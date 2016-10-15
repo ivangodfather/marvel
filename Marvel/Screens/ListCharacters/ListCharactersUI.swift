@@ -8,4 +8,5 @@
 
 protocol ListCharactersUI: BaseUI {
     func showCharacters(characters: [MarvelCharacter])
+    func appendCharacters(characters: [MarvelCharacter])
 }

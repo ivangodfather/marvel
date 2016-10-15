@@ -13,12 +13,14 @@ class ListCharactersViewController: BaseViewController {
 
     var presenter: ListCharactersPresenter!
 
+    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     var dataSource: ListCharactersDataSource!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
+        setupSearchBar()
         presenter.viewDidLoad()
     }
 
@@ -39,10 +41,24 @@ class ListCharactersViewController: BaseViewController {
         }
     }
 
+    private func setupSearchBar() {
+        searchBar.rx.text
+            .skip(1)
+            .throttle(0.5, scheduler: MainScheduler.instance)
+            .distinctUntilChanged()
+            .do(onNext: presenter.searchBarTextDidChange)
+            .flatMapLatest({ (text) -> Observable<[MarvelCharacter]> in
+                self.waitingHud(show: true)
+                return GetCharacters().execute(offset: 0, name: text)
+            }).subscribe(onNext: { (characters) in
+                self.waitingHud(show: false)
+                self.showCharacters(characters: characters)
+            }).addDisposableTo(disposeBag)
+    }
 }
 
 extension ListCharactersViewController: ListCharactersUI {
-    func showCharacters(characters: [MarvelCharacter]) {
+    func appendCharacters(characters: [MarvelCharacter]) {
         var indexPaths = [IndexPath]()
         var index = self.dataSource.characters.count
         characters.forEach {
@@ -56,6 +72,11 @@ extension ListCharactersViewController: ListCharactersUI {
         tableView.endUpdates()
         tableView.finishInfiniteScroll()
 
+    }
+
+    func showCharacters(characters: [MarvelCharacter]) {
+        self.dataSource.characters = characters
+        self.tableView.reloadData()
     }
 }
 
