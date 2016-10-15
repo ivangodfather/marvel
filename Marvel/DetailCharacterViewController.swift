@@ -34,6 +34,8 @@ class DetailCharacterViewController: BaseViewController {
         let headerNib = UINib(nibName: String(describing: DetailCharacterHeaderCollectionReusableView.self), bundle: nil)
         collectionView.register(headerNib, forSupplementaryViewOfKind: IOStickyHeaderParallaxHeader, withReuseIdentifier: DetailCharacterHeaderCollectionReusableView.identifier)
 
+        let cellNib = UINib(nibName: String(describing: DetailCharacterCollectionViewCell.self), bundle: nil)
+        collectionView.register(cellNib, forCellWithReuseIdentifier: DetailCharacterCollectionViewCell.identifier)
         collectionView.dataSource = self
     }
 
@@ -48,11 +50,12 @@ extension DetailCharacterViewController: DetailCharacterUI {
 extension DetailCharacterViewController: UICollectionViewDataSource {
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 0
+        return 15
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return UICollectionViewCell()
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DetailCharacterCollectionViewCell.identifier, for: indexPath) as? DetailCharacterCollectionViewCell else { fatalError() }
+        return cell
     }
 
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
