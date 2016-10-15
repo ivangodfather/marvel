@@ -10,4 +10,5 @@ import Foundation
 
 protocol BaseUI {
     var viewController: UIViewController { get }
+    func waitingHud(show: Bool)
 }

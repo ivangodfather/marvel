@@ -7,12 +7,11 @@
 //
 
 import Foundation
+import RxSwift
 
 class ListCharactersPresenter: BasePresenter {
 
     private var offset = 0
-    private let pageSize = 20
-    private var apiParams: MarvelAPI.Params { return MarvelAPI.Params(pageSize: pageSize, offset: offset) }
 
     private let ui: ListCharactersUI
     private let getCharacters: GetCharacters
@@ -31,8 +30,12 @@ class ListCharactersPresenter: BasePresenter {
     }
 
     private func showCharacters() {
-        getCharacters.execute(params: apiParams).subscribe(onNext: { characters in
-            self.ui.showCharacters(characters: characters)
+        ui.waitingHud(show: true && (offset == 0))
+        getCharacters.execute(offset: offset)
+            .subscribe(onNext: { characters in
+            (self.offset == 0) ?
+                self.ui.showCharacters(characters: characters) : self.ui.appendCharacters(characters: characters)
+                self.ui.waitingHud(show: false)
         }).addDisposableTo(disposeBag)
     }
 
@@ -41,8 +44,12 @@ class ListCharactersPresenter: BasePresenter {
     }
 
     func tableViewDidScrollToBottom() {
-        offset += pageSize
+        offset += GetCharacters.pageSize
         showCharacters()
+    }
+
+    func searchBarTextDidChange(text: String) {
+        offset = 0
     }
 
 }

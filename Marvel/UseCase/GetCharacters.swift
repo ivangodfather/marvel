@@ -11,12 +11,16 @@ import RxSwift
 class GetCharacters {
 
     let repository: CharactersRepository
+    static let pageSize = 20
 
     init(repository: CharactersRepository = CharactersRepository()) {
         self.repository = repository
     }
 
-    func execute(params: MarvelAPI.Params) -> Observable<[MarvelCharacter]> {
+    func execute(offset: Int, name: String? = nil) -> Observable<[MarvelCharacter]> {
+        let params = MarvelAPI.Params(pageSize: GetCharacters.pageSize,
+                                      offset: offset,
+                                      name: name)
         return repository.getAll(params: params)
     }
 }

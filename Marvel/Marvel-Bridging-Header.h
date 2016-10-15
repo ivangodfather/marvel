@@ -4,3 +4,4 @@
 
 #import <AsyncImageView/AsyncImageView.h>
 #import <UIScrollView_InfiniteScroll/UIScrollView+InfiniteScroll.h>
+#import <SVProgressHUD/SVProgressHUD.h>
