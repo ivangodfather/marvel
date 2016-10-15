@@ -10,4 +10,5 @@ import Foundation
 
 protocol DetailCharacterUI: BaseUI {
     func show(character: MarvelCharacter)
+    func show(comics: [MarvelComic])
 }

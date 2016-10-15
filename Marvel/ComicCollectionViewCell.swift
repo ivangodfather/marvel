@@ -8,13 +8,19 @@
 
 import UIKit
 
-class DetailCharacterCollectionViewCell: UICollectionViewCell {
+class ComicCollectionViewCell: UICollectionViewCell {
 
-    static let identifier = String(describing: DetailCharacterCollectionViewCell.self)
+    static let identifier = String(describing: ComicCollectionViewCell.self)
     
+    @IBOutlet weak var titleLabel: UILabel!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+    }
+
+    func configure(comic: MarvelComic) {
+        self.titleLabel.text = comic.title
     }
 
 }

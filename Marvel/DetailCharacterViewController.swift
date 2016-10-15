@@ -14,6 +14,7 @@ class DetailCharacterViewController: BaseViewController {
     var presenter: DetailCharacterPresenter!
 
     var currentCharacter: MarvelCharacter!
+    var dataSource : DetailCharacterDataSource!
 
     @IBOutlet weak var collectionView: UICollectionView!
     override func viewDidLoad() {
@@ -23,6 +24,7 @@ class DetailCharacterViewController: BaseViewController {
     }
 
     private func setupCollectionView() {
+        collectionView.dataSource = dataSource
         if let layout = self.collectionView.collectionViewLayout as? IOStickyHeaderFlowLayout {
             layout.parallaxHeaderReferenceSize = CGSize(width: UIScreen.main.bounds.size.width, height: 240)
             layout.parallaxHeaderMinimumReferenceSize = CGSize(width: UIScreen.main.bounds.size.width, height: 60)
@@ -36,9 +38,8 @@ class DetailCharacterViewController: BaseViewController {
         let headerNib = UINib(nibName: String(describing: DetailCharacterHeaderCollectionReusableView.self), bundle: nil)
         collectionView.register(headerNib, forSupplementaryViewOfKind: IOStickyHeaderParallaxHeader, withReuseIdentifier: DetailCharacterHeaderCollectionReusableView.identifier)
 
-        let cellNib = UINib(nibName: String(describing: DetailCharacterCollectionViewCell.self), bundle: nil)
-        collectionView.register(cellNib, forCellWithReuseIdentifier: DetailCharacterCollectionViewCell.identifier)
-        collectionView.dataSource = self
+        let cellNib = UINib(nibName: String(describing: ComicCollectionViewCell.self), bundle: nil)
+        collectionView.register(cellNib, forCellWithReuseIdentifier: ComicCollectionViewCell.identifier)
     }
 
 }
@@ -48,22 +49,10 @@ extension DetailCharacterViewController: DetailCharacterUI {
         self.currentCharacter = character
         self.title = character.name
     }
-}
 
-extension DetailCharacterViewController: UICollectionViewDataSource {
-
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 30
-    }
-
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DetailCharacterCollectionViewCell.identifier, for: indexPath) as? DetailCharacterCollectionViewCell else { fatalError() }
-        return cell
-    }
-
-    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        guard let cell = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: DetailCharacterHeaderCollectionReusableView.identifier, for: indexPath) as? DetailCharacterHeaderCollectionReusableView else { fatalError() }
-        cell.configureWithCharacter(character: currentCharacter)
-        return cell
+    func show(comics: [MarvelComic]) {
+        dataSource.comics = comics
+        collectionView.reloadData()
     }
 }
+
