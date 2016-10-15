@@ -29,6 +29,7 @@ class CharacterWireframe {
         guard let vc = storyboard.instantiateViewController(withIdentifier: identifiers.detail) as? DetailCharacterViewController else { fatalError() }
         vc.presenter = DetailCharacterPresenter(ui: vc,
                                                 character: character)
+        vc.dataSource = DetailCharacterDataSource(character: character)
         fromVC.navigationController?.pushViewController(vc, animated: true)
     }
 

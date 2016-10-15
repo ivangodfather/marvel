@@ -49,11 +49,12 @@ class ListCharactersViewController: BaseViewController {
             .do(onNext: presenter.searchBarTextDidChange)
             .flatMapLatest({ (text) -> Observable<[MarvelCharacter]> in
                 self.waitingHud(show: true)
-                return GetCharacters().execute(offset: 0, name: text)
+                return GetCharacters().filtered(name: text, offset: 0)
             }).subscribe(onNext: { (characters) in
                 self.waitingHud(show: false)
                 self.showCharacters(characters: characters)
             }).addDisposableTo(disposeBag)
+        searchBar.placeholder = "Search character"
     }
 }
 
@@ -71,7 +72,6 @@ extension ListCharactersViewController: ListCharactersUI {
         tableView.insertRows(at: indexPaths, with: .automatic)
         tableView.endUpdates()
         tableView.finishInfiniteScroll()
-
     }
 
     func showCharacters(characters: [MarvelCharacter]) {
@@ -84,5 +84,20 @@ extension ListCharactersViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let character = dataSource.characters[indexPath.row]
         presenter.didTap(character: character)
+    }
+}
+
+extension ListCharactersViewController: UISearchBarDelegate {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+    }
+
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        searchBar.showsCancelButton = true
+    }
+
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.showsCancelButton = false
+        searchBar.resignFirstResponder()
     }
 }
