@@ -13,6 +13,9 @@ class ComicCollectionViewCell: UICollectionViewCell {
     static let identifier = String(describing: ComicCollectionViewCell.self)
     
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var comicImageView: UIImageView!
+    @IBOutlet weak var pagesLabel: UILabel!
+    @IBOutlet weak var isbnLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -20,7 +23,15 @@ class ComicCollectionViewCell: UICollectionViewCell {
     }
 
     func configure(comic: MarvelComic) {
+        comicImageView.image = #imageLiteral(resourceName: "avatar")
         self.titleLabel.text = comic.title
+        if let thumb = comic.thumbnail {
+            comicImageView.imageURL = thumb
+        }
+        isbnLabel.text = "ISBN: \(comic.isbn ?? "unkown")"
+        pagesLabel.text = "Page count: \(comic.pageCount?.description ?? "unkown")"
+        accessibilityLabel = "\(comic.id) \(comic.title)"
+
     }
 
 }

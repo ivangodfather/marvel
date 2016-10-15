@@ -13,6 +13,8 @@ struct MarvelComic {
     let id: Int
     let title: String
     let description: String
+    let pageCount: Int?
+    let isbn: String?
     let thumbnail: URL?
 
     init?(dict: [String: Any]) {
@@ -27,6 +29,8 @@ struct MarvelComic {
             let ext = thumb["extension"] as? String {
             thumbnail = URL(string: "\(path).\(ext)")
         }
+        isbn = dict["isbn"] as? String
+        pageCount = dict["pageCount"] as? Int
         self.id = id
         self.title = title
         self.description = description
