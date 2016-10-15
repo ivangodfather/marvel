@@ -2,6 +2,7 @@ PODS:
   - Alamofire (4.0.1)
   - AsyncImageView (1.6)
   - CryptoSwift (0.6.0)
+  - IOStickyHeader (1.0.0)
   - KIF (3.5.1):
     - KIF/Core (= 3.5.1)
   - KIF/Core (3.5.1)
@@ -22,6 +23,7 @@ PODS:
 DEPENDENCIES:
   - AsyncImageView
   - CryptoSwift
+  - IOStickyHeader
   - KIF
   - Nimble
   - Quick
@@ -43,6 +45,7 @@ SPEC CHECKSUMS:
   Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
   AsyncImageView: 416e99402e5b1f20571de70ad619ced90f56a7d9
   CryptoSwift: 4a599b7241b8d3b857d6e2c28867d0bd5d1aae24
+  IOStickyHeader: 2636c44a0dd364de1c2b8c7f0e3f2d32de4e3ec3
   KIF: 082eb65279e51c3092923802849eb796a04982ab
   Nimble: 56fc9f5020effa2206de22c3dd910f4fb011b92f
   Quick: 5d290df1c69d5ee2f0729956dcf0fd9a30447eaa
@@ -52,6 +55,6 @@ SPEC CHECKSUMS:
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
   UIScrollView-InfiniteScroll: 14e204c50ca4040467e1cbfa141dad7a18919b56
 
-PODFILE CHECKSUM: 2023964e3e09dd188c549c0ba33ed44204167c3d
+PODFILE CHECKSUM: fbdb60c49a6dc3b8c2ed6fc5a5e12a09c2bd81b7
 
 COCOAPODS: 1.0.1
