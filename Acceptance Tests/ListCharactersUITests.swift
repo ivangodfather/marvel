@@ -66,9 +66,9 @@ class MockGetCharacters: GetCharacters {
 
     var charactersToReturn: [MarvelCharacter]?
 
-    override func execute() -> Observable<[MarvelCharacter]> {
-        guard let charactersToReturn = charactersToReturn else { return Observable.error(MarvelError.unkown) }
-        return Observable.just(charactersToReturn)
+    override func all(offset: Int) -> Observable<[MarvelCharacter]> {
+        if let charactersToReturn = charactersToReturn { return Observable.just(charactersToReturn) }
+        return Observable.error(MarvelError.unkown)
     }
 
 }
