@@ -39,6 +39,8 @@ class ListCharactersViewController: BaseViewController {
         tableView.addInfiniteScroll { tableView -> Void in
             self.presenter.tableViewDidScrollToBottom()
         }
+        tableView.estimatedRowHeight = 140
+        tableView.rowHeight = UITableViewAutomaticDimension
     }
 
     private func setupSearchBar() {
