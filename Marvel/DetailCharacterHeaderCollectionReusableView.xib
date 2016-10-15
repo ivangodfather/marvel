@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11523"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -18,14 +19,14 @@
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hulk" translatesAutoresizingMaskIntoConstraints="NO" id="gB6-Il-k9r">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="219"/>
                 </imageView>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z4C-T2-diV" userLabel="Text Wrapper">
-                    <rect key="frame" x="20.5" y="205" width="280" height="29.5"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z4C-T2-diV" userLabel="Text Container">
+                    <rect key="frame" x="20.5" y="209" width="280" height="22"/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbi-Sy-7Mp">
                     <rect key="frame" x="30" y="211" width="260" height="18"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -41,7 +42,7 @@
                 <constraint firstAttribute="bottom" secondItem="gB6-Il-k9r" secondAttribute="bottom" id="mCX-0l-jVP"/>
                 <constraint firstItem="Z4C-T2-diV" firstAttribute="centerX" secondItem="gbi-Sy-7Mp" secondAttribute="centerX" id="oUL-Jc-a5R"/>
                 <constraint firstItem="Z4C-T2-diV" firstAttribute="width" secondItem="gbi-Sy-7Mp" secondAttribute="width" constant="20" id="ul6-ch-3Pz"/>
-                <constraint firstItem="Z4C-T2-diV" firstAttribute="height" secondItem="gbi-Sy-7Mp" secondAttribute="height" constant="11.5" id="zlv-LK-Lee"/>
+                <constraint firstItem="Z4C-T2-diV" firstAttribute="height" secondItem="gbi-Sy-7Mp" secondAttribute="height" multiplier="1.2" id="zlv-LK-Lee"/>
             </constraints>
             <connections>
                 <outlet property="characterImageView" destination="gB6-Il-k9r" id="Uwt-Kw-jic"/>

@@ -44,6 +44,8 @@ class MarvelAPI {
 
         func toDict() -> [String: Any] {
             var dict = MarvelAPI.defaultParams()
+            if let offset = offset { dict[ApiParams.offset] = offset }
+            if let pageSize = pageSize { dict[ApiParams.pageSize] = pageSize }
             if let name = name, name.characters.count > 0 { dict[ApiParams.name] = name }
             return dict
         }
