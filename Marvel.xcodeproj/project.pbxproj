@@ -19,7 +19,7 @@
 		3F8B71921DB02CCF0022B718 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B71911DB02CCF0022B718 /* BasePresenter.swift */; };
 		3F8B71941DB02D2E0022B718 /* ListCharactersUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B71931DB02D2E0022B718 /* ListCharactersUI.swift */; };
 		3F8B71971DB02EA60022B718 /* GetCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B71961DB02EA60022B718 /* GetCharacters.swift */; };
-		3F8B719A1DB02FFA0022B718 /* CharactersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B71991DB02FFA0022B718 /* CharactersRepository.swift */; };
+		3F8B719A1DB02FFA0022B718 /* CharacterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B71991DB02FFA0022B718 /* CharacterRepository.swift */; };
 		3F8B719D1DB0311D0022B718 /* DetailCharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B719C1DB0311D0022B718 /* DetailCharacterViewController.swift */; };
 		3F8B719F1DB031300022B718 /* DetailCharacterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B719E1DB031300022B718 /* DetailCharacterPresenter.swift */; };
 		3F8B71A11DB031530022B718 /* DetailCharacterUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B71A01DB031530022B718 /* DetailCharacterUI.swift */; };
@@ -38,7 +38,7 @@
 		A3790CE11DB2087600875F53 /* DetailCharacterHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3790CDF1DB2087600875F53 /* DetailCharacterHeaderCollectionReusableView.swift */; };
 		A3790CE21DB2087600875F53 /* DetailCharacterHeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3790CE01DB2087600875F53 /* DetailCharacterHeaderCollectionReusableView.xib */; };
 		A3790CE51DB20D7F00875F53 /* ComicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3790CE31DB20D7F00875F53 /* ComicCollectionViewCell.swift */; };
-		A3790CE61DB20D7F00875F53 /* ComicCharacterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3790CE41DB20D7F00875F53 /* ComicCharacterCollectionViewCell.xib */; };
+		A3790CE61DB20D7F00875F53 /* ComicCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3790CE41DB20D7F00875F53 /* ComicCollectionViewCell.xib */; };
 		A3790CE91DB2203B00875F53 /* GetComics.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3790CE81DB2203B00875F53 /* GetComics.swift */; };
 		A3790CEB1DB2206A00875F53 /* ComicRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3790CEA1DB2206A00875F53 /* ComicRepository.swift */; };
 		A3790CEF1DB2211B00875F53 /* MarvelComic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3790CEE1DB2211B00875F53 /* MarvelComic.swift */; };
@@ -95,7 +95,7 @@
 		3F8B71911DB02CCF0022B718 /* BasePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
 		3F8B71931DB02D2E0022B718 /* ListCharactersUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListCharactersUI.swift; path = Screens/ListCharacters/ListCharactersUI.swift; sourceTree = "<group>"; };
 		3F8B71961DB02EA60022B718 /* GetCharacters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GetCharacters.swift; path = UseCase/GetCharacters.swift; sourceTree = "<group>"; };
-		3F8B71991DB02FFA0022B718 /* CharactersRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersRepository.swift; sourceTree = "<group>"; };
+		3F8B71991DB02FFA0022B718 /* CharacterRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterRepository.swift; sourceTree = "<group>"; };
 		3F8B719C1DB0311D0022B718 /* DetailCharacterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCharacterViewController.swift; sourceTree = "<group>"; };
 		3F8B719E1DB031300022B718 /* DetailCharacterPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCharacterPresenter.swift; sourceTree = "<group>"; };
 		3F8B71A01DB031530022B718 /* DetailCharacterUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCharacterUI.swift; sourceTree = "<group>"; };
@@ -122,7 +122,7 @@
 		A3790CDF1DB2087600875F53 /* DetailCharacterHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCharacterHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		A3790CE01DB2087600875F53 /* DetailCharacterHeaderCollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailCharacterHeaderCollectionReusableView.xib; sourceTree = "<group>"; };
 		A3790CE31DB20D7F00875F53 /* ComicCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComicCollectionViewCell.swift; sourceTree = "<group>"; };
-		A3790CE41DB20D7F00875F53 /* ComicCharacterCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ComicCharacterCollectionViewCell.xib; sourceTree = "<group>"; };
+		A3790CE41DB20D7F00875F53 /* ComicCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ComicCollectionViewCell.xib; sourceTree = "<group>"; };
 		A3790CE81DB2203B00875F53 /* GetComics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetComics.swift; sourceTree = "<group>"; };
 		A3790CEA1DB2206A00875F53 /* ComicRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComicRepository.swift; sourceTree = "<group>"; };
 		A3790CEE1DB2211B00875F53 /* MarvelComic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarvelComic.swift; sourceTree = "<group>"; };
@@ -274,7 +274,7 @@
 		3F8B71981DB02FED0022B718 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				3F8B71991DB02FFA0022B718 /* CharactersRepository.swift */,
+				3F8B71991DB02FFA0022B718 /* CharacterRepository.swift */,
 				A3790CEA1DB2206A00875F53 /* ComicRepository.swift */,
 			);
 			name = Repository;
@@ -398,7 +398,7 @@
 				A3790CDF1DB2087600875F53 /* DetailCharacterHeaderCollectionReusableView.swift */,
 				A3790CE01DB2087600875F53 /* DetailCharacterHeaderCollectionReusableView.xib */,
 				A3790CE31DB20D7F00875F53 /* ComicCollectionViewCell.swift */,
-				A3790CE41DB20D7F00875F53 /* ComicCharacterCollectionViewCell.xib */,
+				A3790CE41DB20D7F00875F53 /* ComicCollectionViewCell.xib */,
 				A3790CF21DB22A8F00875F53 /* DetailCharacterDataSource.swift */,
 			);
 			name = CollectionView;
@@ -619,7 +619,7 @@
 			files = (
 				3FF2476C1DB00452004DFBFE /* LaunchScreen.storyboard in Resources */,
 				3FF247691DB00452004DFBFE /* Assets.xcassets in Resources */,
-				A3790CE61DB20D7F00875F53 /* ComicCharacterCollectionViewCell.xib in Resources */,
+				A3790CE61DB20D7F00875F53 /* ComicCollectionViewCell.xib in Resources */,
 				3FF247671DB00452004DFBFE /* Characters.storyboard in Resources */,
 				A3790CE21DB2087600875F53 /* DetailCharacterHeaderCollectionReusableView.xib in Resources */,
 				3F8B71861DB019360022B718 /* ListCharacterTableViewCell.xib in Resources */,
@@ -835,7 +835,7 @@
 				A3790CF11DB221DB00875F53 /* MarvelAPIParser.swift in Sources */,
 				3F8B71901DB02CAC0022B718 /* ListCharactersPresenter.swift in Sources */,
 				A3790CEB1DB2206A00875F53 /* ComicRepository.swift in Sources */,
-				3F8B719A1DB02FFA0022B718 /* CharactersRepository.swift in Sources */,
+				3F8B719A1DB02FFA0022B718 /* CharacterRepository.swift in Sources */,
 				3FF247911DB0051B004DFBFE /* CharactersAPI.swift in Sources */,
 				3F8B71971DB02EA60022B718 /* GetCharacters.swift in Sources */,
 				3FF247931DB00553004DFBFE /* MarvelAPI.swift in Sources */,

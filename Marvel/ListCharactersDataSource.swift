@@ -19,7 +19,7 @@ class ListCharactersDataSource: NSObject, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: ListCharacterTableViewCell.cellId) as? ListCharacterTableViewCell else { fatalError() }
         let character = characters[indexPath.row]
-        cell.configureWithCharacter(character: character)
+        cell.configure(character: character)
         return cell
     }
 }

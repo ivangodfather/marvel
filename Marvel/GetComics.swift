@@ -18,8 +18,8 @@ class GetComics {
         self.repository = repository
     }
 
-    func by(id: Int) -> Observable<[MarvelComic]> {
-        let params = MarvelAPI.ComicParams(characterId: id)
+    func character(character: MarvelCharacter) -> Observable<[MarvelComic]> {
+        let params = MarvelAPI.ComicParams(characterId: character.id)
         return repository.getComics(params: params)
     }
     

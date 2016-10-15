@@ -26,7 +26,7 @@ class ListCharacterTableViewCell: UITableViewCell {
         selectionStyle = .none
     }
 
-    func configureWithCharacter(character: MarvelCharacter) {
+    func configure(character: MarvelCharacter) {
         characterImageView.image = #imageLiteral(resourceName: "avatar")
         nameLabel.text = character.name
         descriptionLabel.text = character.description

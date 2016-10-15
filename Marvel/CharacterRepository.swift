@@ -9,7 +9,7 @@
 import Foundation
 import RxSwift
 
-class CharactersRepository {
+class CharacterRepository {
 
     let api: MarvelAPIEndpoints
 

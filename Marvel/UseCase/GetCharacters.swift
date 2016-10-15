@@ -10,10 +10,10 @@ import RxSwift
 
 class GetCharacters {
 
-    let repository: CharactersRepository
+    let repository: CharacterRepository
     static let pageSize = 20
 
-    init(repository: CharactersRepository = CharactersRepository()) {
+    init(repository: CharacterRepository = CharacterRepository()) {
         self.repository = repository
     }
 
