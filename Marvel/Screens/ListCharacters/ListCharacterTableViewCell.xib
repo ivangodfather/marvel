@@ -26,10 +26,10 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uWG-uE-tGV">
-                        <rect key="frame" x="20" y="33.5" width="40" height="40.5"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uWG-uE-tGV">
+                        <rect key="frame" x="20" y="30.5" width="40" height="47"/>
                         <constraints>
-                            <constraint firstAttribute="width" secondItem="uWG-uE-tGV" secondAttribute="height" id="6i1-sM-h9g"/>
+                            <constraint firstAttribute="width" secondItem="uWG-uE-tGV" secondAttribute="height" multiplier="0.85" id="6i1-sM-h9g"/>
                             <constraint firstAttribute="width" constant="85" id="LzS-cw-Oj1">
                                 <variation key="heightClass=compact" constant="40"/>
                             </constraint>
@@ -43,13 +43,13 @@
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottomMargin" secondItem="uWG-uE-tGV" secondAttribute="bottom" priority="250" constant="3" id="2iC-sB-BNi"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="uWG-uE-tGV" secondAttribute="bottom" priority="250" constant="21" id="2iC-sB-BNi"/>
                     <constraint firstAttribute="bottomMargin" secondItem="uWG-uE-tGV" secondAttribute="bottom" constant="2" id="3xw-d8-lNG"/>
                     <constraint firstItem="uWG-uE-tGV" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="5VJ-jD-GEf"/>
                     <constraint firstItem="uWG-uE-tGV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="F2q-sY-qcn"/>
                     <constraint firstItem="FrH-qx-jCO" firstAttribute="leading" secondItem="uWG-uE-tGV" secondAttribute="trailing" constant="8" symbolic="YES" id="KdK-TW-vh3"/>
-                    <constraint firstItem="uWG-uE-tGV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" priority="250" constant="3" id="XLg-h8-hlM"/>
-                    <constraint firstItem="FrH-qx-jCO" firstAttribute="top" secondItem="uWG-uE-tGV" secondAttribute="top" id="aJh-oL-ClZ"/>
+                    <constraint firstItem="uWG-uE-tGV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" priority="250" constant="22.5" id="XLg-h8-hlM"/>
+                    <constraint firstItem="FrH-qx-jCO" firstAttribute="top" secondItem="uWG-uE-tGV" secondAttribute="top" constant="3" id="aJh-oL-ClZ"/>
                     <constraint firstAttribute="trailingMargin" secondItem="FrH-qx-jCO" secondAttribute="trailing" id="bLj-2Z-gcD"/>
                     <constraint firstItem="dvb-1b-N7N" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="uWG-uE-tGV" secondAttribute="bottom" id="cWQ-Vz-3B5"/>
                     <constraint firstAttribute="trailingMargin" secondItem="dvb-1b-N7N" secondAttribute="trailing" id="ePO-DM-UMy"/>
