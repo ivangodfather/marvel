@@ -54,6 +54,7 @@ class ListCharactersViewController: BaseViewController {
                 self.waitingHud(show: false)
                 self.showCharacters(characters: characters)
             }).addDisposableTo(disposeBag)
+        searchBar.placeholder = "Search character"
     }
 }
 
@@ -88,6 +89,15 @@ extension ListCharactersViewController: UITableViewDelegate {
 
 extension ListCharactersViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+    }
+
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        searchBar.showsCancelButton = true
+    }
+
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.showsCancelButton = false
         searchBar.resignFirstResponder()
     }
 }

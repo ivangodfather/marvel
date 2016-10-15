@@ -20,7 +20,7 @@ class DetailCharacterHeaderCollectionReusableView: UICollectionReusableView {
         super.awakeFromNib()
         // Initialization code
         textWrapper.clipsToBounds = true
-        textWrapper.layer.cornerRadius = 5
+        textWrapper.layer.cornerRadius = 20
     }
 
     func configureWithCharacter(character: MarvelCharacter) {
