@@ -11,6 +11,7 @@ target 'Marvel' do
   pod 'AsyncImageView'
   pod 'UIScrollView-InfiniteScroll'
   pod 'SVProgressHUD'
+  pod 'IOStickyHeader'
 
   def testing_pods
     pod 'Quick'
