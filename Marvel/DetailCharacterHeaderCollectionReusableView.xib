@@ -6,25 +6,50 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11523"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DetailCharacterHeaderCollectionReusableView" id="U6b-Vx-4bR" customClass="DetailCharacterHeaderCollectionReusableView" customModule="Marvel" customModuleProvider="target">
+        <collectionReusableView opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DetailCharacterHeaderCollectionReusableView" id="U6b-Vx-4bR" customClass="DetailCharacterHeaderCollectionReusableView" customModule="Marvel" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="219"/>
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hulk" translatesAutoresizingMaskIntoConstraints="NO" id="gB6-Il-k9r">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hulk" translatesAutoresizingMaskIntoConstraints="NO" id="gB6-Il-k9r">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="219"/>
                 </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z4C-T2-diV" userLabel="Text Wrapper">
+                    <rect key="frame" x="20.5" y="207.5" width="280" height="23.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbi-Sy-7Mp">
+                    <rect key="frame" x="30" y="212" width="260" height="14.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <constraints>
                 <constraint firstItem="gB6-Il-k9r" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="9uV-oV-3cW"/>
+                <constraint firstItem="gbi-Sy-7Mp" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="30" id="R5f-rH-UPV"/>
                 <constraint firstItem="gB6-Il-k9r" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="WAH-Rz-qqF"/>
+                <constraint firstItem="Z4C-T2-diV" firstAttribute="centerY" secondItem="gbi-Sy-7Mp" secondAttribute="centerY" id="XfB-bG-pE6"/>
+                <constraint firstAttribute="bottom" secondItem="gbi-Sy-7Mp" secondAttribute="centerY" id="Y5W-5L-S6H"/>
                 <constraint firstAttribute="trailing" secondItem="gB6-Il-k9r" secondAttribute="trailing" id="YVT-8U-7IK"/>
+                <constraint firstItem="Z4C-T2-diV" firstAttribute="height" secondItem="gbi-Sy-7Mp" secondAttribute="height" multiplier="1.6" id="eDp-42-Hjt"/>
+                <constraint firstAttribute="trailing" secondItem="gbi-Sy-7Mp" secondAttribute="trailing" constant="30" id="lRj-Id-usm"/>
                 <constraint firstAttribute="bottom" secondItem="gB6-Il-k9r" secondAttribute="bottom" id="mCX-0l-jVP"/>
+                <constraint firstItem="Z4C-T2-diV" firstAttribute="centerX" secondItem="gbi-Sy-7Mp" secondAttribute="centerX" id="oUL-Jc-a5R"/>
+                <constraint firstItem="Z4C-T2-diV" firstAttribute="width" secondItem="gbi-Sy-7Mp" secondAttribute="width" constant="20" id="ul6-ch-3Pz"/>
             </constraints>
+            <connections>
+                <outlet property="characterImageView" destination="gB6-Il-k9r" id="Uwt-Kw-jic"/>
+                <outlet property="textLabel" destination="gbi-Sy-7Mp" id="daZ-S1-MxC"/>
+                <outlet property="textWrapper" destination="Z4C-T2-diV" id="sde-Nv-pNr"/>
+            </connections>
             <point key="canvasLocation" x="121" y="79.5"/>
         </collectionReusableView>
     </objects>
