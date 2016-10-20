@@ -1,3294 +1,1431 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>0813B067C62979EABE051E91</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_MarvelUITests.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>118138524AFF9E935711FCF5</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-MarvelUITests/Pods-MarvelUITests-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>136BECD79BCFFE6B3321EC35</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>15AE9F0DF057083ACD1D089C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A39D449E1DB0EEB8003C0075</string>
-				<string>A39D449C1DB0EEAF003C0075</string>
-				<string>A59917B6A84C7ADD8F426DC8</string>
-				<string>4188EEBD968C0CBE0A402090</string>
-				<string>50D28DDFF23008305BB79164</string>
-				<string>0813B067C62979EABE051E91</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1901FE52B40B5263D5CEF85E</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-MarvelTests/Pods-MarvelTests-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>23FA269A2EB2FBB975B3630A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-MarvelTests.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-MarvelTests/Pods-MarvelTests.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2A7F6174D6B00F506B277F63</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Marvel/Pods-Marvel-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>2ACF8773C457141F5AA490CC</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Marvel-Acceptance Tests/Pods-Marvel-Acceptance Tests-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>2CA206E0C42D6582A5CB5CBF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-MarvelTests.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-MarvelTests/Pods-MarvelTests.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>357637DF02D282D92C01DCFC</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Marvel/Pods-Marvel-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>36C336F094FCDBC2D733AA58</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-Marvel.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-Marvel/Pods-Marvel.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3F8B71781DB00E140022B718</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3F8B71791DB00E2D0022B718</string>
-				<string>A3790CEE1DB2211B00875F53</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Entity</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3F8B71791DB00E2D0022B718</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>MarvelCharacter.swift</string>
-			<key>path</key>
-			<string>Entity/MarvelCharacter.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3F8B717A1DB00E2D0022B718</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3F8B71791DB00E2D0022B718</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3F8B717D1DB0159C0022B718</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>MarvelErrors.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3F8B717E1DB0159C0022B718</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3F8B717D1DB0159C0022B718</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3F8B717F1DB018910022B718</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3F8B719B1DB031090022B718</string>
-				<string>3F8B71801DB018990022B718</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Screens</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3F8B71801DB018990022B718</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A39D447D1DB0D03A003C0075</string>
-				<string>3F8B71811DB018C70022B718</string>
-				<string>3F8B718F1DB02CAC0022B718</string>
-				<string>3F8B71931DB02D2E0022B718</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>ListCharacters</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3F8B71811DB018C70022B718</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ListCharactersViewController.swift</string>
-			<key>path</key>
-			<string>Screens/ListCharacters/ListCharactersViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3F8B71821DB018C70022B718</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3F8B71811DB018C70022B718</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3F8B71831DB019360022B718</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ListCharacterTableViewCell.swift</string>
-			<key>path</key>
-			<string>Screens/ListCharacters/ListCharacterTableViewCell.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3F8B71841DB019360022B718</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>name</key>
-			<string>ListCharacterTableViewCell.xib</string>
-			<key>path</key>
-			<string>Screens/ListCharacters/ListCharacterTableViewCell.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3F8B71851DB019360022B718</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3F8B71831DB019360022B718</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3F8B71861DB019360022B718</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3F8B71841DB019360022B718</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3F8B71871DB024180022B718</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3FF247611DB00452004DFBFE</string>
-				<string>3FF247681DB00452004DFBFE</string>
-				<string>3FF2476A1DB00452004DFBFE</string>
-				<string>3FF2476D1DB00452004DFBFE</string>
-				<string>3F8B718A1DB024490022B718</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3F8B71881DB0242C0022B718</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A3790CDA1DB12F7800875F53</string>
-				<string>A39D447A1DB0CE8E003C0075</string>
-				<string>3F8B718D1DB02AD50022B718</string>
-				<string>3F8B71911DB02CCF0022B718</string>
-				<string>3F8B71A21DB032AE0022B718</string>
-				<string>3F8B71A41DB032F10022B718</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Domain</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3F8B71891DB024350022B718</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3FF247651DB00452004DFBFE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Storyboards</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3F8B718A1DB024490022B718</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Marvel-Bridging-Header.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3F8B718D1DB02AD50022B718</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>CharacterWireframe.swift</string>
-			<key>path</key>
-			<string>Domain/CharacterWireframe.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3F8B718E1DB02AD50022B718</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3F8B718D1DB02AD50022B718</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3F8B718F1DB02CAC0022B718</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ListCharactersPresenter.swift</string>
-			<key>path</key>
-			<string>Screens/ListCharacters/ListCharactersPresenter.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3F8B71901DB02CAC0022B718</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3F8B718F1DB02CAC0022B718</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3F8B71911DB02CCF0022B718</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>BasePresenter.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3F8B71921DB02CCF0022B718</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3F8B71911DB02CCF0022B718</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3F8B71931DB02D2E0022B718</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ListCharactersUI.swift</string>
-			<key>path</key>
-			<string>Screens/ListCharacters/ListCharactersUI.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3F8B71941DB02D2E0022B718</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3F8B71931DB02D2E0022B718</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3F8B71951DB02E730022B718</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3F8B71961DB02EA60022B718</string>
-				<string>A3790CE81DB2203B00875F53</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>UseCase</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3F8B71961DB02EA60022B718</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>GetCharacters.swift</string>
-			<key>path</key>
-			<string>UseCase/GetCharacters.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3F8B71971DB02EA60022B718</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3F8B71961DB02EA60022B718</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3F8B71981DB02FED0022B718</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3F8B71991DB02FFA0022B718</string>
-				<string>A3790CEA1DB2206A00875F53</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Repository</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3F8B71991DB02FFA0022B718</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>CharacterRepository.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3F8B719A1DB02FFA0022B718</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3F8B71991DB02FFA0022B718</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3F8B719B1DB031090022B718</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A3790CDE1DB2081C00875F53</string>
-				<string>3F8B719C1DB0311D0022B718</string>
-				<string>3F8B719E1DB031300022B718</string>
-				<string>3F8B71A01DB031530022B718</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>DetailCharacter</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3F8B719C1DB0311D0022B718</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>DetailCharacterViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3F8B719D1DB0311D0022B718</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3F8B719C1DB0311D0022B718</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3F8B719E1DB031300022B718</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>DetailCharacterPresenter.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3F8B719F1DB031300022B718</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3F8B719E1DB031300022B718</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3F8B71A01DB031530022B718</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>DetailCharacterUI.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3F8B71A11DB031530022B718</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3F8B71A01DB031530022B718</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3F8B71A21DB032AE0022B718</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>BaseUI.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3F8B71A31DB032AE0022B718</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3F8B71A21DB032AE0022B718</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3F8B71A41DB032F10022B718</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>BaseViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3F8B71A51DB032F10022B718</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3F8B71A41DB032F10022B718</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3FEBF9B21DB0AA1C00ACD113</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3FEBF9B31DB0AA3100ACD113</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Entity</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3FEBF9B31DB0AA3100ACD113</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>CharacterSpec.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3FEBF9B41DB0AA3100ACD113</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3FEBF9B31DB0AA3100ACD113</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3FF247551DB00452004DFBFE</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3FF247601DB00452004DFBFE</string>
-				<string>3FF247751DB00452004DFBFE</string>
-				<string>3FF247801DB00452004DFBFE</string>
-				<string>A39D448B1DB0DE05003C0075</string>
-				<string>3FF2475F1DB00452004DFBFE</string>
-				<string>15AE9F0DF057083ACD1D089C</string>
-				<string>C9EB27ACE74228BE31C2FED0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3FF247561DB00452004DFBFE</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastSwiftUpdateCheck</key>
-				<string>0810</string>
-				<key>LastUpgradeCheck</key>
-				<string>0810</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Ivan Ruiz Monjo</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>3FF2475D1DB00452004DFBFE</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>8.0</string>
-						<key>DevelopmentTeam</key>
-						<string>96S72PRKCZ</string>
-						<key>LastSwiftMigration</key>
-						<string>0800</string>
-						<key>ProvisioningStyle</key>
-						<string>Automatic</string>
-					</dict>
-					<key>3FF247711DB00452004DFBFE</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>8.0</string>
-						<key>ProvisioningStyle</key>
-						<string>Automatic</string>
-						<key>TestTargetID</key>
-						<string>3FF2475D1DB00452004DFBFE</string>
-					</dict>
-					<key>3FF2477C1DB00452004DFBFE</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>8.0</string>
-						<key>ProvisioningStyle</key>
-						<string>Automatic</string>
-						<key>TestTargetID</key>
-						<string>3FF2475D1DB00452004DFBFE</string>
-					</dict>
-					<key>A39D44891DB0DE05003C0075</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>8.1</string>
-						<key>ProvisioningStyle</key>
-						<string>Automatic</string>
-						<key>TestTargetID</key>
-						<string>3FF2475D1DB00452004DFBFE</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>3FF247591DB00452004DFBFE</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>3FF247551DB00452004DFBFE</string>
-			<key>productRefGroup</key>
-			<string>3FF2475F1DB00452004DFBFE</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>3FF2475D1DB00452004DFBFE</string>
-				<string>3FF247711DB00452004DFBFE</string>
-				<string>3FF2477C1DB00452004DFBFE</string>
-				<string>A39D44891DB0DE05003C0075</string>
-			</array>
-		</dict>
-		<key>3FF247591DB00452004DFBFE</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>3FF247841DB00452004DFBFE</string>
-				<string>3FF247851DB00452004DFBFE</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>3FF2475A1DB00452004DFBFE</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>3F8B719F1DB031300022B718</string>
-				<string>3F8B71A31DB032AE0022B718</string>
-				<string>A3790CE51DB20D7F00875F53</string>
-				<string>3F8B717E1DB0159C0022B718</string>
-				<string>3F8B71A51DB032F10022B718</string>
-				<string>A3790CE11DB2087600875F53</string>
-				<string>A39D447F1DB0D0D4003C0075</string>
-				<string>A3790CE91DB2203B00875F53</string>
-				<string>3FF247621DB00452004DFBFE</string>
-				<string>3F8B717A1DB00E2D0022B718</string>
-				<string>A3790CF11DB221DB00875F53</string>
-				<string>3F8B71901DB02CAC0022B718</string>
-				<string>A3790CEB1DB2206A00875F53</string>
-				<string>3F8B719A1DB02FFA0022B718</string>
-				<string>3FF247911DB0051B004DFBFE</string>
-				<string>3F8B71971DB02EA60022B718</string>
-				<string>3FF247931DB00553004DFBFE</string>
-				<string>3F8B71941DB02D2E0022B718</string>
-				<string>3F8B71A11DB031530022B718</string>
-				<string>A39D447C1DB0CEA0003C0075</string>
-				<string>A3790CF31DB22A8F00875F53</string>
-				<string>A3790CEF1DB2211B00875F53</string>
-				<string>3F8B71851DB019360022B718</string>
-				<string>3F8B719D1DB0311D0022B718</string>
-				<string>3F8B718E1DB02AD50022B718</string>
-				<string>3F8B71821DB018C70022B718</string>
-				<string>3F8B71921DB02CCF0022B718</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>3FF2475B1DB00452004DFBFE</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>DE04E4A4D4D16C1EBAD64CED</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>3FF2475C1DB00452004DFBFE</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>3FF2476C1DB00452004DFBFE</string>
-				<string>3FF247691DB00452004DFBFE</string>
-				<string>A3790CE61DB20D7F00875F53</string>
-				<string>3FF247671DB00452004DFBFE</string>
-				<string>A3790CE21DB2087600875F53</string>
-				<string>3F8B71861DB019360022B718</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>3FF2475D1DB00452004DFBFE</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>3FF247861DB00452004DFBFE</string>
-			<key>buildPhases</key>
-			<array>
-				<string>D4B2C0982E3CDC1342702E52</string>
-				<string>56822ED884B8875B8368899C</string>
-				<string>3FF2475A1DB00452004DFBFE</string>
-				<string>3FF2475B1DB00452004DFBFE</string>
-				<string>3FF2475C1DB00452004DFBFE</string>
-				<string>2A7F6174D6B00F506B277F63</string>
-				<string>357637DF02D282D92C01DCFC</string>
-				<string>D49183C951525FF647364454</string>
-				<string>A9648854157BBB3114268CE3</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Marvel</string>
-			<key>productName</key>
-			<string>Marvel</string>
-			<key>productReference</key>
-			<string>3FF2475E1DB00452004DFBFE</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>3FF2475E1DB00452004DFBFE</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Marvel.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>3FF2475F1DB00452004DFBFE</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3FF2475E1DB00452004DFBFE</string>
-				<string>3FF247721DB00452004DFBFE</string>
-				<string>3FF2477D1DB00452004DFBFE</string>
-				<string>A39D448A1DB0DE05003C0075</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3FF247601DB00452004DFBFE</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3F8B71981DB02FED0022B718</string>
-				<string>3F8B717F1DB018910022B718</string>
-				<string>3F8B71951DB02E730022B718</string>
-				<string>3F8B71891DB024350022B718</string>
-				<string>3F8B71881DB0242C0022B718</string>
-				<string>3F8B71781DB00E140022B718</string>
-				<string>3FF2478F1DB00500004DFBFE</string>
-				<string>3F8B71871DB024180022B718</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Marvel</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3FF247611DB00452004DFBFE</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>AppDelegate.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3FF247621DB00452004DFBFE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3FF247611DB00452004DFBFE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3FF247651DB00452004DFBFE</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3FF247661DB00452004DFBFE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Characters.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3FF247661DB00452004DFBFE</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Characters.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3FF247671DB00452004DFBFE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3FF247651DB00452004DFBFE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3FF247681DB00452004DFBFE</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Assets.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3FF247691DB00452004DFBFE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3FF247681DB00452004DFBFE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3FF2476A1DB00452004DFBFE</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3FF2476B1DB00452004DFBFE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3FF2476B1DB00452004DFBFE</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3FF2476C1DB00452004DFBFE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3FF2476A1DB00452004DFBFE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3FF2476D1DB00452004DFBFE</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3FF2476E1DB00452004DFBFE</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>A39D44791DB0CDCC003C0075</string>
-				<string>3FF247771DB00452004DFBFE</string>
-				<string>A39D44821DB0D381003C0075</string>
-				<string>A39D44851DB0D407003C0075</string>
-				<string>3FEBF9B41DB0AA3100ACD113</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>3FF2476F1DB00452004DFBFE</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>C9A1500E6C136CD9403B6D2B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>3FF247701DB00452004DFBFE</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>3FF247711DB00452004DFBFE</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>3FF247891DB00452004DFBFE</string>
-			<key>buildPhases</key>
-			<array>
-				<string>AC18820CC21C62EC5BBD7CB1</string>
-				<string>AB6648005F9BB034006752CF</string>
-				<string>3FF2476E1DB00452004DFBFE</string>
-				<string>3FF2476F1DB00452004DFBFE</string>
-				<string>3FF247701DB00452004DFBFE</string>
-				<string>4875B758D7015FF3E4A17B95</string>
-				<string>C48AF3992ED3F99C947D7D76</string>
-				<string>1901FE52B40B5263D5CEF85E</string>
-				<string>7C64CAEE25F27084C61D9E26</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>3FF247741DB00452004DFBFE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>MarvelTests</string>
-			<key>productName</key>
-			<string>MarvelTests</string>
-			<key>productReference</key>
-			<string>3FF247721DB00452004DFBFE</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>3FF247721DB00452004DFBFE</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>MarvelTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>3FF247731DB00452004DFBFE</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>3FF247561DB00452004DFBFE</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>3FF2475D1DB00452004DFBFE</string>
-			<key>remoteInfo</key>
-			<string>Marvel</string>
-		</dict>
-		<key>3FF247741DB00452004DFBFE</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>3FF2475D1DB00452004DFBFE</string>
-			<key>targetProxy</key>
-			<string>3FF247731DB00452004DFBFE</string>
-		</dict>
-		<key>3FF247751DB00452004DFBFE</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A39D44831DB0D3FD003C0075</string>
-				<string>3FEBF9B21DB0AA1C00ACD113</string>
-				<string>A39D44761DB0CDA0003C0075</string>
-				<string>3FF247761DB00452004DFBFE</string>
-				<string>3FF247781DB00452004DFBFE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>MarvelTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3FF247761DB00452004DFBFE</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>MarvelTests.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3FF247771DB00452004DFBFE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3FF247761DB00452004DFBFE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3FF247781DB00452004DFBFE</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3FF247791DB00452004DFBFE</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>3FF247821DB00452004DFBFE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>3FF2477A1DB00452004DFBFE</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>FEEC379E730ABABED5F9FD7D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>3FF2477B1DB00452004DFBFE</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>3FF2477C1DB00452004DFBFE</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>3FF2478C1DB00452004DFBFE</string>
-			<key>buildPhases</key>
-			<array>
-				<string>F7DF6165092A912C7B66C6BA</string>
-				<string>136BECD79BCFFE6B3321EC35</string>
-				<string>3FF247791DB00452004DFBFE</string>
-				<string>3FF2477A1DB00452004DFBFE</string>
-				<string>3FF2477B1DB00452004DFBFE</string>
-				<string>118138524AFF9E935711FCF5</string>
-				<string>D3E9CE84322CECCF0FD9426A</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>3FF2477F1DB00452004DFBFE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>MarvelUITests</string>
-			<key>productName</key>
-			<string>MarvelUITests</string>
-			<key>productReference</key>
-			<string>3FF2477D1DB00452004DFBFE</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.ui-testing</string>
-		</dict>
-		<key>3FF2477D1DB00452004DFBFE</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>MarvelUITests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>3FF2477E1DB00452004DFBFE</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>3FF247561DB00452004DFBFE</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>3FF2475D1DB00452004DFBFE</string>
-			<key>remoteInfo</key>
-			<string>Marvel</string>
-		</dict>
-		<key>3FF2477F1DB00452004DFBFE</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>3FF2475D1DB00452004DFBFE</string>
-			<key>targetProxy</key>
-			<string>3FF2477E1DB00452004DFBFE</string>
-		</dict>
-		<key>3FF247801DB00452004DFBFE</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3FF247811DB00452004DFBFE</string>
-				<string>3FF247831DB00452004DFBFE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>MarvelUITests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3FF247811DB00452004DFBFE</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>MarvelUITests.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3FF247821DB00452004DFBFE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3FF247811DB00452004DFBFE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3FF247831DB00452004DFBFE</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3FF247841DB00452004DFBFE</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_DOCUMENTATION_COMMENTS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INFINITE_RECURSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_SUSPICIOUS_MOVE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_SUSPICIOUS_MOVES</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>ENABLE_TESTABILITY</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>10.0</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SWIFT_ACTIVE_COMPILATION_CONDITIONS</key>
-				<string>DEBUG</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>3FF247851DB00452004DFBFE</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_DOCUMENTATION_COMMENTS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INFINITE_RECURSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_SUSPICIOUS_MOVE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_SUSPICIOUS_MOVES</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>10.0</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Owholemodule</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>3FF247861DB00452004DFBFE</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>3FF247871DB00452004DFBFE</string>
-				<string>3FF247881DB00452004DFBFE</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>3FF247871DB00452004DFBFE</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>36C336F094FCDBC2D733AA58</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES</key>
-				<string>YES</string>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>DEVELOPMENT_TEAM</key>
-				<string>96S72PRKCZ</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Marvel/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>ivan.ruiz.Marvel</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SWIFT_OBJC_BRIDGING_HEADER</key>
-				<string>Marvel/Marvel-Bridging-Header.h</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>3FF247881DB00452004DFBFE</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>ACADFCF5ABE5A0C44FFDBD13</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES</key>
-				<string>YES</string>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>DEVELOPMENT_TEAM</key>
-				<string>96S72PRKCZ</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Marvel/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>ivan.ruiz.Marvel</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SWIFT_OBJC_BRIDGING_HEADER</key>
-				<string>Marvel/Marvel-Bridging-Header.h</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>3FF247891DB00452004DFBFE</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>3FF2478A1DB00452004DFBFE</string>
-				<string>3FF2478B1DB00452004DFBFE</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>3FF2478A1DB00452004DFBFE</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>2CA206E0C42D6582A5CB5CBF</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES</key>
-				<string>YES</string>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>INFOPLIST_FILE</key>
-				<string>MarvelTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>ivan.ruiz.MarvelTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/Marvel.app/Marvel</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>3FF2478B1DB00452004DFBFE</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>23FA269A2EB2FBB975B3630A</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES</key>
-				<string>YES</string>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>INFOPLIST_FILE</key>
-				<string>MarvelTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>ivan.ruiz.MarvelTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/Marvel.app/Marvel</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>3FF2478C1DB00452004DFBFE</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>3FF2478D1DB00452004DFBFE</string>
-				<string>3FF2478E1DB00452004DFBFE</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>3FF2478D1DB00452004DFBFE</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>D12096D91157813CB1B8CAA5</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>MarvelUITests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>ivan.ruiz.MarvelUITests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-				<key>TEST_TARGET_NAME</key>
-				<string>Marvel</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>3FF2478E1DB00452004DFBFE</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>D45283090250EAFDFD86B2ED</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>MarvelUITests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>ivan.ruiz.MarvelUITests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-				<key>TEST_TARGET_NAME</key>
-				<string>Marvel</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>3FF2478F1DB00500004DFBFE</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3FF247901DB0051B004DFBFE</string>
-				<string>3FF247921DB00553004DFBFE</string>
-				<string>A3790CF01DB221DB00875F53</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>API</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3FF247901DB0051B004DFBFE</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>CharactersAPI.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3FF247911DB0051B004DFBFE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3FF247901DB0051B004DFBFE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3FF247921DB00553004DFBFE</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>MarvelAPI.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3FF247931DB00553004DFBFE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3FF247921DB00553004DFBFE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>4188EEBD968C0CBE0A402090</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_Marvel_Acceptance_Tests.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>424D5D361DB96162008CC330</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>424D5D381DB96180008CC330</string>
-				<string>424D5D3A1DB961A4008CC330</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Mocks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>424D5D381DB96180008CC330</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>MockGetCharacters.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>424D5D391DB96180008CC330</key>
-		<dict>
-			<key>fileRef</key>
-			<string>424D5D381DB96180008CC330</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>424D5D3A1DB961A4008CC330</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>MockCharacterWireframe.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>424D5D3B1DB961A4008CC330</key>
-		<dict>
-			<key>fileRef</key>
-			<string>424D5D3A1DB961A4008CC330</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>4554554C334C79839DA29B43</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Marvel-Acceptance Tests/Pods-Marvel-Acceptance Tests-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>4875B758D7015FF3E4A17B95</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-MarvelTests/Pods-MarvelTests-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>4F552190E96D62B4E656C5F3</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-Marvel-Acceptance Tests.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-Marvel-Acceptance Tests/Pods-Marvel-Acceptance Tests.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>50D28DDFF23008305BB79164</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_MarvelTests.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>56822ED884B8875B8368899C</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>5E38075B77A717231A695BF8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>4188EEBD968C0CBE0A402090</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>7C64CAEE25F27084C61D9E26</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-MarvelTests/Pods-MarvelTests-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>96B1F02A321432BC91A59AED</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-Marvel-Acceptance Tests.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-Marvel-Acceptance Tests/Pods-Marvel-Acceptance Tests.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A3790CDA1DB12F7800875F53</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3F8B717D1DB0159C0022B718</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Marvel</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A3790CDE1DB2081C00875F53</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A3790CDF1DB2087600875F53</string>
-				<string>A3790CE01DB2087600875F53</string>
-				<string>A3790CE31DB20D7F00875F53</string>
-				<string>A3790CE41DB20D7F00875F53</string>
-				<string>A3790CF21DB22A8F00875F53</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>CollectionView</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A3790CDF1DB2087600875F53</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>DetailCharacterHeaderCollectionReusableView.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A3790CE01DB2087600875F53</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>path</key>
-			<string>DetailCharacterHeaderCollectionReusableView.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A3790CE11DB2087600875F53</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A3790CDF1DB2087600875F53</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A3790CE21DB2087600875F53</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A3790CE01DB2087600875F53</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A3790CE31DB20D7F00875F53</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>ComicCollectionViewCell.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A3790CE41DB20D7F00875F53</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>path</key>
-			<string>ComicCollectionViewCell.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A3790CE51DB20D7F00875F53</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A3790CE31DB20D7F00875F53</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A3790CE61DB20D7F00875F53</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A3790CE41DB20D7F00875F53</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A3790CE81DB2203B00875F53</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>GetComics.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A3790CE91DB2203B00875F53</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A3790CE81DB2203B00875F53</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A3790CEA1DB2206A00875F53</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>ComicRepository.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A3790CEB1DB2206A00875F53</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A3790CEA1DB2206A00875F53</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A3790CEE1DB2211B00875F53</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>MarvelComic.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A3790CEF1DB2211B00875F53</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A3790CEE1DB2211B00875F53</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A3790CF01DB221DB00875F53</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>MarvelAPIParser.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A3790CF11DB221DB00875F53</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A3790CF01DB221DB00875F53</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A3790CF21DB22A8F00875F53</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>DetailCharacterDataSource.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A3790CF31DB22A8F00875F53</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A3790CF21DB22A8F00875F53</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A39D44761DB0CDA0003C0075</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A39D44771DB0CDB1003C0075</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Screens</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A39D44771DB0CDB1003C0075</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A39D44801DB0D36B003C0075</string>
-				<string>A39D44781DB0CDCC003C0075</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>ListCharacters</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A39D44781DB0CDCC003C0075</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>ListCharactersViewControllerTests.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A39D44791DB0CDCC003C0075</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A39D44781DB0CDCC003C0075</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A39D447A1DB0CE8E003C0075</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A39D447B1DB0CEA0003C0075</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Extensions</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A39D447B1DB0CEA0003C0075</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>UIViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A39D447C1DB0CEA0003C0075</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A39D447B1DB0CEA0003C0075</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A39D447D1DB0D03A003C0075</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3F8B71831DB019360022B718</string>
-				<string>3F8B71841DB019360022B718</string>
-				<string>A39D447E1DB0D0D4003C0075</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>TableView</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A39D447E1DB0D0D4003C0075</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>ListCharactersDataSource.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A39D447F1DB0D0D4003C0075</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A39D447E1DB0D0D4003C0075</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A39D44801DB0D36B003C0075</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A39D44811DB0D381003C0075</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Mocks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A39D44811DB0D381003C0075</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>MockListCharactersDataSource.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A39D44821DB0D381003C0075</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A39D44811DB0D381003C0075</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A39D44831DB0D3FD003C0075</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A39D44841DB0D407003C0075</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Builders</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A39D44841DB0D407003C0075</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>CharacterBuilder.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A39D44851DB0D407003C0075</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A39D44841DB0D407003C0075</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A39D44861DB0DE05003C0075</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>424D5D3B1DB961A4008CC330</string>
-				<string>A39D449B1DB0E075003C0075</string>
-				<string>424D5D391DB96180008CC330</string>
-				<string>A39D44961DB0DFDC003C0075</string>
-				<string>A39D44981DB0E00C003C0075</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>A39D44871DB0DE05003C0075</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>A39D449F1DB0EEB8003C0075</string>
-				<string>A39D449D1DB0EEAF003C0075</string>
-				<string>5E38075B77A717231A695BF8</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>A39D44881DB0DE05003C0075</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>A39D44891DB0DE05003C0075</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>A39D44911DB0DE05003C0075</string>
-			<key>buildPhases</key>
-			<array>
-				<string>BEC3B90628D5B7EE7DDB8B33</string>
-				<string>C911FB373C24208B52EA50DC</string>
-				<string>A39D44861DB0DE05003C0075</string>
-				<string>A39D44871DB0DE05003C0075</string>
-				<string>A39D44881DB0DE05003C0075</string>
-				<string>EF1EEFF3D44AC5FC62E3D05D</string>
-				<string>2ACF8773C457141F5AA490CC</string>
-				<string>4554554C334C79839DA29B43</string>
-				<string>DF56E87D32B7F3F23CA1F664</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>A39D44901DB0DE05003C0075</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Acceptance Tests</string>
-			<key>productName</key>
-			<string>Acceptance Tests</string>
-			<key>productReference</key>
-			<string>A39D448A1DB0DE05003C0075</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>A39D448A1DB0DE05003C0075</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Acceptance Tests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>A39D448B1DB0DE05003C0075</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>424D5D361DB96162008CC330</string>
-				<string>A39D44991DB0E062003C0075</string>
-				<string>A39D44951DB0DFDC003C0075</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Acceptance Tests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A39D448E1DB0DE05003C0075</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A39D448F1DB0DE05003C0075</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>3FF247561DB00452004DFBFE</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>3FF2475D1DB00452004DFBFE</string>
-			<key>remoteInfo</key>
-			<string>Marvel</string>
-		</dict>
-		<key>A39D44901DB0DE05003C0075</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>3FF2475D1DB00452004DFBFE</string>
-			<key>targetProxy</key>
-			<string>A39D448F1DB0DE05003C0075</string>
-		</dict>
-		<key>A39D44911DB0DE05003C0075</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>A39D44921DB0DE05003C0075</string>
-				<string>A39D44931DB0DE05003C0075</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>A39D44921DB0DE05003C0075</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>96B1F02A321432BC91A59AED</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES</key>
-				<string>YES</string>
-				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/Marvel.app/Marvel</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Acceptance Tests/Info.plist</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>10.1</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>OTHER_LDFLAGS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>-ObjC</string>
-					<string>-framework</string>
-					<string>"Alamofire"</string>
-					<string>-framework</string>
-					<string>"AsyncImageView"</string>
-					<string>-framework</string>
-					<string>"CryptoSwift"</string>
-					<string>-framework</string>
-					<string>"KIF"</string>
-					<string>-framework</string>
-					<string>"Nimble"</string>
-					<string>-framework</string>
-					<string>"Quick"</string>
-					<string>-framework</string>
-					<string>"RxAlamofire"</string>
-					<string>-framework</string>
-					<string>"RxCocoa"</string>
-					<string>-framework</string>
-					<string>"RxSwift"</string>
-				</array>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>ivan.Acceptance-Tests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-				<key>TEST_HOST</key>
-				<string>$(BUNDLE_LOADER)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>A39D44931DB0DE05003C0075</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>4F552190E96D62B4E656C5F3</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES</key>
-				<string>YES</string>
-				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/Marvel.app/Marvel</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Acceptance Tests/Info.plist</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>10.1</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>OTHER_LDFLAGS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>-ObjC</string>
-					<string>-framework</string>
-					<string>"Alamofire"</string>
-					<string>-framework</string>
-					<string>"AsyncImageView"</string>
-					<string>-framework</string>
-					<string>"CryptoSwift"</string>
-					<string>-framework</string>
-					<string>"KIF"</string>
-					<string>-framework</string>
-					<string>"Nimble"</string>
-					<string>-framework</string>
-					<string>"Quick"</string>
-					<string>-framework</string>
-					<string>"RxAlamofire"</string>
-					<string>-framework</string>
-					<string>"RxCocoa"</string>
-					<string>-framework</string>
-					<string>"RxSwift"</string>
-				</array>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>ivan.Acceptance-Tests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-				<key>TEST_HOST</key>
-				<string>$(BUNDLE_LOADER)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>A39D44951DB0DFDC003C0075</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>ListCharactersUITests.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A39D44961DB0DFDC003C0075</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A39D44951DB0DFDC003C0075</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A39D44971DB0E00C003C0075</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>BaseUITestCase.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A39D44981DB0E00C003C0075</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A39D44971DB0E00C003C0075</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A39D44991DB0E062003C0075</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A39D448E1DB0DE05003C0075</string>
-				<string>A39D44971DB0E00C003C0075</string>
-				<string>A39D449A1DB0E075003C0075</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Config</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A39D449A1DB0E075003C0075</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>KIFExtension.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A39D449B1DB0E075003C0075</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A39D449A1DB0E075003C0075</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A39D449C1DB0EEAF003C0075</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreGraphics.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CoreGraphics.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>A39D449D1DB0EEAF003C0075</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A39D449C1DB0EEAF003C0075</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A39D449E1DB0EEB8003C0075</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>QuartzCore.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/QuartzCore.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>A39D449F1DB0EEB8003C0075</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A39D449E1DB0EEB8003C0075</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A59917B6A84C7ADD8F426DC8</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_Marvel.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>A9648854157BBB3114268CE3</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Marvel/Pods-Marvel-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>AB6648005F9BB034006752CF</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>AC18820CC21C62EC5BBD7CB1</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>ACADFCF5ABE5A0C44FFDBD13</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-Marvel.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-Marvel/Pods-Marvel.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BEC3B90628D5B7EE7DDB8B33</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>C48AF3992ED3F99C947D7D76</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-MarvelTests/Pods-MarvelTests-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>C911FB373C24208B52EA50DC</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>C9A1500E6C136CD9403B6D2B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>50D28DDFF23008305BB79164</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C9EB27ACE74228BE31C2FED0</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>36C336F094FCDBC2D733AA58</string>
-				<string>ACADFCF5ABE5A0C44FFDBD13</string>
-				<string>96B1F02A321432BC91A59AED</string>
-				<string>4F552190E96D62B4E656C5F3</string>
-				<string>2CA206E0C42D6582A5CB5CBF</string>
-				<string>23FA269A2EB2FBB975B3630A</string>
-				<string>D12096D91157813CB1B8CAA5</string>
-				<string>D45283090250EAFDFD86B2ED</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D12096D91157813CB1B8CAA5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-MarvelUITests.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-MarvelUITests/Pods-MarvelUITests.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D3E9CE84322CECCF0FD9426A</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-MarvelUITests/Pods-MarvelUITests-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>D45283090250EAFDFD86B2ED</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-MarvelUITests.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-MarvelUITests/Pods-MarvelUITests.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D49183C951525FF647364454</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Marvel/Pods-Marvel-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>D4B2C0982E3CDC1342702E52</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>DE04E4A4D4D16C1EBAD64CED</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A59917B6A84C7ADD8F426DC8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DF56E87D32B7F3F23CA1F664</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Marvel-Acceptance Tests/Pods-Marvel-Acceptance Tests-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>EF1EEFF3D44AC5FC62E3D05D</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Marvel-Acceptance Tests/Pods-Marvel-Acceptance Tests-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>F7DF6165092A912C7B66C6BA</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>FEEC379E730ABABED5F9FD7D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0813B067C62979EABE051E91</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>3FF247561DB00452004DFBFE</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F8B717A1DB00E2D0022B718 /* MarvelCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B71791DB00E2D0022B718 /* MarvelCharacter.swift */; };
+		3F8B717E1DB0159C0022B718 /* MarvelErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B717D1DB0159C0022B718 /* MarvelErrors.swift */; };
+		3F8B71821DB018C70022B718 /* ListCharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B71811DB018C70022B718 /* ListCharactersViewController.swift */; };
+		3F8B71851DB019360022B718 /* ListCharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B71831DB019360022B718 /* ListCharacterTableViewCell.swift */; };
+		3F8B71861DB019360022B718 /* ListCharacterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F8B71841DB019360022B718 /* ListCharacterTableViewCell.xib */; };
+		3F8B718E1DB02AD50022B718 /* CharacterWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B718D1DB02AD50022B718 /* CharacterWireframe.swift */; };
+		3F8B71901DB02CAC0022B718 /* ListCharactersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B718F1DB02CAC0022B718 /* ListCharactersPresenter.swift */; };
+		3F8B71921DB02CCF0022B718 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B71911DB02CCF0022B718 /* BasePresenter.swift */; };
+		3F8B71941DB02D2E0022B718 /* ListCharactersUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B71931DB02D2E0022B718 /* ListCharactersUI.swift */; };
+		3F8B71971DB02EA60022B718 /* GetCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B71961DB02EA60022B718 /* GetCharacters.swift */; };
+		3F8B719A1DB02FFA0022B718 /* CharacterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B71991DB02FFA0022B718 /* CharacterRepository.swift */; };
+		3F8B719D1DB0311D0022B718 /* DetailCharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B719C1DB0311D0022B718 /* DetailCharacterViewController.swift */; };
+		3F8B719F1DB031300022B718 /* DetailCharacterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B719E1DB031300022B718 /* DetailCharacterPresenter.swift */; };
+		3F8B71A11DB031530022B718 /* DetailCharacterUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B71A01DB031530022B718 /* DetailCharacterUI.swift */; };
+		3F8B71A31DB032AE0022B718 /* BaseUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B71A21DB032AE0022B718 /* BaseUI.swift */; };
+		3F8B71A51DB032F10022B718 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B71A41DB032F10022B718 /* BaseViewController.swift */; };
+		3FEBF9B41DB0AA3100ACD113 /* CharacterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEBF9B31DB0AA3100ACD113 /* CharacterSpec.swift */; };
+		3FF247621DB00452004DFBFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF247611DB00452004DFBFE /* AppDelegate.swift */; };
+		3FF247671DB00452004DFBFE /* Characters.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FF247651DB00452004DFBFE /* Characters.storyboard */; };
+		3FF247691DB00452004DFBFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FF247681DB00452004DFBFE /* Assets.xcassets */; };
+		3FF2476C1DB00452004DFBFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FF2476A1DB00452004DFBFE /* LaunchScreen.storyboard */; };
+		3FF247771DB00452004DFBFE /* MarvelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF247761DB00452004DFBFE /* MarvelTests.swift */; };
+		3FF247821DB00452004DFBFE /* MarvelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF247811DB00452004DFBFE /* MarvelUITests.swift */; };
+		3FF247911DB0051B004DFBFE /* CharactersAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF247901DB0051B004DFBFE /* CharactersAPI.swift */; };
+		3FF247931DB00553004DFBFE /* MarvelAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF247921DB00553004DFBFE /* MarvelAPI.swift */; };
+		424D5D391DB96180008CC330 /* MockGetCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424D5D381DB96180008CC330 /* MockGetCharacters.swift */; };
+		424D5D3B1DB961A4008CC330 /* MockCharacterWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424D5D3A1DB961A4008CC330 /* MockCharacterWireframe.swift */; };
+		5E38075B77A717231A695BF8 /* Pods_Marvel_Acceptance_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4188EEBD968C0CBE0A402090 /* Pods_Marvel_Acceptance_Tests.framework */; };
+		A3790CE11DB2087600875F53 /* DetailCharacterHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3790CDF1DB2087600875F53 /* DetailCharacterHeaderCollectionReusableView.swift */; };
+		A3790CE21DB2087600875F53 /* DetailCharacterHeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3790CE01DB2087600875F53 /* DetailCharacterHeaderCollectionReusableView.xib */; };
+		A3790CE51DB20D7F00875F53 /* ComicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3790CE31DB20D7F00875F53 /* ComicCollectionViewCell.swift */; };
+		A3790CE61DB20D7F00875F53 /* ComicCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3790CE41DB20D7F00875F53 /* ComicCollectionViewCell.xib */; };
+		A3790CE91DB2203B00875F53 /* GetComics.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3790CE81DB2203B00875F53 /* GetComics.swift */; };
+		A3790CEB1DB2206A00875F53 /* ComicRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3790CEA1DB2206A00875F53 /* ComicRepository.swift */; };
+		A3790CEF1DB2211B00875F53 /* MarvelComic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3790CEE1DB2211B00875F53 /* MarvelComic.swift */; };
+		A3790CF11DB221DB00875F53 /* MarvelAPIParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3790CF01DB221DB00875F53 /* MarvelAPIParser.swift */; };
+		A3790CF31DB22A8F00875F53 /* DetailCharacterDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3790CF21DB22A8F00875F53 /* DetailCharacterDataSource.swift */; };
+		A39D44791DB0CDCC003C0075 /* ListCharactersViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39D44781DB0CDCC003C0075 /* ListCharactersViewControllerTests.swift */; };
+		A39D447C1DB0CEA0003C0075 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39D447B1DB0CEA0003C0075 /* UIViewController.swift */; };
+		A39D447F1DB0D0D4003C0075 /* ListCharactersDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39D447E1DB0D0D4003C0075 /* ListCharactersDataSource.swift */; };
+		A39D44821DB0D381003C0075 /* MockListCharactersDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39D44811DB0D381003C0075 /* MockListCharactersDataSource.swift */; };
+		A39D44851DB0D407003C0075 /* CharacterBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39D44841DB0D407003C0075 /* CharacterBuilder.swift */; };
+		A39D44961DB0DFDC003C0075 /* ListCharactersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39D44951DB0DFDC003C0075 /* ListCharactersUITests.swift */; };
+		A39D44981DB0E00C003C0075 /* BaseUITestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39D44971DB0E00C003C0075 /* BaseUITestCase.swift */; };
+		A39D449B1DB0E075003C0075 /* KIFExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39D449A1DB0E075003C0075 /* KIFExtension.swift */; };
+		A39D449D1DB0EEAF003C0075 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A39D449C1DB0EEAF003C0075 /* CoreGraphics.framework */; };
+		A39D449F1DB0EEB8003C0075 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A39D449E1DB0EEB8003C0075 /* QuartzCore.framework */; };
+		C9A1500E6C136CD9403B6D2B /* Pods_MarvelTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D28DDFF23008305BB79164 /* Pods_MarvelTests.framework */; };
+		DE04E4A4D4D16C1EBAD64CED /* Pods_Marvel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A59917B6A84C7ADD8F426DC8 /* Pods_Marvel.framework */; };
+		FEEC379E730ABABED5F9FD7D /* Pods_MarvelUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0813B067C62979EABE051E91 /* Pods_MarvelUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3FF247731DB00452004DFBFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FF247561DB00452004DFBFE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FF2475D1DB00452004DFBFE;
+			remoteInfo = Marvel;
+		};
+		3FF2477E1DB00452004DFBFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FF247561DB00452004DFBFE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FF2475D1DB00452004DFBFE;
+			remoteInfo = Marvel;
+		};
+		A39D448F1DB0DE05003C0075 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FF247561DB00452004DFBFE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FF2475D1DB00452004DFBFE;
+			remoteInfo = Marvel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0813B067C62979EABE051E91 /* Pods_MarvelUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarvelUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23FA269A2EB2FBB975B3630A /* Pods-MarvelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MarvelTests/Pods-MarvelTests.release.xcconfig"; sourceTree = "<group>"; };
+		2CA206E0C42D6582A5CB5CBF /* Pods-MarvelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MarvelTests/Pods-MarvelTests.debug.xcconfig"; sourceTree = "<group>"; };
+		36C336F094FCDBC2D733AA58 /* Pods-Marvel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marvel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Marvel/Pods-Marvel.debug.xcconfig"; sourceTree = "<group>"; };
+		3F8B71791DB00E2D0022B718 /* MarvelCharacter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MarvelCharacter.swift; path = Entity/MarvelCharacter.swift; sourceTree = "<group>"; };
+		3F8B717D1DB0159C0022B718 /* MarvelErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarvelErrors.swift; sourceTree = "<group>"; };
+		3F8B71811DB018C70022B718 /* ListCharactersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListCharactersViewController.swift; path = Screens/ListCharacters/ListCharactersViewController.swift; sourceTree = "<group>"; };
+		3F8B71831DB019360022B718 /* ListCharacterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListCharacterTableViewCell.swift; path = Screens/ListCharacters/ListCharacterTableViewCell.swift; sourceTree = "<group>"; };
+		3F8B71841DB019360022B718 /* ListCharacterTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ListCharacterTableViewCell.xib; path = Screens/ListCharacters/ListCharacterTableViewCell.xib; sourceTree = "<group>"; };
+		3F8B718A1DB024490022B718 /* Marvel-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Marvel-Bridging-Header.h"; sourceTree = "<group>"; };
+		3F8B718D1DB02AD50022B718 /* CharacterWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CharacterWireframe.swift; path = Domain/CharacterWireframe.swift; sourceTree = "<group>"; };
+		3F8B718F1DB02CAC0022B718 /* ListCharactersPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListCharactersPresenter.swift; path = Screens/ListCharacters/ListCharactersPresenter.swift; sourceTree = "<group>"; };
+		3F8B71911DB02CCF0022B718 /* BasePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
+		3F8B71931DB02D2E0022B718 /* ListCharactersUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListCharactersUI.swift; path = Screens/ListCharacters/ListCharactersUI.swift; sourceTree = "<group>"; };
+		3F8B71961DB02EA60022B718 /* GetCharacters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GetCharacters.swift; path = UseCase/GetCharacters.swift; sourceTree = "<group>"; };
+		3F8B71991DB02FFA0022B718 /* CharacterRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterRepository.swift; sourceTree = "<group>"; };
+		3F8B719C1DB0311D0022B718 /* DetailCharacterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCharacterViewController.swift; sourceTree = "<group>"; };
+		3F8B719E1DB031300022B718 /* DetailCharacterPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCharacterPresenter.swift; sourceTree = "<group>"; };
+		3F8B71A01DB031530022B718 /* DetailCharacterUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCharacterUI.swift; sourceTree = "<group>"; };
+		3F8B71A21DB032AE0022B718 /* BaseUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseUI.swift; sourceTree = "<group>"; };
+		3F8B71A41DB032F10022B718 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		3FEBF9B31DB0AA3100ACD113 /* CharacterSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterSpec.swift; sourceTree = "<group>"; };
+		3FF2475E1DB00452004DFBFE /* Marvel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marvel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FF247611DB00452004DFBFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3FF247661DB00452004DFBFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Characters.storyboard; sourceTree = "<group>"; };
+		3FF247681DB00452004DFBFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3FF2476B1DB00452004DFBFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3FF2476D1DB00452004DFBFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FF247721DB00452004DFBFE /* MarvelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarvelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FF247761DB00452004DFBFE /* MarvelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelTests.swift; sourceTree = "<group>"; };
+		3FF247781DB00452004DFBFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FF2477D1DB00452004DFBFE /* MarvelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarvelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FF247811DB00452004DFBFE /* MarvelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelUITests.swift; sourceTree = "<group>"; };
+		3FF247831DB00452004DFBFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FF247901DB0051B004DFBFE /* CharactersAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersAPI.swift; sourceTree = "<group>"; };
+		3FF247921DB00553004DFBFE /* MarvelAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarvelAPI.swift; sourceTree = "<group>"; };
+		4188EEBD968C0CBE0A402090 /* Pods_Marvel_Acceptance_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marvel_Acceptance_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		424D5D381DB96180008CC330 /* MockGetCharacters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockGetCharacters.swift; sourceTree = "<group>"; };
+		424D5D3A1DB961A4008CC330 /* MockCharacterWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockCharacterWireframe.swift; sourceTree = "<group>"; };
+		4F552190E96D62B4E656C5F3 /* Pods-Marvel-Acceptance Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marvel-Acceptance Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Marvel-Acceptance Tests/Pods-Marvel-Acceptance Tests.release.xcconfig"; sourceTree = "<group>"; };
+		50D28DDFF23008305BB79164 /* Pods_MarvelTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarvelTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96B1F02A321432BC91A59AED /* Pods-Marvel-Acceptance Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marvel-Acceptance Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Marvel-Acceptance Tests/Pods-Marvel-Acceptance Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		A3790CDF1DB2087600875F53 /* DetailCharacterHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCharacterHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		A3790CE01DB2087600875F53 /* DetailCharacterHeaderCollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailCharacterHeaderCollectionReusableView.xib; sourceTree = "<group>"; };
+		A3790CE31DB20D7F00875F53 /* ComicCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComicCollectionViewCell.swift; sourceTree = "<group>"; };
+		A3790CE41DB20D7F00875F53 /* ComicCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ComicCollectionViewCell.xib; sourceTree = "<group>"; };
+		A3790CE81DB2203B00875F53 /* GetComics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetComics.swift; sourceTree = "<group>"; };
+		A3790CEA1DB2206A00875F53 /* ComicRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComicRepository.swift; sourceTree = "<group>"; };
+		A3790CEE1DB2211B00875F53 /* MarvelComic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarvelComic.swift; sourceTree = "<group>"; };
+		A3790CF01DB221DB00875F53 /* MarvelAPIParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarvelAPIParser.swift; sourceTree = "<group>"; };
+		A3790CF21DB22A8F00875F53 /* DetailCharacterDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCharacterDataSource.swift; sourceTree = "<group>"; };
+		A39D44781DB0CDCC003C0075 /* ListCharactersViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCharactersViewControllerTests.swift; sourceTree = "<group>"; };
+		A39D447B1DB0CEA0003C0075 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		A39D447E1DB0D0D4003C0075 /* ListCharactersDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCharactersDataSource.swift; sourceTree = "<group>"; };
+		A39D44811DB0D381003C0075 /* MockListCharactersDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockListCharactersDataSource.swift; sourceTree = "<group>"; };
+		A39D44841DB0D407003C0075 /* CharacterBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterBuilder.swift; sourceTree = "<group>"; };
+		A39D448A1DB0DE05003C0075 /* Acceptance Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Acceptance Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A39D448E1DB0DE05003C0075 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A39D44951DB0DFDC003C0075 /* ListCharactersUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCharactersUITests.swift; sourceTree = "<group>"; };
+		A39D44971DB0E00C003C0075 /* BaseUITestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseUITestCase.swift; sourceTree = "<group>"; };
+		A39D449A1DB0E075003C0075 /* KIFExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KIFExtension.swift; sourceTree = "<group>"; };
+		A39D449C1DB0EEAF003C0075 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A39D449E1DB0EEB8003C0075 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A59917B6A84C7ADD8F426DC8 /* Pods_Marvel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marvel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACADFCF5ABE5A0C44FFDBD13 /* Pods-Marvel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marvel.release.xcconfig"; path = "Pods/Target Support Files/Pods-Marvel/Pods-Marvel.release.xcconfig"; sourceTree = "<group>"; };
+		D12096D91157813CB1B8CAA5 /* Pods-MarvelUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MarvelUITests/Pods-MarvelUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D45283090250EAFDFD86B2ED /* Pods-MarvelUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MarvelUITests/Pods-MarvelUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FF2475B1DB00452004DFBFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE04E4A4D4D16C1EBAD64CED /* Pods_Marvel.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FF2476F1DB00452004DFBFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9A1500E6C136CD9403B6D2B /* Pods_MarvelTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FF2477A1DB00452004DFBFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEEC379E730ABABED5F9FD7D /* Pods_MarvelUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A39D44871DB0DE05003C0075 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A39D449F1DB0EEB8003C0075 /* QuartzCore.framework in Frameworks */,
+				A39D449D1DB0EEAF003C0075 /* CoreGraphics.framework in Frameworks */,
+				5E38075B77A717231A695BF8 /* Pods_Marvel_Acceptance_Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15AE9F0DF057083ACD1D089C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A39D449E1DB0EEB8003C0075 /* QuartzCore.framework */,
+				A39D449C1DB0EEAF003C0075 /* CoreGraphics.framework */,
+				A59917B6A84C7ADD8F426DC8 /* Pods_Marvel.framework */,
+				4188EEBD968C0CBE0A402090 /* Pods_Marvel_Acceptance_Tests.framework */,
+				50D28DDFF23008305BB79164 /* Pods_MarvelTests.framework */,
+				0813B067C62979EABE051E91 /* Pods_MarvelUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3F8B71781DB00E140022B718 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				3F8B71791DB00E2D0022B718 /* MarvelCharacter.swift */,
+				A3790CEE1DB2211B00875F53 /* MarvelComic.swift */,
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
+		3F8B717F1DB018910022B718 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				3F8B719B1DB031090022B718 /* DetailCharacter */,
+				3F8B71801DB018990022B718 /* ListCharacters */,
+			);
+			name = Screens;
+			sourceTree = "<group>";
+		};
+		3F8B71801DB018990022B718 /* ListCharacters */ = {
+			isa = PBXGroup;
+			children = (
+				A39D447D1DB0D03A003C0075 /* TableView */,
+				3F8B71811DB018C70022B718 /* ListCharactersViewController.swift */,
+				3F8B718F1DB02CAC0022B718 /* ListCharactersPresenter.swift */,
+				3F8B71931DB02D2E0022B718 /* ListCharactersUI.swift */,
+			);
+			name = ListCharacters;
+			sourceTree = "<group>";
+		};
+		3F8B71871DB024180022B718 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				3FF247611DB00452004DFBFE /* AppDelegate.swift */,
+				3FF247681DB00452004DFBFE /* Assets.xcassets */,
+				3FF2476A1DB00452004DFBFE /* LaunchScreen.storyboard */,
+				3FF2476D1DB00452004DFBFE /* Info.plist */,
+				3F8B718A1DB024490022B718 /* Marvel-Bridging-Header.h */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		3F8B71881DB0242C0022B718 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				A3790CDA1DB12F7800875F53 /* Marvel */,
+				A39D447A1DB0CE8E003C0075 /* Extensions */,
+				3F8B718D1DB02AD50022B718 /* CharacterWireframe.swift */,
+				3F8B71911DB02CCF0022B718 /* BasePresenter.swift */,
+				3F8B71A21DB032AE0022B718 /* BaseUI.swift */,
+				3F8B71A41DB032F10022B718 /* BaseViewController.swift */,
+			);
+			name = Domain;
+			sourceTree = "<group>";
+		};
+		3F8B71891DB024350022B718 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				3FF247651DB00452004DFBFE /* Characters.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		3F8B71951DB02E730022B718 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				3F8B71961DB02EA60022B718 /* GetCharacters.swift */,
+				A3790CE81DB2203B00875F53 /* GetComics.swift */,
+			);
+			name = UseCase;
+			sourceTree = "<group>";
+		};
+		3F8B71981DB02FED0022B718 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				3F8B71991DB02FFA0022B718 /* CharacterRepository.swift */,
+				A3790CEA1DB2206A00875F53 /* ComicRepository.swift */,
+			);
+			name = Repository;
+			sourceTree = "<group>";
+		};
+		3F8B719B1DB031090022B718 /* DetailCharacter */ = {
+			isa = PBXGroup;
+			children = (
+				A3790CDE1DB2081C00875F53 /* CollectionView */,
+				3F8B719C1DB0311D0022B718 /* DetailCharacterViewController.swift */,
+				3F8B719E1DB031300022B718 /* DetailCharacterPresenter.swift */,
+				3F8B71A01DB031530022B718 /* DetailCharacterUI.swift */,
+			);
+			name = DetailCharacter;
+			sourceTree = "<group>";
+		};
+		3FEBF9B21DB0AA1C00ACD113 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				3FEBF9B31DB0AA3100ACD113 /* CharacterSpec.swift */,
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
+		3FF247551DB00452004DFBFE = {
+			isa = PBXGroup;
+			children = (
+				3FF247601DB00452004DFBFE /* Marvel */,
+				3FF247751DB00452004DFBFE /* MarvelTests */,
+				3FF247801DB00452004DFBFE /* MarvelUITests */,
+				A39D448B1DB0DE05003C0075 /* Acceptance Tests */,
+				3FF2475F1DB00452004DFBFE /* Products */,
+				15AE9F0DF057083ACD1D089C /* Frameworks */,
+				C9EB27ACE74228BE31C2FED0 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		3FF2475F1DB00452004DFBFE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FF2475E1DB00452004DFBFE /* Marvel.app */,
+				3FF247721DB00452004DFBFE /* MarvelTests.xctest */,
+				3FF2477D1DB00452004DFBFE /* MarvelUITests.xctest */,
+				A39D448A1DB0DE05003C0075 /* Acceptance Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FF247601DB00452004DFBFE /* Marvel */ = {
+			isa = PBXGroup;
+			children = (
+				3F8B71981DB02FED0022B718 /* Repository */,
+				3F8B717F1DB018910022B718 /* Screens */,
+				3F8B71951DB02E730022B718 /* UseCase */,
+				3F8B71891DB024350022B718 /* Storyboards */,
+				3F8B71881DB0242C0022B718 /* Domain */,
+				3F8B71781DB00E140022B718 /* Entity */,
+				3FF2478F1DB00500004DFBFE /* API */,
+				3F8B71871DB024180022B718 /* Support */,
+			);
+			path = Marvel;
+			sourceTree = "<group>";
+		};
+		3FF247751DB00452004DFBFE /* MarvelTests */ = {
+			isa = PBXGroup;
+			children = (
+				A39D44831DB0D3FD003C0075 /* Builders */,
+				3FEBF9B21DB0AA1C00ACD113 /* Entity */,
+				A39D44761DB0CDA0003C0075 /* Screens */,
+				3FF247761DB00452004DFBFE /* MarvelTests.swift */,
+				3FF247781DB00452004DFBFE /* Info.plist */,
+			);
+			path = MarvelTests;
+			sourceTree = "<group>";
+		};
+		3FF247801DB00452004DFBFE /* MarvelUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3FF247811DB00452004DFBFE /* MarvelUITests.swift */,
+				3FF247831DB00452004DFBFE /* Info.plist */,
+			);
+			path = MarvelUITests;
+			sourceTree = "<group>";
+		};
+		3FF2478F1DB00500004DFBFE /* API */ = {
+			isa = PBXGroup;
+			children = (
+				3FF247901DB0051B004DFBFE /* CharactersAPI.swift */,
+				3FF247921DB00553004DFBFE /* MarvelAPI.swift */,
+				A3790CF01DB221DB00875F53 /* MarvelAPIParser.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		424D5D361DB96162008CC330 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				424D5D381DB96180008CC330 /* MockGetCharacters.swift */,
+				424D5D3A1DB961A4008CC330 /* MockCharacterWireframe.swift */,
+			);
+			name = Mocks;
+			sourceTree = "<group>";
+		};
+		A3790CDA1DB12F7800875F53 /* Marvel */ = {
+			isa = PBXGroup;
+			children = (
+				3F8B717D1DB0159C0022B718 /* MarvelErrors.swift */,
+			);
+			name = Marvel;
+			sourceTree = "<group>";
+		};
+		A3790CDE1DB2081C00875F53 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				A3790CDF1DB2087600875F53 /* DetailCharacterHeaderCollectionReusableView.swift */,
+				A3790CE01DB2087600875F53 /* DetailCharacterHeaderCollectionReusableView.xib */,
+				A3790CE31DB20D7F00875F53 /* ComicCollectionViewCell.swift */,
+				A3790CE41DB20D7F00875F53 /* ComicCollectionViewCell.xib */,
+				A3790CF21DB22A8F00875F53 /* DetailCharacterDataSource.swift */,
+			);
+			name = CollectionView;
+			sourceTree = "<group>";
+		};
+		A39D44761DB0CDA0003C0075 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				A39D44771DB0CDB1003C0075 /* ListCharacters */,
+			);
+			name = Screens;
+			sourceTree = "<group>";
+		};
+		A39D44771DB0CDB1003C0075 /* ListCharacters */ = {
+			isa = PBXGroup;
+			children = (
+				A39D44801DB0D36B003C0075 /* Mocks */,
+				A39D44781DB0CDCC003C0075 /* ListCharactersViewControllerTests.swift */,
+			);
+			name = ListCharacters;
+			sourceTree = "<group>";
+		};
+		A39D447A1DB0CE8E003C0075 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A39D447B1DB0CEA0003C0075 /* UIViewController.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		A39D447D1DB0D03A003C0075 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				3F8B71831DB019360022B718 /* ListCharacterTableViewCell.swift */,
+				3F8B71841DB019360022B718 /* ListCharacterTableViewCell.xib */,
+				A39D447E1DB0D0D4003C0075 /* ListCharactersDataSource.swift */,
+			);
+			name = TableView;
+			sourceTree = "<group>";
+		};
+		A39D44801DB0D36B003C0075 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				A39D44811DB0D381003C0075 /* MockListCharactersDataSource.swift */,
+			);
+			name = Mocks;
+			sourceTree = "<group>";
+		};
+		A39D44831DB0D3FD003C0075 /* Builders */ = {
+			isa = PBXGroup;
+			children = (
+				A39D44841DB0D407003C0075 /* CharacterBuilder.swift */,
+			);
+			name = Builders;
+			sourceTree = "<group>";
+		};
+		A39D448B1DB0DE05003C0075 /* Acceptance Tests */ = {
+			isa = PBXGroup;
+			children = (
+				424D5D361DB96162008CC330 /* Mocks */,
+				A39D44991DB0E062003C0075 /* Config */,
+				A39D44951DB0DFDC003C0075 /* ListCharactersUITests.swift */,
+			);
+			path = "Acceptance Tests";
+			sourceTree = "<group>";
+		};
+		A39D44991DB0E062003C0075 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				A39D448E1DB0DE05003C0075 /* Info.plist */,
+				A39D44971DB0E00C003C0075 /* BaseUITestCase.swift */,
+				A39D449A1DB0E075003C0075 /* KIFExtension.swift */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		C9EB27ACE74228BE31C2FED0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				36C336F094FCDBC2D733AA58 /* Pods-Marvel.debug.xcconfig */,
+				ACADFCF5ABE5A0C44FFDBD13 /* Pods-Marvel.release.xcconfig */,
+				96B1F02A321432BC91A59AED /* Pods-Marvel-Acceptance Tests.debug.xcconfig */,
+				4F552190E96D62B4E656C5F3 /* Pods-Marvel-Acceptance Tests.release.xcconfig */,
+				2CA206E0C42D6582A5CB5CBF /* Pods-MarvelTests.debug.xcconfig */,
+				23FA269A2EB2FBB975B3630A /* Pods-MarvelTests.release.xcconfig */,
+				D12096D91157813CB1B8CAA5 /* Pods-MarvelUITests.debug.xcconfig */,
+				D45283090250EAFDFD86B2ED /* Pods-MarvelUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FF2475D1DB00452004DFBFE /* Marvel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FF247861DB00452004DFBFE /* Build configuration list for PBXNativeTarget "Marvel" */;
+			buildPhases = (
+				D4B2C0982E3CDC1342702E52 /* Check Pods Manifest.lock */,
+				56822ED884B8875B8368899C /* [CP] Check Pods Manifest.lock */,
+				3FF2475A1DB00452004DFBFE /* Sources */,
+				3FF2475B1DB00452004DFBFE /* Frameworks */,
+				3FF2475C1DB00452004DFBFE /* Resources */,
+				2A7F6174D6B00F506B277F63 /* [CP] Embed Pods Frameworks */,
+				357637DF02D282D92C01DCFC /* [CP] Copy Pods Resources */,
+				D49183C951525FF647364454 /* Embed Pods Frameworks */,
+				A9648854157BBB3114268CE3 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Marvel;
+			productName = Marvel;
+			productReference = 3FF2475E1DB00452004DFBFE /* Marvel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3FF247711DB00452004DFBFE /* MarvelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FF247891DB00452004DFBFE /* Build configuration list for PBXNativeTarget "MarvelTests" */;
+			buildPhases = (
+				AC18820CC21C62EC5BBD7CB1 /* Check Pods Manifest.lock */,
+				AB6648005F9BB034006752CF /* [CP] Check Pods Manifest.lock */,
+				3FF2476E1DB00452004DFBFE /* Sources */,
+				3FF2476F1DB00452004DFBFE /* Frameworks */,
+				3FF247701DB00452004DFBFE /* Resources */,
+				4875B758D7015FF3E4A17B95 /* [CP] Embed Pods Frameworks */,
+				C48AF3992ED3F99C947D7D76 /* [CP] Copy Pods Resources */,
+				1901FE52B40B5263D5CEF85E /* Embed Pods Frameworks */,
+				7C64CAEE25F27084C61D9E26 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FF247741DB00452004DFBFE /* PBXTargetDependency */,
+			);
+			name = MarvelTests;
+			productName = MarvelTests;
+			productReference = 3FF247721DB00452004DFBFE /* MarvelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3FF2477C1DB00452004DFBFE /* MarvelUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FF2478C1DB00452004DFBFE /* Build configuration list for PBXNativeTarget "MarvelUITests" */;
+			buildPhases = (
+				F7DF6165092A912C7B66C6BA /* Check Pods Manifest.lock */,
+				136BECD79BCFFE6B3321EC35 /* [CP] Check Pods Manifest.lock */,
+				3FF247791DB00452004DFBFE /* Sources */,
+				3FF2477A1DB00452004DFBFE /* Frameworks */,
+				3FF2477B1DB00452004DFBFE /* Resources */,
+				118138524AFF9E935711FCF5 /* [CP] Copy Pods Resources */,
+				D3E9CE84322CECCF0FD9426A /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FF2477F1DB00452004DFBFE /* PBXTargetDependency */,
+			);
+			name = MarvelUITests;
+			productName = MarvelUITests;
+			productReference = 3FF2477D1DB00452004DFBFE /* MarvelUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		A39D44891DB0DE05003C0075 /* Acceptance Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A39D44911DB0DE05003C0075 /* Build configuration list for PBXNativeTarget "Acceptance Tests" */;
+			buildPhases = (
+				BEC3B90628D5B7EE7DDB8B33 /* Check Pods Manifest.lock */,
+				C911FB373C24208B52EA50DC /* [CP] Check Pods Manifest.lock */,
+				A39D44861DB0DE05003C0075 /* Sources */,
+				A39D44871DB0DE05003C0075 /* Frameworks */,
+				A39D44881DB0DE05003C0075 /* Resources */,
+				EF1EEFF3D44AC5FC62E3D05D /* [CP] Embed Pods Frameworks */,
+				2ACF8773C457141F5AA490CC /* [CP] Copy Pods Resources */,
+				4554554C334C79839DA29B43 /* Embed Pods Frameworks */,
+				DF56E87D32B7F3F23CA1F664 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A39D44901DB0DE05003C0075 /* PBXTargetDependency */,
+			);
+			name = "Acceptance Tests";
+			productName = "Acceptance Tests";
+			productReference = A39D448A1DB0DE05003C0075 /* Acceptance Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FF247561DB00452004DFBFE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Ivan Ruiz Monjo";
+				TargetAttributes = {
+					3FF2475D1DB00452004DFBFE = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 96S72PRKCZ;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
+					3FF247711DB00452004DFBFE = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3FF2475D1DB00452004DFBFE;
+					};
+					3FF2477C1DB00452004DFBFE = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3FF2475D1DB00452004DFBFE;
+					};
+					A39D44891DB0DE05003C0075 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3FF2475D1DB00452004DFBFE;
+					};
+				};
+			};
+			buildConfigurationList = 3FF247591DB00452004DFBFE /* Build configuration list for PBXProject "Marvel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3FF247551DB00452004DFBFE;
+			productRefGroup = 3FF2475F1DB00452004DFBFE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FF2475D1DB00452004DFBFE /* Marvel */,
+				3FF247711DB00452004DFBFE /* MarvelTests */,
+				3FF2477C1DB00452004DFBFE /* MarvelUITests */,
+				A39D44891DB0DE05003C0075 /* Acceptance Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FF2475C1DB00452004DFBFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FF2476C1DB00452004DFBFE /* LaunchScreen.storyboard in Resources */,
+				3FF247691DB00452004DFBFE /* Assets.xcassets in Resources */,
+				A3790CE61DB20D7F00875F53 /* ComicCollectionViewCell.xib in Resources */,
+				3FF247671DB00452004DFBFE /* Characters.storyboard in Resources */,
+				A3790CE21DB2087600875F53 /* DetailCharacterHeaderCollectionReusableView.xib in Resources */,
+				3F8B71861DB019360022B718 /* ListCharacterTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FF247701DB00452004DFBFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FF2477B1DB00452004DFBFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A39D44881DB0DE05003C0075 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		118138524AFF9E935711FCF5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MarvelUITests/Pods-MarvelUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		136BECD79BCFFE6B3321EC35 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1901FE52B40B5263D5CEF85E /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MarvelTests/Pods-MarvelTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A7F6174D6B00F506B277F63 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Marvel/Pods-Marvel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2ACF8773C457141F5AA490CC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Marvel-Acceptance Tests/Pods-Marvel-Acceptance Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		357637DF02D282D92C01DCFC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Marvel/Pods-Marvel-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4554554C334C79839DA29B43 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Marvel-Acceptance Tests/Pods-Marvel-Acceptance Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4875B758D7015FF3E4A17B95 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MarvelTests/Pods-MarvelTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56822ED884B8875B8368899C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7C64CAEE25F27084C61D9E26 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MarvelTests/Pods-MarvelTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9648854157BBB3114268CE3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Marvel/Pods-Marvel-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB6648005F9BB034006752CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AC18820CC21C62EC5BBD7CB1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BEC3B90628D5B7EE7DDB8B33 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C48AF3992ED3F99C947D7D76 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MarvelTests/Pods-MarvelTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C911FB373C24208B52EA50DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D3E9CE84322CECCF0FD9426A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MarvelUITests/Pods-MarvelUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D49183C951525FF647364454 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Marvel/Pods-Marvel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4B2C0982E3CDC1342702E52 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DF56E87D32B7F3F23CA1F664 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Marvel-Acceptance Tests/Pods-Marvel-Acceptance Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF1EEFF3D44AC5FC62E3D05D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Marvel-Acceptance Tests/Pods-Marvel-Acceptance Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7DF6165092A912C7B66C6BA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FF2475A1DB00452004DFBFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F8B719F1DB031300022B718 /* DetailCharacterPresenter.swift in Sources */,
+				3F8B71A31DB032AE0022B718 /* BaseUI.swift in Sources */,
+				A3790CE51DB20D7F00875F53 /* ComicCollectionViewCell.swift in Sources */,
+				3F8B717E1DB0159C0022B718 /* MarvelErrors.swift in Sources */,
+				3F8B71A51DB032F10022B718 /* BaseViewController.swift in Sources */,
+				A3790CE11DB2087600875F53 /* DetailCharacterHeaderCollectionReusableView.swift in Sources */,
+				A39D447F1DB0D0D4003C0075 /* ListCharactersDataSource.swift in Sources */,
+				A3790CE91DB2203B00875F53 /* GetComics.swift in Sources */,
+				3FF247621DB00452004DFBFE /* AppDelegate.swift in Sources */,
+				3F8B717A1DB00E2D0022B718 /* MarvelCharacter.swift in Sources */,
+				A3790CF11DB221DB00875F53 /* MarvelAPIParser.swift in Sources */,
+				3F8B71901DB02CAC0022B718 /* ListCharactersPresenter.swift in Sources */,
+				A3790CEB1DB2206A00875F53 /* ComicRepository.swift in Sources */,
+				3F8B719A1DB02FFA0022B718 /* CharacterRepository.swift in Sources */,
+				3FF247911DB0051B004DFBFE /* CharactersAPI.swift in Sources */,
+				3F8B71971DB02EA60022B718 /* GetCharacters.swift in Sources */,
+				3FF247931DB00553004DFBFE /* MarvelAPI.swift in Sources */,
+				3F8B71941DB02D2E0022B718 /* ListCharactersUI.swift in Sources */,
+				3F8B71A11DB031530022B718 /* DetailCharacterUI.swift in Sources */,
+				A39D447C1DB0CEA0003C0075 /* UIViewController.swift in Sources */,
+				A3790CF31DB22A8F00875F53 /* DetailCharacterDataSource.swift in Sources */,
+				A3790CEF1DB2211B00875F53 /* MarvelComic.swift in Sources */,
+				3F8B71851DB019360022B718 /* ListCharacterTableViewCell.swift in Sources */,
+				3F8B719D1DB0311D0022B718 /* DetailCharacterViewController.swift in Sources */,
+				3F8B718E1DB02AD50022B718 /* CharacterWireframe.swift in Sources */,
+				3F8B71821DB018C70022B718 /* ListCharactersViewController.swift in Sources */,
+				3F8B71921DB02CCF0022B718 /* BasePresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FF2476E1DB00452004DFBFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A39D44791DB0CDCC003C0075 /* ListCharactersViewControllerTests.swift in Sources */,
+				3FF247771DB00452004DFBFE /* MarvelTests.swift in Sources */,
+				A39D44821DB0D381003C0075 /* MockListCharactersDataSource.swift in Sources */,
+				A39D44851DB0D407003C0075 /* CharacterBuilder.swift in Sources */,
+				3FEBF9B41DB0AA3100ACD113 /* CharacterSpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FF247791DB00452004DFBFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FF247821DB00452004DFBFE /* MarvelUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A39D44861DB0DE05003C0075 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				424D5D3B1DB961A4008CC330 /* MockCharacterWireframe.swift in Sources */,
+				A39D449B1DB0E075003C0075 /* KIFExtension.swift in Sources */,
+				424D5D391DB96180008CC330 /* MockGetCharacters.swift in Sources */,
+				A39D44961DB0DFDC003C0075 /* ListCharactersUITests.swift in Sources */,
+				A39D44981DB0E00C003C0075 /* BaseUITestCase.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3FF247741DB00452004DFBFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FF2475D1DB00452004DFBFE /* Marvel */;
+			targetProxy = 3FF247731DB00452004DFBFE /* PBXContainerItemProxy */;
+		};
+		3FF2477F1DB00452004DFBFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FF2475D1DB00452004DFBFE /* Marvel */;
+			targetProxy = 3FF2477E1DB00452004DFBFE /* PBXContainerItemProxy */;
+		};
+		A39D44901DB0DE05003C0075 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FF2475D1DB00452004DFBFE /* Marvel */;
+			targetProxy = A39D448F1DB0DE05003C0075 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3FF247651DB00452004DFBFE /* Characters.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FF247661DB00452004DFBFE /* Base */,
+			);
+			name = Characters.storyboard;
+			sourceTree = "<group>";
+		};
+		3FF2476A1DB00452004DFBFE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FF2476B1DB00452004DFBFE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3FF247841DB00452004DFBFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3FF247851DB00452004DFBFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3FF247871DB00452004DFBFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36C336F094FCDBC2D733AA58 /* Pods-Marvel.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 96S72PRKCZ;
+				INFOPLIST_FILE = Marvel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ivan.ruiz.Marvel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Marvel/Marvel-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3FF247881DB00452004DFBFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACADFCF5ABE5A0C44FFDBD13 /* Pods-Marvel.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 96S72PRKCZ;
+				INFOPLIST_FILE = Marvel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ivan.ruiz.Marvel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Marvel/Marvel-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		3FF2478A1DB00452004DFBFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CA206E0C42D6582A5CB5CBF /* Pods-MarvelTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MarvelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ivan.ruiz.MarvelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Marvel.app/Marvel";
+			};
+			name = Debug;
+		};
+		3FF2478B1DB00452004DFBFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23FA269A2EB2FBB975B3630A /* Pods-MarvelTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MarvelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ivan.ruiz.MarvelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Marvel.app/Marvel";
+			};
+			name = Release;
+		};
+		3FF2478D1DB00452004DFBFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D12096D91157813CB1B8CAA5 /* Pods-MarvelUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = MarvelUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ivan.ruiz.MarvelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Marvel;
+			};
+			name = Debug;
+		};
+		3FF2478E1DB00452004DFBFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D45283090250EAFDFD86B2ED /* Pods-MarvelUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = MarvelUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ivan.ruiz.MarvelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Marvel;
+			};
+			name = Release;
+		};
+		A39D44921DB0DE05003C0075 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96B1F02A321432BC91A59AED /* Pods-Marvel-Acceptance Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Marvel.app/Marvel";
+				INFOPLIST_FILE = "Acceptance Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"AsyncImageView\"",
+					"-framework",
+					"\"CryptoSwift\"",
+					"-framework",
+					"\"KIF\"",
+					"-framework",
+					"\"Nimble\"",
+					"-framework",
+					"\"Quick\"",
+					"-framework",
+					"\"RxAlamofire\"",
+					"-framework",
+					"\"RxCocoa\"",
+					"-framework",
+					"\"RxSwift\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ivan.Acceptance-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		A39D44931DB0DE05003C0075 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F552190E96D62B4E656C5F3 /* Pods-Marvel-Acceptance Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Marvel.app/Marvel";
+				INFOPLIST_FILE = "Acceptance Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"AsyncImageView\"",
+					"-framework",
+					"\"CryptoSwift\"",
+					"-framework",
+					"\"KIF\"",
+					"-framework",
+					"\"Nimble\"",
+					"-framework",
+					"\"Quick\"",
+					"-framework",
+					"\"RxAlamofire\"",
+					"-framework",
+					"\"RxCocoa\"",
+					"-framework",
+					"\"RxSwift\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ivan.Acceptance-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FF247591DB00452004DFBFE /* Build configuration list for PBXProject "Marvel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FF247841DB00452004DFBFE /* Debug */,
+				3FF247851DB00452004DFBFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FF247861DB00452004DFBFE /* Build configuration list for PBXNativeTarget "Marvel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FF247871DB00452004DFBFE /* Debug */,
+				3FF247881DB00452004DFBFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FF247891DB00452004DFBFE /* Build configuration list for PBXNativeTarget "MarvelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FF2478A1DB00452004DFBFE /* Debug */,
+				3FF2478B1DB00452004DFBFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FF2478C1DB00452004DFBFE /* Build configuration list for PBXNativeTarget "MarvelUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FF2478D1DB00452004DFBFE /* Debug */,
+				3FF2478E1DB00452004DFBFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A39D44911DB0DE05003C0075 /* Build configuration list for PBXNativeTarget "Acceptance Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A39D44921DB0DE05003C0075 /* Debug */,
+				A39D44931DB0DE05003C0075 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3FF247561DB00452004DFBFE /* Project object */;
+}
