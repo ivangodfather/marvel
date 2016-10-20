@@ -21,7 +21,6 @@ class CharacterWireframe {
     func list() -> UIViewController {
         guard let vc = storyboard.instantiateViewController(withIdentifier: identifiers.list) as? ListCharactersViewController else { fatalError() }
         vc.presenter = ListCharactersPresenter(ui: vc)
-        vc.dataSource = ListCharactersDataSource()
         return UINavigationController(rootViewController: vc)
     }
 
