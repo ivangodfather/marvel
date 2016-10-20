@@ -8,10 +8,12 @@ target 'Marvel' do
   # Pods for Marvel
   pod 'CryptoSwift'
   pod 'RxAlamofire', :git => 'https://github.com/RxSwiftCommunity/RxAlamofire', :branch => 'master'
+  pod 'RxSwift', '~> 3.0.0.beta.2'
+  pod 'RxCocoa', '~> 3.0.0.beta.2'	
   pod 'AsyncImageView'
   pod 'UIScrollView-InfiniteScroll'
   pod 'SVProgressHUD'
-  pod 'IOStickyHeader'
+  pod "CSStickyHeaderFlowLayout"
 
   def testing_pods
     pod 'Quick'

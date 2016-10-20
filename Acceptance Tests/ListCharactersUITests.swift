@@ -61,18 +61,3 @@ class ListCharactersUITests: BaseUITestCase {
         presentViewController(UINavigationController(rootViewController: vc))
     }
 }
-
-class MockGetCharacters: GetCharacters {
-
-    var charactersToReturn: [MarvelCharacter]?
-
-    override func all(offset: Int) -> Observable<[MarvelCharacter]> {
-        if let charactersToReturn = charactersToReturn { return Observable.just(charactersToReturn) }
-        return Observable.error(MarvelError.unkown)
-    }
-
-}
-
-class MockCharacterWireframe: CharacterWireframe {
-
-}

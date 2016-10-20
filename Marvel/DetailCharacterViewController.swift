@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import IOStickyHeader
+import CSStickyHeaderFlowLayout
 
 
 class DetailCharacterViewController: BaseViewController {
@@ -30,7 +30,7 @@ class DetailCharacterViewController: BaseViewController {
 
         self.collectionView.scrollIndicatorInsets = UIEdgeInsetsMake(0, 0, 0, 0)
         let headerNib = UINib(nibName: String(describing: DetailCharacterHeaderCollectionReusableView.self), bundle: nil)
-        collectionView.register(headerNib, forSupplementaryViewOfKind: IOStickyHeaderParallaxHeader, withReuseIdentifier: DetailCharacterHeaderCollectionReusableView.identifier)
+        collectionView.register(headerNib, forSupplementaryViewOfKind: CSStickyHeaderParallaxHeader, withReuseIdentifier: DetailCharacterHeaderCollectionReusableView.identifier)
 
         let cellNib = UINib(nibName: String(describing: ComicCollectionViewCell.self), bundle: nil)
         collectionView.register(cellNib, forCellWithReuseIdentifier: ComicCollectionViewCell.identifier)
@@ -43,7 +43,7 @@ class DetailCharacterViewController: BaseViewController {
     }
 
     func updateCollectionViewLayout(size: CGSize) {
-        if let layout = self.collectionView.collectionViewLayout as? IOStickyHeaderFlowLayout {
+        if let layout = self.collectionView.collectionViewLayout as? CSStickyHeaderFlowLayout {
             layout.parallaxHeaderReferenceSize = CGSize(width: size.width, height: getHeaderHeight(size: size))
             layout.parallaxHeaderMinimumReferenceSize = CGSize(width: UIScreen.main.bounds.size.width, height: 60)
             layout.itemSize = CGSize(width: UIScreen.main.bounds.size.width, height: layout.itemSize.height)

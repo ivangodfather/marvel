@@ -10,6 +10,19 @@
 	<string>46</string>
 	<key>objects</key>
 	<dict>
+		<key>0813B067C62979EABE051E91</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods_MarvelUITests.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
 		<key>118138524AFF9E935711FCF5</key>
 		<dict>
 			<key>buildActionMask</key>
@@ -70,10 +83,10 @@ fi
 			<array>
 				<string>A39D449E1DB0EEB8003C0075</string>
 				<string>A39D449C1DB0EEAF003C0075</string>
-				<string>B139759010CC0900AFAB9DE8</string>
-				<string>8B77C308CBB69935009D90CE</string>
-				<string>AA4693C68D508E3519506EA1</string>
-				<string>7230001ECB2CAE66B816C770</string>
+				<string>A59917B6A84C7ADD8F426DC8</string>
+				<string>4188EEBD968C0CBE0A402090</string>
+				<string>50D28DDFF23008305BB79164</string>
+				<string>0813B067C62979EABE051E91</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -82,14 +95,7 @@ fi
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>1BBD9BBFCF6BE8C91AF1B286</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AA4693C68D508E3519506EA1</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>1C7F8C25FAC506C034F109F1</key>
+		<key>1901FE52B40B5263D5CEF85E</key>
 		<dict>
 			<key>buildActionMask</key>
 			<string>2147483647</string>
@@ -100,7 +106,7 @@ fi
 			<key>isa</key>
 			<string>PBXShellScriptBuildPhase</string>
 			<key>name</key>
-			<string>Copy Pods Resources</string>
+			<string>Embed Pods Frameworks</string>
 			<key>outputPaths</key>
 			<array/>
 			<key>runOnlyForDeploymentPostprocessing</key>
@@ -108,10 +114,25 @@ fi
 			<key>shellPath</key>
 			<string>/bin/sh</string>
 			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-MarvelTests/Pods-MarvelTests-resources.sh"
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-MarvelTests/Pods-MarvelTests-frameworks.sh"
 </string>
 			<key>showEnvVarsInLog</key>
 			<string>0</string>
+		</dict>
+		<key>23FA269A2EB2FBB975B3630A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-MarvelTests.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-MarvelTests/Pods-MarvelTests.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>2A7F6174D6B00F506B277F63</key>
 		<dict>
@@ -161,14 +182,7 @@ fi
 			<key>showEnvVarsInLog</key>
 			<string>0</string>
 		</dict>
-		<key>2F7B7C523FD2EF8DB9F5C0B4</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7230001ECB2CAE66B816C770</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3108495B17B5544256EEDFE6</key>
+		<key>2CA206E0C42D6582A5CB5CBF</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -177,9 +191,9 @@ fi
 			<key>lastKnownFileType</key>
 			<string>text.xcconfig</string>
 			<key>name</key>
-			<string>Pods-Marvel.debug.xcconfig</string>
+			<string>Pods-MarvelTests.debug.xcconfig</string>
 			<key>path</key>
-			<string>Pods/Target Support Files/Pods-Marvel/Pods-Marvel.debug.xcconfig</string>
+			<string>Pods/Target Support Files/Pods-MarvelTests/Pods-MarvelTests.debug.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -207,31 +221,7 @@ fi
 			<key>showEnvVarsInLog</key>
 			<string>0</string>
 		</dict>
-		<key>37716219A58016F1FAADFE8F</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-MarvelTests/Pods-MarvelTests-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>3ECB6D106CFD7D4B25BEF93F</key>
+		<key>36C336F094FCDBC2D733AA58</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -240,9 +230,9 @@ fi
 			<key>lastKnownFileType</key>
 			<string>text.xcconfig</string>
 			<key>name</key>
-			<string>Pods-MarvelTests.debug.xcconfig</string>
+			<string>Pods-Marvel.debug.xcconfig</string>
 			<key>path</key>
-			<string>Pods/Target Support Files/Pods-MarvelTests/Pods-MarvelTests.debug.xcconfig</string>
+			<string>Pods/Target Support Files/Pods-Marvel/Pods-Marvel.debug.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -729,13 +719,6 @@ fi
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>3FC65359B72D1BEC2846F8A7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8B77C308CBB69935009D90CE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
 		<key>3FEBF9B21DB0AA1C00ACD113</key>
 		<dict>
 			<key>children</key>
@@ -778,8 +761,8 @@ fi
 				<string>3FF247801DB00452004DFBFE</string>
 				<string>A39D448B1DB0DE05003C0075</string>
 				<string>3FF2475F1DB00452004DFBFE</string>
-				<string>48B232B6D9D8FEEFCF7528EA</string>
 				<string>15AE9F0DF057083ACD1D089C</string>
+				<string>C9EB27ACE74228BE31C2FED0</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -930,7 +913,7 @@ fi
 			<string>2147483647</string>
 			<key>files</key>
 			<array>
-				<string>FEB20E2214C228F5BC8E1AF2</string>
+				<string>DE04E4A4D4D16C1EBAD64CED</string>
 			</array>
 			<key>isa</key>
 			<string>PBXFrameworksBuildPhase</string>
@@ -961,15 +944,15 @@ fi
 			<string>3FF247861DB00452004DFBFE</string>
 			<key>buildPhases</key>
 			<array>
-				<string>EE69D146D029E5DD44932DDC</string>
+				<string>D4B2C0982E3CDC1342702E52</string>
 				<string>56822ED884B8875B8368899C</string>
 				<string>3FF2475A1DB00452004DFBFE</string>
 				<string>3FF2475B1DB00452004DFBFE</string>
 				<string>3FF2475C1DB00452004DFBFE</string>
 				<string>2A7F6174D6B00F506B277F63</string>
 				<string>357637DF02D282D92C01DCFC</string>
-				<string>D6E6804499743A3F8E7FEC8A</string>
-				<string>44BAD87E4F4F644FFC4FE45C</string>
+				<string>D49183C951525FF647364454</string>
+				<string>A9648854157BBB3114268CE3</string>
 			</array>
 			<key>buildRules</key>
 			<array/>
@@ -1171,7 +1154,7 @@ fi
 			<string>2147483647</string>
 			<key>files</key>
 			<array>
-				<string>3FC65359B72D1BEC2846F8A7</string>
+				<string>C9A1500E6C136CD9403B6D2B</string>
 			</array>
 			<key>isa</key>
 			<string>PBXFrameworksBuildPhase</string>
@@ -1195,15 +1178,15 @@ fi
 			<string>3FF247891DB00452004DFBFE</string>
 			<key>buildPhases</key>
 			<array>
-				<string>CE840072D96EA75CC7F0D90C</string>
+				<string>AC18820CC21C62EC5BBD7CB1</string>
 				<string>AB6648005F9BB034006752CF</string>
 				<string>3FF2476E1DB00452004DFBFE</string>
 				<string>3FF2476F1DB00452004DFBFE</string>
 				<string>3FF247701DB00452004DFBFE</string>
 				<string>4875B758D7015FF3E4A17B95</string>
 				<string>C48AF3992ED3F99C947D7D76</string>
-				<string>37716219A58016F1FAADFE8F</string>
-				<string>1C7F8C25FAC506C034F109F1</string>
+				<string>1901FE52B40B5263D5CEF85E</string>
+				<string>7C64CAEE25F27084C61D9E26</string>
 			</array>
 			<key>buildRules</key>
 			<array/>
@@ -1322,7 +1305,7 @@ fi
 			<string>2147483647</string>
 			<key>files</key>
 			<array>
-				<string>1BBD9BBFCF6BE8C91AF1B286</string>
+				<string>FEEC379E730ABABED5F9FD7D</string>
 			</array>
 			<key>isa</key>
 			<string>PBXFrameworksBuildPhase</string>
@@ -1346,13 +1329,13 @@ fi
 			<string>3FF2478C1DB00452004DFBFE</string>
 			<key>buildPhases</key>
 			<array>
-				<string>D820CB48927A17F8B95225BF</string>
+				<string>F7DF6165092A912C7B66C6BA</string>
 				<string>136BECD79BCFFE6B3321EC35</string>
 				<string>3FF247791DB00452004DFBFE</string>
 				<string>3FF2477A1DB00452004DFBFE</string>
 				<string>3FF2477B1DB00452004DFBFE</string>
 				<string>118138524AFF9E935711FCF5</string>
-				<string>EACAD4DCDBD2E1634A779632</string>
+				<string>D3E9CE84322CECCF0FD9426A</string>
 			</array>
 			<key>buildRules</key>
 			<array/>
@@ -1645,7 +1628,7 @@ fi
 		<key>3FF247871DB00452004DFBFE</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>3108495B17B5544256EEDFE6</string>
+			<string>36C336F094FCDBC2D733AA58</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES</key>
@@ -1679,7 +1662,7 @@ fi
 		<key>3FF247881DB00452004DFBFE</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>C208FFF8D58624962DD2943D</string>
+			<string>ACADFCF5ABE5A0C44FFDBD13</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES</key>
@@ -1725,7 +1708,7 @@ fi
 		<key>3FF2478A1DB00452004DFBFE</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>3ECB6D106CFD7D4B25BEF93F</string>
+			<string>2CA206E0C42D6582A5CB5CBF</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES</key>
@@ -1753,7 +1736,7 @@ fi
 		<key>3FF2478B1DB00452004DFBFE</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>BACADC8146DD89593127284A</string>
+			<string>23FA269A2EB2FBB975B3630A</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES</key>
@@ -1795,7 +1778,7 @@ fi
 		<key>3FF2478D1DB00452004DFBFE</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>D21AA3133CE7DBF6D72DEE5C</string>
+			<string>D12096D91157813CB1B8CAA5</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES</key>
@@ -1821,7 +1804,7 @@ fi
 		<key>3FF2478E1DB00452004DFBFE</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>92D902BF1AA715EA047F97F7</string>
+			<string>D45283090250EAFDFD86B2ED</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES</key>
@@ -1899,7 +1882,74 @@ fi
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>44BAD87E4F4F644FFC4FE45C</key>
+		<key>4188EEBD968C0CBE0A402090</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods_Marvel_Acceptance_Tests.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>424D5D361DB96162008CC330</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>424D5D381DB96180008CC330</string>
+				<string>424D5D3A1DB961A4008CC330</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Mocks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>424D5D381DB96180008CC330</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>MockGetCharacters.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>424D5D391DB96180008CC330</key>
+		<dict>
+			<key>fileRef</key>
+			<string>424D5D381DB96180008CC330</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>424D5D3A1DB961A4008CC330</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>MockCharacterWireframe.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>424D5D3B1DB961A4008CC330</key>
+		<dict>
+			<key>fileRef</key>
+			<string>424D5D3A1DB961A4008CC330</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>4554554C334C79839DA29B43</key>
 		<dict>
 			<key>buildActionMask</key>
 			<string>2147483647</string>
@@ -1910,7 +1960,7 @@ fi
 			<key>isa</key>
 			<string>PBXShellScriptBuildPhase</string>
 			<key>name</key>
-			<string>Copy Pods Resources</string>
+			<string>Embed Pods Frameworks</string>
 			<key>outputPaths</key>
 			<array/>
 			<key>runOnlyForDeploymentPostprocessing</key>
@@ -1918,7 +1968,7 @@ fi
 			<key>shellPath</key>
 			<string>/bin/sh</string>
 			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Marvel/Pods-Marvel-resources.sh"
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Marvel-Acceptance Tests/Pods-Marvel-Acceptance Tests-frameworks.sh"
 </string>
 			<key>showEnvVarsInLog</key>
 			<string>0</string>
@@ -1947,25 +1997,33 @@ fi
 			<key>showEnvVarsInLog</key>
 			<string>0</string>
 		</dict>
-		<key>48B232B6D9D8FEEFCF7528EA</key>
+		<key>4F552190E96D62B4E656C5F3</key>
 		<dict>
-			<key>children</key>
-			<array>
-				<string>3108495B17B5544256EEDFE6</string>
-				<string>C208FFF8D58624962DD2943D</string>
-				<string>3ECB6D106CFD7D4B25BEF93F</string>
-				<string>BACADC8146DD89593127284A</string>
-				<string>D21AA3133CE7DBF6D72DEE5C</string>
-				<string>92D902BF1AA715EA047F97F7</string>
-				<string>BD3573C19BE9BBD67F5452F9</string>
-				<string>F5AE00C30D63322FD2F8660A</string>
-			</array>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXGroup</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
 			<key>name</key>
-			<string>Pods</string>
+			<string>Pods-Marvel-Acceptance Tests.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-Marvel-Acceptance Tests/Pods-Marvel-Acceptance Tests.release.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>50D28DDFF23008305BB79164</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods_MarvelTests.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>56822ED884B8875B8368899C</key>
 		<dict>
@@ -1997,33 +2055,38 @@ fi
 			<key>showEnvVarsInLog</key>
 			<string>0</string>
 		</dict>
-		<key>7230001ECB2CAE66B816C770</key>
+		<key>5E38075B77A717231A695BF8</key>
 		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
+			<key>fileRef</key>
+			<string>4188EEBD968C0CBE0A402090</string>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_Marvel_Acceptance_Tests.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
+			<string>PBXBuildFile</string>
 		</dict>
-		<key>8B77C308CBB69935009D90CE</key>
+		<key>7C64CAEE25F27084C61D9E26</key>
 		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_MarvelTests.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-MarvelTests/Pods-MarvelTests-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
 		</dict>
-		<key>92D902BF1AA715EA047F97F7</key>
+		<key>96B1F02A321432BC91A59AED</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2032,9 +2095,9 @@ fi
 			<key>lastKnownFileType</key>
 			<string>text.xcconfig</string>
 			<key>name</key>
-			<string>Pods-MarvelUITests.release.xcconfig</string>
+			<string>Pods-Marvel-Acceptance Tests.debug.xcconfig</string>
 			<key>path</key>
-			<string>Pods/Target Support Files/Pods-MarvelUITests/Pods-MarvelUITests.release.xcconfig</string>
+			<string>Pods/Target Support Files/Pods-Marvel-Acceptance Tests/Pods-Marvel-Acceptance Tests.debug.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -2435,7 +2498,9 @@ fi
 			<string>2147483647</string>
 			<key>files</key>
 			<array>
+				<string>424D5D3B1DB961A4008CC330</string>
 				<string>A39D449B1DB0E075003C0075</string>
+				<string>424D5D391DB96180008CC330</string>
 				<string>A39D44961DB0DFDC003C0075</string>
 				<string>A39D44981DB0E00C003C0075</string>
 			</array>
@@ -2452,7 +2517,7 @@ fi
 			<array>
 				<string>A39D449F1DB0EEB8003C0075</string>
 				<string>A39D449D1DB0EEAF003C0075</string>
-				<string>2F7B7C523FD2EF8DB9F5C0B4</string>
+				<string>5E38075B77A717231A695BF8</string>
 			</array>
 			<key>isa</key>
 			<string>PBXFrameworksBuildPhase</string>
@@ -2476,15 +2541,15 @@ fi
 			<string>A39D44911DB0DE05003C0075</string>
 			<key>buildPhases</key>
 			<array>
-				<string>D2BA4A9B92ED9767FA745E61</string>
+				<string>BEC3B90628D5B7EE7DDB8B33</string>
 				<string>C911FB373C24208B52EA50DC</string>
 				<string>A39D44861DB0DE05003C0075</string>
 				<string>A39D44871DB0DE05003C0075</string>
 				<string>A39D44881DB0DE05003C0075</string>
 				<string>EF1EEFF3D44AC5FC62E3D05D</string>
 				<string>2ACF8773C457141F5AA490CC</string>
-				<string>A949AEC80C414DF0C9E075E3</string>
-				<string>BDDE610D7781D5BE275A78EF</string>
+				<string>4554554C334C79839DA29B43</string>
+				<string>DF56E87D32B7F3F23CA1F664</string>
 			</array>
 			<key>buildRules</key>
 			<array/>
@@ -2520,6 +2585,7 @@ fi
 		<dict>
 			<key>children</key>
 			<array>
+				<string>424D5D361DB96162008CC330</string>
 				<string>A39D44991DB0E062003C0075</string>
 				<string>A39D44951DB0DFDC003C0075</string>
 			</array>
@@ -2580,7 +2646,7 @@ fi
 		<key>A39D44921DB0DE05003C0075</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>BD3573C19BE9BBD67F5452F9</string>
+			<string>96B1F02A321432BC91A59AED</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES</key>
@@ -2633,7 +2699,7 @@ fi
 		<key>A39D44931DB0DE05003C0075</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>F5AE00C30D63322FD2F8660A</string>
+			<string>4F552190E96D62B4E656C5F3</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES</key>
@@ -2798,7 +2864,20 @@ fi
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>A949AEC80C414DF0C9E075E3</key>
+		<key>A59917B6A84C7ADD8F426DC8</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods_Marvel.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>A9648854157BBB3114268CE3</key>
 		<dict>
 			<key>buildActionMask</key>
 			<string>2147483647</string>
@@ -2809,7 +2888,7 @@ fi
 			<key>isa</key>
 			<string>PBXShellScriptBuildPhase</string>
 			<key>name</key>
-			<string>Embed Pods Frameworks</string>
+			<string>Copy Pods Resources</string>
 			<key>outputPaths</key>
 			<array/>
 			<key>runOnlyForDeploymentPostprocessing</key>
@@ -2817,23 +2896,10 @@ fi
 			<key>shellPath</key>
 			<string>/bin/sh</string>
 			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Marvel-Acceptance Tests/Pods-Marvel-Acceptance Tests-frameworks.sh"
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Marvel/Pods-Marvel-resources.sh"
 </string>
 			<key>showEnvVarsInLog</key>
 			<string>0</string>
-		</dict>
-		<key>AA4693C68D508E3519506EA1</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_MarvelUITests.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>AB6648005F9BB034006752CF</key>
 		<dict>
@@ -2865,50 +2931,7 @@ fi
 			<key>showEnvVarsInLog</key>
 			<string>0</string>
 		</dict>
-		<key>B139759010CC0900AFAB9DE8</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_Marvel.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>BACADC8146DD89593127284A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-MarvelTests.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-MarvelTests/Pods-MarvelTests.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BD3573C19BE9BBD67F5452F9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-Marvel-Acceptance Tests.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-Marvel-Acceptance Tests/Pods-Marvel-Acceptance Tests.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BDDE610D7781D5BE275A78EF</key>
+		<key>AC18820CC21C62EC5BBD7CB1</key>
 		<dict>
 			<key>buildActionMask</key>
 			<string>2147483647</string>
@@ -2919,7 +2942,7 @@ fi
 			<key>isa</key>
 			<string>PBXShellScriptBuildPhase</string>
 			<key>name</key>
-			<string>Copy Pods Resources</string>
+			<string>Check Pods Manifest.lock</string>
 			<key>outputPaths</key>
 			<array/>
 			<key>runOnlyForDeploymentPostprocessing</key>
@@ -2927,12 +2950,18 @@ fi
 			<key>shellPath</key>
 			<string>/bin/sh</string>
 			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Marvel-Acceptance Tests/Pods-Marvel-Acceptance Tests-resources.sh"
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
 </string>
 			<key>showEnvVarsInLog</key>
 			<string>0</string>
 		</dict>
-		<key>C208FFF8D58624962DD2943D</key>
+		<key>ACADFCF5ABE5A0C44FFDBD13</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2946,6 +2975,36 @@ fi
 			<string>Pods/Target Support Files/Pods-Marvel/Pods-Marvel.release.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BEC3B90628D5B7EE7DDB8B33</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
 		</dict>
 		<key>C48AF3992ED3F99C947D7D76</key>
 		<dict>
@@ -3001,37 +3060,34 @@ fi
 			<key>showEnvVarsInLog</key>
 			<string>0</string>
 		</dict>
-		<key>CE840072D96EA75CC7F0D90C</key>
+		<key>C9A1500E6C136CD9403B6D2B</key>
 		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
+			<key>fileRef</key>
+			<string>50D28DDFF23008305BB79164</string>
 			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
+			<string>PBXBuildFile</string>
 		</dict>
-		<key>D21AA3133CE7DBF6D72DEE5C</key>
+		<key>C9EB27ACE74228BE31C2FED0</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>36C336F094FCDBC2D733AA58</string>
+				<string>ACADFCF5ABE5A0C44FFDBD13</string>
+				<string>96B1F02A321432BC91A59AED</string>
+				<string>4F552190E96D62B4E656C5F3</string>
+				<string>2CA206E0C42D6582A5CB5CBF</string>
+				<string>23FA269A2EB2FBB975B3630A</string>
+				<string>D12096D91157813CB1B8CAA5</string>
+				<string>D45283090250EAFDFD86B2ED</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D12096D91157813CB1B8CAA5</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -3046,91 +3102,7 @@ fi
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>D2BA4A9B92ED9767FA745E61</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>D6E6804499743A3F8E7FEC8A</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Marvel/Pods-Marvel-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>D820CB48927A17F8B95225BF</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>EACAD4DCDBD2E1634A779632</key>
+		<key>D3E9CE84322CECCF0FD9426A</key>
 		<dict>
 			<key>buildActionMask</key>
 			<string>2147483647</string>
@@ -3154,7 +3126,46 @@ fi
 			<key>showEnvVarsInLog</key>
 			<string>0</string>
 		</dict>
-		<key>EE69D146D029E5DD44932DDC</key>
+		<key>D45283090250EAFDFD86B2ED</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-MarvelUITests.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-MarvelUITests/Pods-MarvelUITests.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D49183C951525FF647364454</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Embed Pods Frameworks</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Marvel/Pods-Marvel-frameworks.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>D4B2C0982E3CDC1342702E52</key>
 		<dict>
 			<key>buildActionMask</key>
 			<string>2147483647</string>
@@ -3180,6 +3191,37 @@ error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or up
 EOM
     exit 1
 fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>DE04E4A4D4D16C1EBAD64CED</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A59917B6A84C7ADD8F426DC8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DF56E87D32B7F3F23CA1F664</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Marvel-Acceptance Tests/Pods-Marvel-Acceptance Tests-resources.sh"
 </string>
 			<key>showEnvVarsInLog</key>
 			<string>0</string>
@@ -3208,25 +3250,40 @@ fi
 			<key>showEnvVarsInLog</key>
 			<string>0</string>
 		</dict>
-		<key>F5AE00C30D63322FD2F8660A</key>
+		<key>F7DF6165092A912C7B66C6BA</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
+			<string>PBXShellScriptBuildPhase</string>
 			<key>name</key>
-			<string>Pods-Marvel-Acceptance Tests.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-Marvel-Acceptance Tests/Pods-Marvel-Acceptance Tests.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
 		</dict>
-		<key>FEB20E2214C228F5BC8E1AF2</key>
+		<key>FEEC379E730ABABED5F9FD7D</key>
 		<dict>
 			<key>fileRef</key>
-			<string>B139759010CC0900AFAB9DE8</string>
+			<string>0813B067C62979EABE051E91</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
