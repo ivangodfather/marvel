@@ -9,6 +9,7 @@
 import Foundation
 import XCTest
 @testable import Marvel
+import RxSwift
 
 class ListCharactersViewControllerTests: XCTestCase {
 
@@ -25,16 +26,9 @@ class ListCharactersViewControllerTests: XCTestCase {
         XCTAssertNotNil(sut.tableView)
     }
 
-    func testViewDidLoad_dataSourceIsNotNil() {
-        sut.preloadView()
-
-        XCTAssertNotNil(sut.tableView.dataSource)
-        XCTAssertTrue(sut.tableView.dataSource is ListCharactersDataSource)
-    }
-
     func testTableview_numberOfRowsInSectionIsCharactersCountOfDataSource() {
         let numberOfCharacters = 5
-        sut.dataSource.characters = CharacterBuilder.get(count: numberOfCharacters)
+        sut.characters = Variable(CharacterBuilder.get(count: numberOfCharacters))
 
         sut.preloadView()
 

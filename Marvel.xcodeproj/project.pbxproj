@@ -47,7 +47,6 @@
 		A39D44791DB0CDCC003C0075 /* ListCharactersViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39D44781DB0CDCC003C0075 /* ListCharactersViewControllerTests.swift */; };
 		A39D447C1DB0CEA0003C0075 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39D447B1DB0CEA0003C0075 /* UIViewController.swift */; };
 		A39D447F1DB0D0D4003C0075 /* ListCharactersDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39D447E1DB0D0D4003C0075 /* ListCharactersDataSource.swift */; };
-		A39D44821DB0D381003C0075 /* MockListCharactersDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39D44811DB0D381003C0075 /* MockListCharactersDataSource.swift */; };
 		A39D44851DB0D407003C0075 /* CharacterBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39D44841DB0D407003C0075 /* CharacterBuilder.swift */; };
 		A39D44961DB0DFDC003C0075 /* ListCharactersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39D44951DB0DFDC003C0075 /* ListCharactersUITests.swift */; };
 		A39D44981DB0E00C003C0075 /* BaseUITestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39D44971DB0E00C003C0075 /* BaseUITestCase.swift */; };
@@ -138,7 +137,6 @@
 		A39D44781DB0CDCC003C0075 /* ListCharactersViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCharactersViewControllerTests.swift; sourceTree = "<group>"; };
 		A39D447B1DB0CEA0003C0075 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		A39D447E1DB0D0D4003C0075 /* ListCharactersDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCharactersDataSource.swift; sourceTree = "<group>"; };
-		A39D44811DB0D381003C0075 /* MockListCharactersDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockListCharactersDataSource.swift; sourceTree = "<group>"; };
 		A39D44841DB0D407003C0075 /* CharacterBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterBuilder.swift; sourceTree = "<group>"; };
 		A39D448A1DB0DE05003C0075 /* Acceptance Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Acceptance Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A39D448E1DB0DE05003C0075 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -413,7 +411,6 @@
 		A39D44771DB0CDB1003C0075 /* ListCharacters */ = {
 			isa = PBXGroup;
 			children = (
-				A39D44801DB0D36B003C0075 /* Mocks */,
 				A39D44781DB0CDCC003C0075 /* ListCharactersViewControllerTests.swift */,
 			);
 			name = ListCharacters;
@@ -435,14 +432,6 @@
 				A39D447E1DB0D0D4003C0075 /* ListCharactersDataSource.swift */,
 			);
 			name = TableView;
-			sourceTree = "<group>";
-		};
-		A39D44801DB0D36B003C0075 /* Mocks */ = {
-			isa = PBXGroup;
-			children = (
-				A39D44811DB0D381003C0075 /* MockListCharactersDataSource.swift */,
-			);
-			name = Mocks;
 			sourceTree = "<group>";
 		};
 		A39D44831DB0D3FD003C0075 /* Builders */ = {
@@ -1049,7 +1038,6 @@
 			files = (
 				A39D44791DB0CDCC003C0075 /* ListCharactersViewControllerTests.swift in Sources */,
 				3FF247771DB00452004DFBFE /* MarvelTests.swift in Sources */,
-				A39D44821DB0D381003C0075 /* MockListCharactersDataSource.swift in Sources */,
 				A39D44851DB0D407003C0075 /* CharacterBuilder.swift in Sources */,
 				3FEBF9B41DB0AA3100ACD113 /* CharacterSpec.swift in Sources */,
 			);

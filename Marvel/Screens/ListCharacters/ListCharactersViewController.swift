@@ -11,29 +11,29 @@ import RxSwift
 import RxCocoa
 
 class ListCharactersViewController: BaseViewController {
-
+    
     var presenter: ListCharactersPresenter!
-
+    
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
-    var dataSource: ListCharactersDataSource!
-
+    
+    var characters = Variable([MarvelCharacter]())
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
         setupSearchBar()
         presenter.viewDidLoad()
     }
-
+    
     override func updateGUI() {
         super.updateGUI()
         self.title = "List"
         tableView.accessibilityLabel = String(describing: ListCharactersViewController.self)
     }
-
+    
     private func setupTableView() {
-        tableView.dataSource = dataSource
-        tableView.delegate = self
         let nib = UINib(nibName: ListCharacterTableViewCell.cellId, bundle: Bundle.main)
         tableView.register(nib, forCellReuseIdentifier: ListCharacterTableViewCell.cellId)
         tableView.infiniteScrollIndicatorStyle = .gray
@@ -44,8 +44,27 @@ class ListCharactersViewController: BaseViewController {
         }
         tableView.estimatedRowHeight = 140
         tableView.rowHeight = UITableViewAutomaticDimension
+        
+        characters.asObservable()
+            .bindTo(tableView
+                .rx
+                .items(cellIdentifier: ListCharacterTableViewCell.cellId,
+                       cellType: ListCharacterTableViewCell.self)) { (row, character, cell) in
+                        cell.configure(character: character)
+            }.addDisposableTo(disposeBag)
+        
+        
+        tableView
+            .rx
+            .modelSelected(MarvelCharacter.self)
+            .subscribe(onNext: {
+                character in
+                self.presenter.didTap(character: character)
+                
+            }).addDisposableTo(disposeBag)
+        
     }
-
+    
     private func setupSearchBar() {
         searchBar.rx.text
             .skip(1)
@@ -66,29 +85,22 @@ class ListCharactersViewController: BaseViewController {
 extension ListCharactersViewController: ListCharactersUI {
     func appendCharacters(characters: [MarvelCharacter]) {
         var indexPaths = [IndexPath]()
-        var index = self.dataSource.characters.count
+        var index = self.characters.value.count
         characters.forEach {
             let indexPath = IndexPath(row: index, section: 0)
             indexPaths.append(indexPath)
             index += 1
-            self.dataSource.characters.append($0)
+            self.characters.value.append($0)
         }
         tableView.beginUpdates()
         tableView.insertRows(at: indexPaths, with: .automatic)
         tableView.endUpdates()
         tableView.finishInfiniteScroll()
     }
-
+    
     func showCharacters(characters: [MarvelCharacter]) {
-        self.dataSource.characters = characters
+        self.characters.value = characters
         self.tableView.reloadData()
-    }
-}
-
-extension ListCharactersViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let character = dataSource.characters[indexPath.row]
-        presenter.didTap(character: character)
     }
 }
 
@@ -96,11 +108,11 @@ extension ListCharactersViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         searchBar.resignFirstResponder()
     }
-
+    
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
         searchBar.showsCancelButton = true
     }
-
+    
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         searchBar.showsCancelButton = false
         searchBar.resignFirstResponder()

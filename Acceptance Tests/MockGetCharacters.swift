@@ -8,6 +8,7 @@
 
 import Foundation
 @testable import Marvel
+import RxSwift
 
 class MockGetCharacters: GetCharacters {
     

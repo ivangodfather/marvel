@@ -57,7 +57,6 @@ class ListCharactersUITests: BaseUITestCase {
         let sb = UIStoryboard(name: CharacterWireframe.identifiers.sb, bundle: nil)
         let vc = sb.instantiateViewController(withIdentifier: CharacterWireframe.identifiers.list) as! ListCharactersViewController
         vc.presenter = ListCharactersPresenter(ui: vc, getCharacters: getCharacters, characterWireframe: characterWireframe)
-        vc.dataSource = ListCharactersDataSource()
         presentViewController(UINavigationController(rootViewController: vc))
     }
 }
