@@ -2,7 +2,7 @@
 
 This project shows characters from Marvel API. Its intention its to show common patterns for developing an iOS app. Its dessigned to support portrait/landscape.
 
-![Marvel](http://www.ruiznadal.com/wp-admin/images/marvel_landscape.gif "Marvel Landscape")
+![Marvel](http://www.ruiznadal.com/wp-admin/images/marvel_landscape.gif)
 
 ## Requeriments
 Xcode 8 / Swift 3
