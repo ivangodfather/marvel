@@ -84,23 +84,12 @@ class ListCharactersViewController: BaseViewController {
 
 extension ListCharactersViewController: ListCharactersUI {
     func appendCharacters(characters: [MarvelCharacter]) {
-        var indexPaths = [IndexPath]()
-        var index = self.characters.value.count
-        characters.forEach {
-            let indexPath = IndexPath(row: index, section: 0)
-            indexPaths.append(indexPath)
-            index += 1
-            self.characters.value.append($0)
-        }
-        tableView.beginUpdates()
-        tableView.insertRows(at: indexPaths, with: .automatic)
-        tableView.endUpdates()
+        self.characters.value.append(contentsOf: characters)
         tableView.finishInfiniteScroll()
     }
     
     func showCharacters(characters: [MarvelCharacter]) {
         self.characters.value = characters
-        self.tableView.reloadData()
     }
 }
 
