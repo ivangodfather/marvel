@@ -44,23 +44,20 @@ class ListCharactersViewController: BaseViewController {
         }
         tableView.estimatedRowHeight = 140
         tableView.rowHeight = UITableViewAutomaticDimension
-        
-        characters.asObservable()
+        characters
+            .asObservable()
             .bindTo(tableView
                 .rx
                 .items(cellIdentifier: ListCharacterTableViewCell.cellId,
                        cellType: ListCharacterTableViewCell.self)) { (row, character, cell) in
                         cell.configure(character: character)
             }.addDisposableTo(disposeBag)
-        
-        
         tableView
             .rx
             .modelSelected(MarvelCharacter.self)
             .subscribe(onNext: {
                 character in
                 self.presenter.didTap(character: character)
-                
             }).addDisposableTo(disposeBag)
         
     }
@@ -71,12 +68,7 @@ class ListCharactersViewController: BaseViewController {
             .throttle(0.5, scheduler: MainScheduler.instance)
             .distinctUntilChanged()
             .do(onNext: presenter.searchBarTextDidChange)
-            .flatMapLatest({ (text) -> Driver<[MarvelCharacter]> in
-                self.waitingHud(show: true)
-                return GetCharacters().filtered(name: text, offset: 0).asDriver(onErrorJustReturn: [])
-            }).do(onNext: { character in
-                self.waitingHud(show: false)
-            }).bindTo(characters)
+            .subscribe()
         searchBar.placeholder = "Search character"
     }
 }
