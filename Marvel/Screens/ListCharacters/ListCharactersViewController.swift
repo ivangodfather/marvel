@@ -66,18 +66,17 @@ class ListCharactersViewController: BaseViewController {
     }
     
     private func setupSearchBar() {
-        searchBar.rx.text
+        _ = searchBar.rx.text
             .skip(1)
             .throttle(0.5, scheduler: MainScheduler.instance)
             .distinctUntilChanged()
             .do(onNext: presenter.searchBarTextDidChange)
-            .flatMapLatest({ (text) -> Observable<[MarvelCharacter]> in
+            .flatMapLatest({ (text) -> Driver<[MarvelCharacter]> in
                 self.waitingHud(show: true)
-                return GetCharacters().filtered(name: text, offset: 0)
-            }).subscribe(onNext: { (characters) in
+                return GetCharacters().filtered(name: text, offset: 0).asDriver(onErrorJustReturn: [])
+            }).do(onNext: { character in
                 self.waitingHud(show: false)
-                self.showCharacters(characters: characters)
-            }).addDisposableTo(disposeBag)
+            }).bindTo(characters)
         searchBar.placeholder = "Search character"
     }
 }

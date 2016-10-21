@@ -16,6 +16,7 @@ class ListCharactersPresenter: BasePresenter {
     private let ui: ListCharactersUI
     private let getCharacters: GetCharacters
     private let characterWireframe: CharacterWireframe
+    let publishSubject: PublishSubject = PublishSubject<String>()
 
     init(ui: ListCharactersUI,
          getCharacters: GetCharacters = GetCharacters(),
