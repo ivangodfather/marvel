@@ -39,7 +39,7 @@ struct MarvelComic {
 }
 
 extension MarvelComic {
-    struct Keys {
+    fileprivate struct Keys {
         static let id = "id"
         static let title = "title"
         static let description = "description"

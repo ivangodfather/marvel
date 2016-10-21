@@ -29,8 +29,9 @@
 		3FF247691DB00452004DFBFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FF247681DB00452004DFBFE /* Assets.xcassets */; };
 		3FF2476C1DB00452004DFBFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FF2476A1DB00452004DFBFE /* LaunchScreen.storyboard */; };
 		3FF247821DB00452004DFBFE /* MarvelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF247811DB00452004DFBFE /* MarvelUITests.swift */; };
-		3FF247911DB0051B004DFBFE /* CharactersAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF247901DB0051B004DFBFE /* CharactersAPI.swift */; };
+		3FF247911DB0051B004DFBFE /* MarvelCharacterAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF247901DB0051B004DFBFE /* MarvelCharacterAPI.swift */; };
 		3FF247931DB00553004DFBFE /* MarvelAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF247921DB00553004DFBFE /* MarvelAPI.swift */; };
+		420D50E61DBA836E00921A95 /* MarvelComicAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420D50E51DBA836E00921A95 /* MarvelComicAPI.swift */; };
 		424D5D391DB96180008CC330 /* MockGetCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424D5D381DB96180008CC330 /* MockGetCharacters.swift */; };
 		424D5D3B1DB961A4008CC330 /* MockCharacterWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424D5D3A1DB961A4008CC330 /* MockCharacterWireframe.swift */; };
 		5E38075B77A717231A695BF8 /* Pods_Marvel_Acceptance_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4188EEBD968C0CBE0A402090 /* Pods_Marvel_Acceptance_Tests.framework */; };
@@ -115,9 +116,10 @@
 		3FF2477D1DB00452004DFBFE /* MarvelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarvelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FF247811DB00452004DFBFE /* MarvelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelUITests.swift; sourceTree = "<group>"; };
 		3FF247831DB00452004DFBFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3FF247901DB0051B004DFBFE /* CharactersAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersAPI.swift; sourceTree = "<group>"; };
+		3FF247901DB0051B004DFBFE /* MarvelCharacterAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarvelCharacterAPI.swift; sourceTree = "<group>"; };
 		3FF247921DB00553004DFBFE /* MarvelAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarvelAPI.swift; sourceTree = "<group>"; };
 		4188EEBD968C0CBE0A402090 /* Pods_Marvel_Acceptance_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marvel_Acceptance_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		420D50E51DBA836E00921A95 /* MarvelComicAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarvelComicAPI.swift; sourceTree = "<group>"; };
 		424D5D381DB96180008CC330 /* MockGetCharacters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockGetCharacters.swift; sourceTree = "<group>"; };
 		424D5D3A1DB961A4008CC330 /* MockCharacterWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockCharacterWireframe.swift; sourceTree = "<group>"; };
 		4F552190E96D62B4E656C5F3 /* Pods-Marvel-Acceptance Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marvel-Acceptance Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Marvel-Acceptance Tests/Pods-Marvel-Acceptance Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -361,9 +363,10 @@
 		3FF2478F1DB00500004DFBFE /* API */ = {
 			isa = PBXGroup;
 			children = (
-				3FF247901DB0051B004DFBFE /* CharactersAPI.swift */,
 				3FF247921DB00553004DFBFE /* MarvelAPI.swift */,
 				A3790CF01DB221DB00875F53 /* MarvelAPIParser.swift */,
+				3FF247901DB0051B004DFBFE /* MarvelCharacterAPI.swift */,
+				420D50E51DBA836E00921A95 /* MarvelComicAPI.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -1013,7 +1016,7 @@
 				3F8B71901DB02CAC0022B718 /* ListCharactersPresenter.swift in Sources */,
 				A3790CEB1DB2206A00875F53 /* ComicRepository.swift in Sources */,
 				3F8B719A1DB02FFA0022B718 /* CharacterRepository.swift in Sources */,
-				3FF247911DB0051B004DFBFE /* CharactersAPI.swift in Sources */,
+				3FF247911DB0051B004DFBFE /* MarvelCharacterAPI.swift in Sources */,
 				3F8B71971DB02EA60022B718 /* GetCharacters.swift in Sources */,
 				3FF247931DB00553004DFBFE /* MarvelAPI.swift in Sources */,
 				3F8B71941DB02D2E0022B718 /* ListCharactersUI.swift in Sources */,
@@ -1026,6 +1029,7 @@
 				3F8B718E1DB02AD50022B718 /* CharacterWireframe.swift in Sources */,
 				3F8B71821DB018C70022B718 /* ListCharactersViewController.swift in Sources */,
 				3F8B71921DB02CCF0022B718 /* BasePresenter.swift in Sources */,
+				420D50E61DBA836E00921A95 /* MarvelComicAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
