@@ -18,15 +18,6 @@ class MarvelAPI {
         return "\(MarvelAPI.url)/\(characterId.description)/series"
     }
 
-    private struct ApiParams {
-        static let apiKey = "apikey"
-        static let timestamp = "ts"
-        static let hash = "hash"
-        static let offset = "offset"
-        static let pageSize = "limit"
-        static let name = "nameStartsWith"
-    }
-
     struct CharactersParams {
         var pageSize: Int?
         var offset: Int?
@@ -44,9 +35,9 @@ class MarvelAPI {
 
         func toDict() -> [String: Any] {
             var dict = MarvelAPI.defaultParams()
-            if let offset = offset { dict[ApiParams.offset] = offset }
-            if let pageSize = pageSize { dict[ApiParams.pageSize] = pageSize }
-            if let name = name, name.characters.count > 0 { dict[ApiParams.name] = name }
+            if let offset = offset { dict[Keys.offset] = offset }
+            if let pageSize = pageSize { dict[Keys.pageSize] = pageSize }
+            if let name = name, name.characters.count > 0 { dict[Keys.name] = name }
             return dict
         }
     }
@@ -60,8 +51,19 @@ class MarvelAPI {
 
     private static func defaultParams() -> [String: Any] {
         let timestamp = Int(Date().timeIntervalSince1970)
-        return [ApiParams.apiKey: publicKey,
-                ApiParams.timestamp: timestamp,
-                ApiParams.hash: "\(timestamp)\(privateKey)\(publicKey)".md5()]
+        return [Keys.apiKey: publicKey,
+                Keys.timestamp: timestamp,
+                Keys.hash: "\(timestamp)\(privateKey)\(publicKey)".md5()]
+    }
+}
+
+extension MarvelAPI {
+    fileprivate struct Keys {
+        static let apiKey = "apikey"
+        static let timestamp = "ts"
+        static let hash = "hash"
+        static let offset = "offset"
+        static let pageSize = "limit"
+        static let name = "nameStartsWith"
     }
 }

@@ -11,13 +11,13 @@ import RxSwift
 
 class CharacterRepository {
 
-    let api: MarvelAPIEndpoints
+    private let marvelCharacterAPI: MarvelCharacterAPI
 
-    init(api: MarvelAPIEndpoints = MarvelAPIEndpoints()) {
-        self.api = api
+    init(marvelCharacterAPI: MarvelCharacterAPI = MarvelCharacterAPI()) {
+        self.marvelCharacterAPI = marvelCharacterAPI
     }
 
     func getAll(params: MarvelAPI.CharactersParams) -> Observable<[MarvelCharacter]> {
-        return api.getCharacters(params: params)
+        return marvelCharacterAPI.getCharacters(params: params)
     }
 }

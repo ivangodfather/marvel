@@ -10,8 +10,7 @@ import Foundation
 import RxAlamofire
 import RxSwift
 
-class MarvelAPIEndpoints {
-    
+class MarvelCharacterAPI {
     let parser: MarvelAPIParser
     
     init(parser: MarvelAPIParser = MarvelAPIParser()) {
@@ -24,18 +23,6 @@ class MarvelAPIEndpoints {
                          MarvelAPI.url,
                          parameters: params.toDict() as [String : AnyObject]?)
             .flatMap { response, data -> Observable<[MarvelCharacter]> in
-                guard response.statusCode == 200 else { return Observable.error(MarvelError.apiError) }
-                guard let dict = data as? [String: Any] else { return Observable.error(MarvelError.unkown) }
-                return Observable.just(self.parser.parse(dict: dict))
-        }
-    }
-    
-    func getComics(params: MarvelAPI.ComicParams) -> Observable<[MarvelComic]> {
-        return RxAlamofire
-            .requestJSON(.get,
-                         MarvelAPI.urlComics(characterId: params.characterId),
-                         parameters: params.toDict() as [String : AnyObject]?)
-            .flatMap { response, data -> Observable<[MarvelComic]> in
                 guard response.statusCode == 200 else { return Observable.error(MarvelError.apiError) }
                 guard let dict = data as? [String: Any] else { return Observable.error(MarvelError.unkown) }
                 return Observable.just(self.parser.parse(dict: dict))
