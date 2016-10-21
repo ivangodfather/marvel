@@ -1,22 +1,25 @@
 //
-//  Character.swift
+//  MarvelEntity.swift
 //  Marvel
 //
-//  Created by Ivan Ruiz Monjo on 13/10/16.
+//  Created by Ivan Ruiz on 15/10/16.
 //  Copyright © 2016 Ivan Ruiz Monjo. All rights reserved.
 //
 
 import Foundation
 
-struct MarvelCharacter {
+struct MarvelComic {
+
     let id: Int
-    let name: String
+    let title: String
     let description: String
+    let pageCount: Int?
+    let isbn: String?
     let thumbnail: URL?
 
     init?(dict: [String: Any]) {
         guard let id = dict[Keys.id] as? Int,
-            let name = dict[Keys.name] as? String,
+            let title = dict[Keys.title] as? String,
             let description = dict[Keys.description] as? String
             else { return nil }
 
@@ -26,30 +29,24 @@ struct MarvelCharacter {
             let ext = thumb[Keys.ext] as? String {
             thumbnail = URL(string: "\(path).\(ext)")
         }
+        isbn = dict[Keys.isbn] as? String
+        pageCount = dict[Keys.pageCount] as? Int
         self.id = id
-        self.name = name
-        self.description = description
-        self.thumbnail = thumbnail
-    }
-
-    init(id: Int,
-         name: String,
-         description: String,
-         thumbnail: URL?) {
-        self.id = id
-        self.name = name
+        self.title = title
         self.description = description
         self.thumbnail = thumbnail
     }
 }
 
-extension MarvelCharacter {
+extension MarvelComic {
     struct Keys {
         static let id = "id"
-        static let name = "name"
+        static let title = "title"
         static let description = "description"
+        static let ext = "extension"
         static let thumbnail = "thumbnail"
         static let path = "path"
-        static let ext = "extension"
+        static let isbn = "isbn"
+        static let pageCount = "pageCount"
     }
 }
