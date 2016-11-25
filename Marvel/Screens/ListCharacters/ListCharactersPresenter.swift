@@ -62,8 +62,8 @@ class ListCharactersPresenter: BasePresenter {
         showCharacters()
     }
     
-    func searchBarTextDidChange(text: String) {
-        searchPublishSubject.onNext(text)
+    func searchBarTextDidChange(text: String?) {
+        searchPublishSubject.onNext(text ?? "")
     }
     
 }

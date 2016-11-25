@@ -1,130 +1,51 @@
->-
-  PODS:
-  - >-
-    Alamofire (4.0.1)
-  - >-
-    AsyncImageView (1.6)
-  - >-
-    CryptoSwift (0.6.1)
-  - >-
-    CSStickyHeaderFlowLayout (0.2.11)
-  - >-
-    KIF (3.5.1):
-    - >-
-      KIF/Core (= 3.5.1)
-  - >-
-    KIF/Core (3.5.1)
-  - >-
-    Nimble (5.0.0)
-  - >-
-    Quick (0.10.0)
-  - >-
-    RxAlamofire (3.0.0-rc.1):
-    - >-
-      RxAlamofire/Core (= 3.0.0-rc.1)
-  - >-
-    RxAlamofire/Core (3.0.0-rc.1):
-    - >-
-      Alamofire (~> 4.0)
-    - >-
-      RxSwift (~> 3.0.0-rc.1)
-  - >-
-    RxCocoa (3.0.0-rc.1):
-    - >-
-      RxSwift (~> 3.0.0-rc.1)
-  - >-
-    RxSwift (3.0.0-rc.1)
-  - >-
-    SVProgressHUD (2.0.3)
-  - >-
-    UIScrollView-InfiniteScroll (0.9.1)
+PODS:
+  - Alamofire (4.2.0)
+  - AsyncImageView (1.6)
+  - CryptoSwift (0.6.6)
+  - CSStickyHeaderFlowLayout (0.2.11)
+  - KIF (3.5.1):
+    - KIF/Core (= 3.5.1)
+  - KIF/Core (3.5.1)
+  - Nimble (5.1.1)
+  - Quick (1.0.0)
+  - RxAlamofire (3.0.2):
+    - RxAlamofire/Core (= 3.0.2)
+  - RxAlamofire/Core (3.0.2):
+    - Alamofire (~> 4.0)
+    - RxSwift (~> 3.0)
+  - RxCocoa (3.0.1):
+    - RxSwift (~> 3.0)
+  - RxSwift (3.0.1)
+  - SVProgressHUD (2.0.4)
+  - UIScrollView-InfiniteScroll (0.9.1)
 
->-
-  DEPENDENCIES:
-  - >-
-    AsyncImageView
-  - >-
-    CryptoSwift
-  - >-
-    CSStickyHeaderFlowLayout
-  - >-
-    KIF
-  - >-
-    Nimble
-  - >-
-    Quick
-  - >-
-    RxAlamofire (from `https://github.com/RxSwiftCommunity/RxAlamofire`, branch `master`)
-  - >-
-    RxCocoa (~> 3.0.0.beta.2)
-  - >-
-    RxSwift (~> 3.0.0.beta.2)
-  - >-
-    SVProgressHUD
-  - >-
-    UIScrollView-InfiniteScroll
+DEPENDENCIES:
+  - AsyncImageView
+  - CryptoSwift
+  - CSStickyHeaderFlowLayout
+  - KIF
+  - Nimble
+  - Quick
+  - RxAlamofire
+  - RxCocoa
+  - RxSwift
+  - SVProgressHUD
+  - UIScrollView-InfiniteScroll
 
->-
-  EXTERNAL SOURCES:
-  >-
-    RxAlamofire:
-    :branch: >-
-      master
-    :git: >-
-      https://github.com/RxSwiftCommunity/RxAlamofire
+SPEC CHECKSUMS:
+  Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
+  AsyncImageView: 416e99402e5b1f20571de70ad619ced90f56a7d9
+  CryptoSwift: 88592381b73f36e192124539390a7c9bacda76af
+  CSStickyHeaderFlowLayout: e9bcb1762413f49d7d09e5bd0ae5efd1100116b7
+  KIF: 082eb65279e51c3092923802849eb796a04982ab
+  Nimble: 415e3aa3267e7bc2c96b05fa814ddea7bb686a29
+  Quick: 8024e4a47e6cc03a9d5245ef0948264fc6d27cff
+  RxAlamofire: bc53604b29fd2d220cfaa490c736cc4500819f34
+  RxCocoa: 15a52fc590dcc700cb4a690a633b5c5184ce3a78
+  RxSwift: af5680055c4ad04480189c52d28385b1029493a6
+  SVProgressHUD: bfde85ed6c573ea802b9cb37894ed9b629034f1b
+  UIScrollView-InfiniteScroll: 14e204c50ca4040467e1cbfa141dad7a18919b56
 
->-
-  CHECKOUT OPTIONS:
-  >-
-    RxAlamofire:
-    :commit: >-
-      fa98bd027fb3c9dc9312d92e6025fbd6c8e3f8e7
-    :git: >-
-      https://github.com/RxSwiftCommunity/RxAlamofire
+PODFILE CHECKSUM: 6c81940f95fc570db0afb511fe56e9fe502e2169
 
->-
-  SPEC CHECKSUMS:
-  >-
-    Alamofire: >-
-    7682d43245de14874acd142ec137b144aa1dd335
-  >-
-    AsyncImageView: >-
-    416e99402e5b1f20571de70ad619ced90f56a7d9
-  >-
-    CryptoSwift: >-
-    abdbc1bf32c89117c6b403810a7b30f742d86e68
-  >-
-    CSStickyHeaderFlowLayout: >-
-    e9bcb1762413f49d7d09e5bd0ae5efd1100116b7
-  >-
-    KIF: >-
-    082eb65279e51c3092923802849eb796a04982ab
-  >-
-    Nimble: >-
-    56fc9f5020effa2206de22c3dd910f4fb011b92f
-  >-
-    Quick: >-
-    5d290df1c69d5ee2f0729956dcf0fd9a30447eaa
-  >-
-    RxAlamofire: >-
-    5e544296d77b754c4ad9cb419c29936e6bc9711d
-  >-
-    RxCocoa: >-
-    e72a074a7f38896ec0382d096df5f58df10115c7
-  >-
-    RxSwift: >-
-    d7a3819dd71789c473e3cbf1a0c02d58b2692739
-  >-
-    SVProgressHUD: >-
-    b0830714205bea1317ea1a2ebc71e5633af334d4
-  >-
-    UIScrollView-InfiniteScroll: >-
-    14e204c50ca4040467e1cbfa141dad7a18919b56
-
->-
-  PODFILE CHECKSUM: >-
-  44fc319817939b3d8b0f2b22d88cd8efff5c8417
-
->-
-  COCOAPODS: >-
-  1.0.0.beta.2
+COCOAPODS: 1.1.1

@@ -66,7 +66,6 @@ class ListCharactersViewController: BaseViewController {
         _ = searchBar.rx.text
             .skip(1)
             .throttle(0.5, scheduler: MainScheduler.instance)
-            .distinctUntilChanged()
             .do(onNext: presenter.searchBarTextDidChange)
             .subscribe()
         searchBar.placeholder = "Search character"
