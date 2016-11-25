@@ -11,14 +11,14 @@ import RxSwift
 
 class ComicRepository {
 
-    let api: MarvelAPIEndpoints
+    private let marvelComicAPI: MarvelComicAPI
 
-    init(api: MarvelAPIEndpoints = MarvelAPIEndpoints()) {
-        self.api = api
+    init(marvelComicAPI: MarvelComicAPI = MarvelComicAPI()) {
+        self.marvelComicAPI = marvelComicAPI
     }
 
     func getComics(params: MarvelAPI.ComicParams) -> Observable<[MarvelComic]> {
-        return api.getComics(params: params)
+        return marvelComicAPI.getComics(params: params)
     }
     
 }
