@@ -208,8 +208,7 @@
 				3F8B71791DB00E2D0022B718 /* MarvelCharacter.swift */,
 				A3790CEE1DB2211B00875F53 /* MarvelComic.swift */,
 			);
-			name = Entity;
-			path = ../Entity;
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		3F8B717F1DB018910022B718 /* Screens */ = {
@@ -247,9 +246,9 @@
 		3F8B71881DB0242C0022B718 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				3F8B71981DB02FED0022B718 /* Repository */,
 				3F8B71781DB00E140022B718 /* Entity */,
 				A3790CDA1DB12F7800875F53 /* Marvel */,
+				3F8B71981DB02FED0022B718 /* Repository */,
 				3F8B71911DB02CCF0022B718 /* BasePresenter.swift */,
 				3F8B71A21DB032AE0022B718 /* BaseUI.swift */,
 				3F8B71A41DB032F10022B718 /* BaseViewController.swift */,
@@ -281,8 +280,7 @@
 				3F8B71991DB02FFA0022B718 /* CharacterRepository.swift */,
 				A3790CEA1DB2206A00875F53 /* ComicRepository.swift */,
 			);
-			name = Repository;
-			path = ../Repository;
+			path = Repository;
 			sourceTree = "<group>";
 		};
 		3F8B719B1DB031090022B718 /* DetailCharacter */ = {
@@ -331,9 +329,9 @@
 		3FF247601DB00452004DFBFE /* Marvel */ = {
 			isa = PBXGroup;
 			children = (
-				A39D447A1DB0CE8E003C0075 /* Extensions */,
 				3FF2478F1DB00500004DFBFE /* API */,
 				3F8B71881DB0242C0022B718 /* Domain */,
+				A39D447A1DB0CE8E003C0075 /* Extensions */,
 				3F8B717F1DB018910022B718 /* Screens */,
 				3F8B71891DB024350022B718 /* Storyboards */,
 				3F8B71871DB024180022B718 /* Support */,
@@ -423,8 +421,7 @@
 			children = (
 				A39D447B1DB0CEA0003C0075 /* UIViewController.swift */,
 			);
-			name = Extensions;
-			path = Domain/Extensions;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		A39D447D1DB0D03A003C0075 /* TableView */ = {
