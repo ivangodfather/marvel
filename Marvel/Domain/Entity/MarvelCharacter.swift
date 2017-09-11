@@ -44,7 +44,7 @@ struct MarvelCharacter {
 }
 
 extension MarvelCharacter {
-    fileprivate struct Keys {
+     struct Keys {
         static let id = "id"
         static let name = "name"
         static let description = "description"
