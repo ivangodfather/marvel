@@ -1224,7 +1224,7 @@
 				DEVELOPMENT_TEAM = CPTD3EV4H4;
 				INFOPLIST_FILE = Marvel/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ivan.Marvel;
+				PRODUCT_BUNDLE_IDENTIFIER = CPTD3EV4H4.ivan.Marvel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Marvel/Support/Marvel-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1242,7 +1242,7 @@
 				DEVELOPMENT_TEAM = CPTD3EV4H4;
 				INFOPLIST_FILE = Marvel/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ivan.Marvel;
+				PRODUCT_BUNDLE_IDENTIFIER = CPTD3EV4H4.ivan.Marvel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Marvel/Support/Marvel-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
